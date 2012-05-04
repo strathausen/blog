@@ -17,14 +17,13 @@ vimifier = (article, next) ->
   while i < parts.length
     if parts[i] is '<pre><code>'
       i++
-      console.log 'adding', parts[i]
       jobs.push i
     i++
   async.forEach jobs, ((job, next) ->
     source = parts[job]
-    [ type, code ] = source.split '\n'
+    [ type, code... ] = source.split '\n'
     type = type.replace '#!', ''
-    vimify code, type, (err, css, html) ->
+    vimify (code.join '\n'), type, (err, css, html) ->
       parts[job] = html
       css = css.split '\n'
       allCss.push css...
@@ -35,7 +34,7 @@ vimifier = (article, next) ->
     do next
 
 module.exports = ({ articles }, cb) ->
-  async.forEach articles, vimifier
+  async.forEach articles, vimifier, cb
 unless module.parent
   console.log 'doing the test'
   text = content: '''
