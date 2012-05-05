@@ -1,0 +1,22 @@
+{
+  "author": "Johann Philipp Strathausen <strathausen@gmail.com>",
+  "name": "strathausen",
+  "description": "Website of Johann Philipp Strathausen",
+  "private": "true",
+  "version": "2.0.3",
+  "homepage": "http://www.strathausen.eu",
+  "repository": {
+    "type": "git",
+    "url": "a:/home/filip/git/strathausen"
+  },
+  "dependencies": {
+    "underscore": "~1.3.3",
+    "async": "~0.1.18",
+    "vimify": "~0.1.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
