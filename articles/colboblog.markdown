@@ -1,6 +1,6 @@
 title: Colbo - a fast blog engine for node
 tags: [ node, coffee, blog, project ]
-date: '2012-03-04'
+date: 'April 4th 2012'
 author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
 indexed: true
 

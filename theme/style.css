@@ -21,28 +21,26 @@ body {
 }
 #header, h1, h2, h3 {
   font-family : 'Junction';
-  text-align  : center;
 }
 #header, h1 {
-  color : #39E;
+  color      : #39E;
+  text-align : center;
+  /*padding   : .2em 0 0 0;*/
+  /*font-size : 2em;*/
 }
 #header {
   padding : .2em 0 0 0;
 }
-h1 {
-  padding   : .2em 0 0 0;
-  font-size : 2em;
-}
 #header .subline {
-  margin-top: -1em;
-  margin-bottom: -1em;
+  margin-top    : -1em;
+  margin-bottom : -1em;
 }
 h2 {
-  margin: 2em 0 1em 0;
-  color: #7A2;
+  margin : 2em 0 1em 0;
+  color  : #7A2;
 }
 h3 {
-  margin: 2em 0 1em 0;
+  margin      : 2em 0 1em 0;
   color       : #B31;
   font-weight : bolder;
 }
@@ -72,13 +70,25 @@ ul.index {
   list-style  : none;
   font-family : 'Junction';
 }
+.date {
+  color       : #B31;
+  font-size   : .9em;
+  font-family : 'Junction';
+}
+/* on the article page */
+.article .date {
+  width      : 180px;
+  display    : block;
+  position   : relative;
+  text-align : right;
+  left       : -180px;
+}
+/* on the index page */
 ul.index li span.date {
   width         : 30%;
   display       : inline-block;
   text-align    : right;
   padding-right : .6em;
-  color         : #B31;
-  font-size     : .9em;
 }
 ul.index li span.title {
   color     : #7A2;
@@ -97,7 +107,7 @@ ul.index li {
   color : #39E;
 }
 #header .navigation li {
-  display      : inline-block;
-  font-size    : .8em;
-  padding      : 0 1em 0 1em;
+  display   : inline-block;
+  font-size : .8em;
+  padding   : 0 1em 0 1em;
 }
