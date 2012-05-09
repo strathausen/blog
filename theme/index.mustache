@@ -1,7 +1,13 @@
-<ul>
+<p class='index'>{{{content}}}</p>
+<ul class='index'>
 {{#blog.articles}}
-{{#indexed}}
-<li><a href="/{{id}}">{{title}}</a></li>
-{{/indexed}}
+  {{#indexed}}
+  <li>
+    <a href="/{{id}}">
+      <span class='date'>{{date}}</span>
+      <span class='title'>{{title}}</span>
+    </a>
+  </li>
+  {{/indexed}}
 {{/blog.articles}}
 </ul>

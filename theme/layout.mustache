@@ -1,36 +1,27 @@
 <html>
   <head>
-    <title> Johann Philipp Strathausen - strathausen.eu </title>
+    <title>{{title}} - strathausen.eu</title>
+    <link rel='stylesheet' href='/style.css' type='text/css' />
     <style type="text/css">
-      <!--
-      h1 {
-        color           : #39E;
-      }
-      h2 {
-        color: #7A2;
-      }
-      h3 {
-        color: #B31;
-      }
-      a {
-        text-decoration : none;
-      }
-      p {
-        font-size: .8em;
-      }
-      pre {
-        border-radius    : 5px;
-        margin           : 0 3em;
-        background-color : #443;
-        color            : wheat;
-        padding          : 1em 2em;
-      }
+      <--
       {{css}}
       -->
     </style>
+    <meta name='keywords' content='{{#tags}}{{.}},{{/tags}}' /> 
+    <meta name='author' content='{{author}}' /> 
   </head>
   <body>
-    <a href='/'><h1>Johann Philipp Strathausen</h1></a>
-    {{>body}}
+    <div id='header'>
+      <a href='/'><h1>Johann Philipp Strathausen</h1></a>
+      <div class='subline'>••••••••••••••••••••••••••••••••••••••••••••</div>
+      <ul class='navigation'>
+        <li><a href='/'>index</a></li>
+        <li><a href='/profile'>profile</a></li>
+        <!--<li><a href='/hire'>/hire</a></li>-->
+      </ul>
+    </div>
+    <div id='content'>
+      {{>body}}
+    </div>
   </body>
 </html>

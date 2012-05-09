@@ -1,9 +1,10 @@
 # parses some text for <pre><code> tags and hands it over to vim
 # for nice syntax highlighting
 
-vimify = require 'vimify'
-async  = require 'async'
-_      = require 'underscore'
+vimify     = require 'vimify'
+async      = require 'async'
+_          = require 'underscore'
+{ decode } = require 'entities'
 
 # used to find code snippets
 regex = /(<pre><code>|<\/code><\/pre>)/
@@ -20,7 +21,7 @@ vimifier = (article, next) ->
       jobs.push i
     i++
   async.forEach jobs, ((job, next) ->
-    source = parts[job]
+    source = decode parts[job]
     [ type, code... ] = source.split '\n'
     type = type.replace '#!', ''
     vimify (code.join '\n'), type, (err, css, html) ->
