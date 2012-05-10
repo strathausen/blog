@@ -1,6 +1,7 @@
 title: Colbo - a fast blog engine for node
 tags: [ node, coffee, blog, project ]
-date: 'April 4th 2012'
+date: 'April 4th, 2012'
+sort: 20120504
 author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
 indexed: true
 
@@ -20,4 +21,4 @@ Here's how you can use it.
     blog = new Blog dir: __dirname + '/articles'
     blog.on 'ready', -> blog.listen 3000
 
-## And now?
+### And now?

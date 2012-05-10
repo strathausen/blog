@@ -14,7 +14,8 @@
     "async": "~0.1.18",
     "vimify": "~0.1.0",
     "entities": "~0.1.1",
-    "connect": "~2.2.1"
+    "connect": "~2.2.2",
+    "express": "~2.5.9"
   },
   "devDependencies": {},
   "optionalDependencies": {},

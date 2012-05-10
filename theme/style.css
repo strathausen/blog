@@ -16,24 +16,26 @@ body {
 #content {
   width     : 60%;
   min-width : 450px;
-  max-width : 650px;
+  max-width : 560px;
   margin    : auto;
 }
-#header, h1, h2, h3 {
+#header, #footer, h1, h2, h3 {
   font-family : 'Junction';
 }
-#header, h1 {
+#header, h1, #footer {
   color      : #39E;
-  text-align : center;
-  /*padding   : .2em 0 0 0;*/
-  /*font-size : 2em;*/
 }
-#header {
+#header h1 {
+  font-size : 2em;
+}
+#header, #footer {
+  text-align : center;
   padding : .2em 0 0 0;
 }
 #header .subline {
   margin-top    : -1em;
   margin-bottom : -1em;
+  /*font-size     : 1.8em;*/
 }
 h2 {
   margin : 2em 0 1em 0;
@@ -52,15 +54,16 @@ p {
   font-family : 'Junction';
   font-size   : .9em;
   color       : #443;
+  line-height : 1.8em;
 }
 pre {
   font-family      : 'Ubuntu Mono';
   border-radius    : 5px;
-  margin           : 0 3em;
+  margin           : 0 0.2em;
   background-color : #443;
   color            : #FEC;
-  padding          : 1em 2em;
-  max-width        : 55em;
+  padding          : .8em 1.1em;
+  max-width        : 56em;
 }
 code {
   font-family : 'Ubuntu Mono';
@@ -77,11 +80,14 @@ ul.index {
 }
 /* on the article page */
 .article .date {
-  width      : 180px;
-  display    : block;
-  position   : relative;
-  text-align : right;
-  left       : -180px;
+  width         : 180px;
+  display       : block;
+  position      : relative;
+  text-align    : right;
+  left          : -195px;
+  top           : 20px;
+  margin-bottom : -50px;
+  height        : 1.1em;
 }
 /* on the index page */
 ul.index li span.date {
@@ -100,7 +106,8 @@ ul.index li a:visited span.title {
 ul.index li {
   line-height: 2em;
 }
-#header .navigation ul {
+#header ul.navigation {
+  padding    : 0;
   list-style : none;
 }
 #header .navigation li a {
@@ -110,4 +117,8 @@ ul.index li {
   display   : inline-block;
   font-size : .8em;
   padding   : 0 1em 0 1em;
+}
+.lnr {
+  color : #996;
+  margin-right : .2em;
 }

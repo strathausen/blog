@@ -1,4 +1,4 @@
-date: ''
+title: 'My Profile'
 
 ## My profile
 

@@ -36,6 +36,7 @@ vimifier = (article, next) ->
 
 module.exports = ({ articles }, cb) ->
   async.forEach articles, vimifier, cb
+
 unless module.parent
   console.log 'doing the test'
   text = content: '''
