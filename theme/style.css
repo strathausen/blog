@@ -31,12 +31,14 @@ body {
 }
 #header, #footer {
   text-align : center;
-  padding : .2em 0 0 0;
+  padding    : .2em 0 0 0;
 }
 #header .subline {
   margin-top    : -1em;
   margin-bottom : -1em;
-  /*font-size     : 1.8em;*/
+}
+#footer {
+  margin-bottom : 3em;
 }
 h2 {
   margin : 2em 0 1em 0;
@@ -101,10 +103,10 @@ ul.index li span.title {
   font-size : 1.1em;
 }
 ul.index li a:visited span.title {
-  color: #896;
+  color : #896;
 }
 ul.index li {
-  line-height: 2em;
+  line-height : 2em;
 }
 #header ul.navigation {
   padding    : 0;
@@ -119,6 +121,6 @@ ul.index li {
   padding   : 0 1em 0 1em;
 }
 .lnr {
-  color : #996;
+  color        : #996;
   margin-right : .2em;
 }
