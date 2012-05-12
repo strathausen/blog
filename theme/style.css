@@ -21,6 +21,7 @@ body {
 }
 #header, #footer, h1, h2, h3 {
   font-family : 'Junction';
+  font-weight : 'normal';
 }
 #header, h1, #footer {
   color      : #39E;
@@ -44,7 +45,6 @@ h2 {
 h3 {
   margin      : 2em 0 1em 0;
   color       : #B31;
-  font-weight : bolder;
 }
 a {
   text-decoration : none;
