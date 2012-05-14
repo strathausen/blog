@@ -6,4 +6,5 @@ compile:
 	coffee -c theme/*.coffee
 
 watch:
+	@echo 'building a watch...'
 	coffee -cw theme/*.coffee

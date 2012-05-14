@@ -18,11 +18,16 @@ class window.AjaxNavigator
 
   registerEventHandlers: =>
     ($ window).on 'popstate', @popstateHandler
+    ($ document).on 'click', 'a[href^="/"]', @clickHandler
+
     # Cheating time! Use mousedown to make it appear snappier. Awesomeness!
-    ($ document).on 'mousedown', 'a[href^="/"]', @clickHandler
-    ($ document).on 'click', 'a[href^="/"]', (e) -> e.preventDefault()
+    #($ document).on 'mousedown', 'a[href^="/"]', @clickHandler
 
   clickHandler: (e) =>
+    # is the ctrl key being hold?
+    # then it is time to say good bye, and let the world be as it is...
+    return if e.ctrlKey or e.shiftKey
+    
     url = e.currentTarget.href
     history.pushState {url}, '', url
     @navigate url
@@ -35,11 +40,16 @@ class window.AjaxNavigator
 
   navigateCallback: (res) =>
     @replaceTitle res
+    @replaceCSS res
     @replaceContent $ res
     ($ @).trigger 'load'
 
   replaceTitle: (res) ->
     document.title = (res.match /<title>(.*?)<\/title>/)[1] ? document.title
+
+  replaceCSS: (res) ->
+    ($ ($ 'style')[0]).html (res.match /<style(.|\n)*<\/style>/g)[0]
+      .replace /(<style(.*)>|<\/style>)/g, ''
 
   replaceContent: (res) ->
     ($ sel).html (res.find sel).children() for sel in @replacementSelectors

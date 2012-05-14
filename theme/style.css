@@ -33,9 +33,11 @@ body {
   text-align : center;
   padding    : .2em 0 0 0;
 }
+.subline {
+  margin-bottom : -1em;
+}
 #header .subline {
   margin-top    : -1em;
-  margin-bottom : -1em;
 }
 #footer {
   margin-bottom : 3em;
@@ -108,14 +110,14 @@ ul.index li a:visited span.title {
 ul.index li {
   line-height : 2em;
 }
-#header ul.navigation {
+ul.navigation {
   padding    : 0;
   list-style : none;
 }
-#header .navigation li a {
+.navigation li a {
   color : #39E;
 }
-#header .navigation li {
+.navigation li {
   display   : inline-block;
   font-size : .8em;
   padding   : 0 1em 0 1em;
