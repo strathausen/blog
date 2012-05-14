@@ -1,14 +1,16 @@
-title: 'Dracula Graph Library'
+title: 'Release: Dracula Graph Library v0.0.3alpha'
 id: '2010/06/01/dracula_0-0-3alpha'
 end: '_'
-date: 20100601
+sort: 20100601
+date: 'June 1st, 2010'
+author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
 indexed: true
 tags: [ bellman-ford, binary heap, browser, dijkstra, dracula, edge, floyd-warshall, graph, javascript, layout, node, raphael, raphaeljs, svg, tooltip ]
 
 
-Edit: This library moved to it's own a web site: <a href='http://dracula.net'>graphdracula.net</a>
+## Dracula Graph Library v0.0.3alpha
 
-# Dracula Graph Library v0.0.3alpha
+**Edit: This library moved to it's own a web site: <a href='http://dracula.net'>graphdracula.net</a>**
 
 I have updated the code of the dracula graph library! There are some changes, like now you have a simple option to add labels to connections by passing a label property when creating an edge and a simple overlay option for nodes. Note that the file names have also changed, but this shouldn’t be too hard to adopt to. Some source code refractoring has been done too and the getShape is now called render.
 
@@ -19,6 +21,7 @@ The biggest changes however are some search algorithms I implemented to work wit
 Here are the issues I’m working on until removing the alpha badge, some already pointed out by some of you:
 
 Have a render function for every node, no matter how it was created.
+
 - Provide a convenient way to define the custom render function via json code.
 - Enhance the overlay property to make it easier to use.
 - Enhance the label property for better readability and automatic text aligning.

@@ -25,10 +25,11 @@ vimifier = (article, next) ->
     [ type, code... ] = source.split '\n'
     type = type.replace '#!', ''
     vimify (code.join '\n'), type, (err, css, html) ->
+      return next err if err
       parts[job] = html
       css = css.split '\n'
       allCss.push css...
-      next err
+      do next
   ), (err) ->
     article.content = parts.join ''
     article.css = (_.unique allCss).join '\n'
