@@ -1,11 +1,8 @@
 title: 'My Profile'
 
+
 ## My profile
 
-### Who I am
+I am Philipp, lead developer and co-owner of UPcload, a Berlin based startup that solves the fitting problem of online apparel shopping.
 
-CTO of UPcload
 
-### What I do
-
-Programming, consulting, designing...
