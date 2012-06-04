@@ -59,20 +59,21 @@ a {
   font-family : 'Junction';
   font-size   : .9em;
   color       : #443;
-  line-height : 2.4em;
+  line-height : 1.8em;
 }
 pre {
   font-family      : 'Ubuntu Mono';
+  font-size        : .9em;
   border-radius    : 5px;
   margin           : 0 0.2em;
   background-color : #443;
   color            : #FEC;
   padding          : .8em 1.1em;
   max-width        : 56em;
+  text-shadow : 0 0 6px black;
 }
 code {
   font-family : 'Ubuntu Mono';
-  text-shadow : 0 0 6px black;
 }
 ul.index {
   list-style  : none;
@@ -109,7 +110,7 @@ ul.index li a:visited span.title {
   color : #896;
 }
 ul.index li {
-  line-height : 2em;
+  line-height : 2.6em!important;
 }
 ul.navigation {
   padding    : 0;
