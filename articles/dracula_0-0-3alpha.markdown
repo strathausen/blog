@@ -1,4 +1,4 @@
-title: 'Release: Dracula Graph Library v0.0.3alpha'
+title: 'Dracula Graph Library v0.0.3alpha'
 id: '2010/06/01/dracula_0-0-3alpha'
 end: '_'
 sort: 20100601

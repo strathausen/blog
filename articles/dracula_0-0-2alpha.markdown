@@ -73,8 +73,7 @@ Here's an example on how easy it is to use (it doesn't differ much from the orig
 
 The result will look like this:
 
-<iframe src="/dracula/v0.0.1alpha/index.html">
-</iframe>
+<iframe src="http://dracula.ameisenbar.de/index.html" width="100%" height="360" style="border:1px solid #888; background-color:white;"></iframe>
 
 You can try it at dracula.ameisenbar.de, get the code <strike>via launchpad</strike> at GitHub or get the zip archive. There are still some optimizations necessary for the layout algorithm as well as the code structure. I already commented most of the code and there's also an example HTML page demonstrating all possible options. Enjoy!
 
