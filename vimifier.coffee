@@ -46,5 +46,5 @@ unless module.parent
     x = (y) -> y
     </code></pre>
   '''
-  vimifier text, ->
+  vimifier text, -># [ 'set nonumber' ], ->
     console.log 'done', text

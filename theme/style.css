@@ -23,8 +23,8 @@ body {
   font-family : 'Junction';
   font-weight : 'normal';
 }
-#header, h1, #footer {
-  color : #39E;
+.navigation li a, #header, h1, #footer {
+  color : #39B;
 }
 #header h1 {
   font-size : 2em;
@@ -116,15 +116,11 @@ ul.navigation {
   padding    : 0;
   list-style : none;
 }
-.navigation li a {
-  color : #39E;
-}
 .navigation li {
   display   : inline-block;
   font-size : .8em;
   padding   : 0 1em 0 1em;
 }
 .lnr {
-  color        : #996;
-  margin-right : .2em;
+  visibility : hidden;
 }
