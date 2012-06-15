@@ -1,3 +1,3 @@
 [submodule "joconut"]
-	path = joconut
+	path = vendor/joconut
 	url = https://github.com/vdemedes/joconut.git
