@@ -1,3 +1,4 @@
+#!/usr/bin/env coffee
 # My personal blog
 # Johann Philipp Strathausen
 
