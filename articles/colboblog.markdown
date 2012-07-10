@@ -3,7 +3,6 @@ tags: [ node, coffee, blog, project ]
 date: 'April 4th, 2012'
 sort: 20120504
 author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
-indexed: true
 
 
 ## Coffee powered
