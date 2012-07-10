@@ -8,6 +8,7 @@ Blog     = require 'colbo'
 vimifier = require './vimifier'
 _        = require 'underscore'
 express  = require 'express'
+process.title = 'strablo'
 
 config =
   dir      : __dirname + '/articles'
