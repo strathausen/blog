@@ -1,9 +1,9 @@
 server:
-	PORT=7000 coffee blog.coffee
+	PORT=8000 ./node_modules/.bin/coffee blog.coffee
 
 compile:
-	coffee -j server.js -cb blog.coffee
-	coffee -c theme/*.coffee
+	./node_modules/.bin/coffee -j server.js -cb blog.coffee
+	./node_modules/.bin/coffee -c theme/*.coffee
 
 assets:
 	cp vendor/joconut/dist/joconut.min.js theme/
@@ -11,7 +11,7 @@ assets:
 
 watch:
 	@echo 'building a watch...'
-	coffee -cw theme/*.coffee
+	./node_modules/.bin/coffee -cw theme/*.coffee
 
 clean:
 	rm theme/*.js
