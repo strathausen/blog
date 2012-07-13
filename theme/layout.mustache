@@ -1,16 +1,16 @@
 <html>
   <head>
-    <title>{{title}} - strathausen.eu</title>
+    <title>{{title}} | strathausen.eu</title>
     <link rel='stylesheet' href='/style.css' type='text/css' />
     <meta name='keywords' content='{{#tags}}{{.}},{{/tags}}' /> 
     <meta name='author' content='{{author}}' /> 
-  </head>
-  <body>
     <style type="text/css">
       <--
       {{css}}
       -->
     </style>
+  </head>
+  <body>
     <div>
       <div id='header'>
         <a href='/'><h1>Johann Philipp Strathausen</h1></a>
@@ -34,6 +34,12 @@
     </div>
     <script type='text/javascript'
       src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-    <script type='text/javascript' src='/ajaxnavigator.js'></script>
+    <script type="text/javascript">
+      <!--
+      $(function {
+        $.AjaxNavigator([ '#content' ]);
+      });
+      -->
+    </script>   <script type='text/javascript' src='/ajaxnavigator.js'></script>
   </body>
 </html>
