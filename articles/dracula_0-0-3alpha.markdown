@@ -51,7 +51,11 @@ Some of the issues I will address in the future:
 
 Here’s what it looks like in action currently (the tool-tip is just a dummy rounded square):
 
+<iframe src="http://dracula.ameisenbar.de/0.0.3alpha/index.html" style="border: 1px solid rgb(136, 136, 136); background-color: white;" height="360" width="100%"></iframe>
+
 And the Dijkstra algorithm to search the shortest paths from Berlin to any city in the world:
+
+<iframe src="http://dracula.ameisenbar.de/0.0.3alpha/dracula_algorithms.html" style="border: 1px solid rgb(136, 136, 136); background-color: white;" height="360" width="100%"></iframe>
 
 ### Code
 

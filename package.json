@@ -17,7 +17,8 @@
     "connect": "~2.2.2",
     "express": "~2.5.9",
     "jquery": "~1.7.2",
-    "coffee-script": "~1.3.3"
+    "coffee-script": "~1.3.3",
+    "culoare": "~1.2.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},

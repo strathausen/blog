@@ -8,6 +8,7 @@ Blog     = require 'colbo'
 vimifier = require './vimifier'
 _        = require 'underscore'
 express  = require 'express'
+c        = require 'culoare'
 process.title = 'strablo'
 
 config =
@@ -29,7 +30,7 @@ blog.on 'ready', ->
     res.redirect 'http://strathausen.eu/' + req.url.replace english, ''
   # finally, logging unmatched urls
   blog.app.use (req, res, next) ->
-    console.log 'not found', req.url
+    console.log 'not found'.red.bold.underline.blink, req.url.green, req.headers
     do next
   port = process.env.PORT or 7000
   blog.app.listen port
