@@ -1,4 +1,4 @@
-title: Colbo - a fast blog engine for node
+title: 'Colbo - a fast blog engine for node'
 tags: [ node, coffee, blog, project ]
 date: 'April 4th, 2012'
 sort: 20120504
