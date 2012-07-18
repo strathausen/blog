@@ -7,7 +7,7 @@ sort: 20100804
 indexed: true
 
 
-# Sorting products by colour in web shops
+## Sorting products by colour in web shops
 
 Many on-line shop systems, like Magento, Prestashop or xt-commerce, lack the ability to automatically sort products by colour.
 
