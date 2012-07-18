@@ -1,9 +1,14 @@
 title: '[de] Ein Tag im Paradies'
 id: '2009/12/11/ein-tag-im-paradies'
 sort: 20091211
-date: ''
+date: 'December 11th, 2009'
 author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
+indexed: true
 
+
+## Ein Tag im Paradies
+
+(Diesen Text habe ich für die Vereinszeitung des <a target="_blank" href="http://www.cde-ev.de">CDE e.V.</a> zum Thema "CDE-ler im Ausland" geschrieben)
 
 Wie ist es, in Israel zu leben? Lustig ist es, und es macht unglaublich Spaß – zumindest als Freiwilliger. Von 2002 bis 2003 habe ich in Israel meinen Zivildienst in einer Kibbutz-ähnlichen Einrichtung für Behinderte abgeleistet. Ein beispielhafter Tag des Zivildienstes sei hier kurz zusammengefasst.
 
