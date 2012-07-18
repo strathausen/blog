@@ -23,14 +23,14 @@ blog.plugins.splice 1, 0, vimifier
 # once finished loading
 blog.on 'ready', ->
   # redirection of legacy wordpress visitors
-  english = /^\/en[\/$]/
+  english = /^\/(en|ro|de|he)(\/|$)/
   blog.app.use (req, res, next) ->
     unless english.test req.url
       return do next
     res.redirect 'http://strathausen.eu/' + req.url.replace english, ''
   # finally, logging unmatched urls
   blog.app.use (req, res, next) ->
-    console.log 'not found'.red.bold.underline.blink, req.url.green, req.headers
+    console.log 'not found'.red.bold.underline.blink, req.url.green, req.headers['user-agent']
     do next
   port = process.env.PORT or 7000
   blog.app.listen port
