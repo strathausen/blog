@@ -13,7 +13,7 @@ Many on-line shop systems, like Magento, Prestashop or xt-commerce, lack the abi
 
 In order to solve this, I wrote a little python script that transforms the average colour of a product image into a scalar, then generates a CSV file including the colour value in some property, allowing it to be sorted easily by the web shop system of your choice. Images with many different colours are not sorted very well, but it worked for most of the products in my case.
 
-You can see the script in action at <a href="http://unikatstoff.de" target="_blank">unikatstoff.de</a>. It generates a CVS file which can be imported by most e-commerce systems. You will certainly have to change the script to your needs, but this should be easy to do even with little programming experience. Changing the sorting mechanism may also be appropriate in some cases. Enjoy.
+You can see the script in action at <a href="http://unikatstoff.de/9-einfarbige-stoffe-unicolor" target="_blank">unikatstoff.de</a> (sorry for the ugly design). It generates a CVS file which can be imported by most e-commerce systems. You will certainly have to change the script to your needs, but this should be easy to do even with little programming experience. Changing the sorting mechanism may also be appropriate in some cases. Enjoy.
 
 And here’s the script. The product image names must contain numbers functioning as the product ID and the files must reside in a folder structure reflecting your category names. Of course, you can change all that. You will also have to adopt the script to map the category names to product descriptions, category ids or whatever your system requires in order to import the products.
 
