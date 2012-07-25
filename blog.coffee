@@ -9,6 +9,7 @@ vimifier = require './vimifier'
 _        = require 'underscore'
 express  = require 'express'
 c        = require 'culoare'
+http     = require 'http'
 process.title = 'strablo'
 
 config =
@@ -35,3 +36,5 @@ blog.on 'ready', ->
   port = process.env.PORT or 7000
   blog.app.listen port
   console.log 'started at port', port
+
+#module.exports = http.createServer blog.app
