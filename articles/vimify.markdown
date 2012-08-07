@@ -35,7 +35,7 @@ Convinced?
 Using vim as a highlighter is really awesome, and not quite without disadvantages.
 
 - Vim generating HTML is damn slow (1-3s per code block)
-- The generated HTML sucks!
+- The generated HTML sucks! It's like from the nineties. And with line numbers 
 - Vim's code highlighting for JavaScript sucks so much! (I never realized that)
 - Why is vim so hard with stdin and stdout?
 

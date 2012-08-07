@@ -1,9 +1,9 @@
 <html>
   <head>
     <title>{{title}} - strathausen.eu</title>
-    <link rel='stylesheet' href='/style.css' type='text/css' />
-    <meta name='keywords' content='{{#tags}}{{.}},{{/tags}}' /> 
-    <meta name='author' content='{{author}}' /> 
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <meta name="keywords" content="{{#tags}}{{.}},{{/tags}}" /> 
+    <meta name="author" content="{{author}}" /> 
   </head>
   <body>
     <style type="text/css">
@@ -12,28 +12,30 @@
       -->
     </style>
     <div>
-      <div id='header'>
-        <a href='/'><h1>Johann Philipp Strathausen</h1></a>
-        <div class='subline'>••••••••••••••••••••••••••••••••••••••••••••</div>
-        <ul class='navigation'>
-          <li><a href='/'>index</a></li>
-          <li><a href='/profile'>profile</a></li>
-          <li><a href='http://github.com/strathausen' target='_blank'>github</a></li>
-          <!--<li><a href='/hire'>hire</a></li>-->
+      <div id="header">
+        <a href="/"><h1>Johann Philipp Strathausen</h1></a>
+        <div class="subline">••••••••••••••••••••••••••••••••••••••••••••</div>
+        <ul class="navigation">
+          <li><a href="/" title="All the articles">index</a></li>
+          <li><a href="/profile" title="About me">profile</a></li>
+          <li><a href="http://github.com/strathausen" target="_blank"
+            title="External: My GitHub Profile">github</a></li>
+          <!--<li><a href="/hire" title="Make me work for you!">hire</a></li>-->
         </ul>
       </div>
-      <div id='content'>
+      <div id="content">
         {{>body}}
       </div>
       <div id="footer">
-        <div class='subline'>••••••••••••••••••••••••••••••••••••••••••••</div>
-        <ul class='navigation'>
-          <li><a href='/imprint'>imprint</a></li>
+        <div class="subline">••••••••••••••••••••••••••••••••••••••••••••</div>
+        <ul class="navigation">
+          <li><a href="/imprint">imprint</a></li>
         </ul>
       </div>
     </div>
-    <script type='text/javascript'
-      src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-    <script type='text/javascript' src='/joconut.min.js'></script>
+    <!--script type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+    <script type="text/javascript" src="/jquery.min.js"></script>
+    <script type="text/javascript" src="/joconut.min.js"></script>
   </body>
 </html>
