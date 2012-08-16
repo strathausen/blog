@@ -28,23 +28,25 @@
   </head>
   <body>
     <div>
-      <div id='header'>
-        <a href='/'><h1>Johann Philipp Strathausen</h1></a>
-        <div class='subline'>••••••••••••••••••••••••••••••••••••••••••••</div>
-        <ul class='navigation'>
-          <li><a href='/'>index</a></li>
-          <li><a href='/profile'>profile</a></li>
-          <li><a href='http://github.com/strathausen' target='_blank'>github</a></li>
-          {{!<li><a href='/hire'>hire</a></li>}}
+      <div id="header">
+        <a href="/"><h1>Johann Philipp Strathausen</h1></a>
+        <div class="subline">••••••••••••••••••••••••••••••••••••••••••••</div>
+        <ul class="navigation">
+          <li><a href="/" title="All the articles">index</a></li>
+          <li><a href="/profile" title="About me">profile</a></li>
+          <li><a href="http://github.com/strathausen" target="_blank"
+            title="External: My GitHub Profile">github</a></li>
+          {{!<li><a href="/hire" title="Make me work for you!">hire</a></li>}}
         </ul>
       </div>
-      <div id='content'>
+      <div id="content">
         {{>body}}
       </div>
       <div id="footer">
-        <div class='subline'>••••••••••••••••••••••••••••••••••••••••••••</div>
-        <ul class='navigation'>
-          <li><a href='/imprint'>imprint</a></li>
+        <div class="subline">••••••••••••••••••••••••••••••••••••••••••••</div>
+        <ul class="navigation">
+          <li><a href="/blog">about this blog</a></li>
+          {{!<li><a href="/imprint">imprint</a></li>}}
         </ul>
       </div>
     </div>
