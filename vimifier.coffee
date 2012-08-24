@@ -42,9 +42,9 @@ unless module.parent
   console.log 'doing the test'
   text = content: '''
     <p>Here comes the code</p>
-    <pre><code>#!coffee
+    <pre lang="coffee">
     x = (y) -> y
-    </code></pre>
+    </pre>
   '''
   vimifier text, -># [ 'set nonumber' ], ->
     console.log 'done', text
