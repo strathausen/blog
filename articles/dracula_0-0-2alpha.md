@@ -1,9 +1,6 @@
 title: 'Dracula - Graph layouts for the browser'
 id: '2010/03/02/dracula'
-sort: 20100302
 date: 'March 2nd, 2010'
-author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
-indexed: true
 tags: [ 'browser', 'graph', 'javascript', 'layout', 'math', 'raphael', 'raphaeljs' ]
 
 

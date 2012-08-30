@@ -1,10 +1,7 @@
 title: 'Dracula Graph Library v0.0.3alpha'
 id: '2010/06/01/dracula_0-0-3alpha'
 end: '_'
-sort: 20100601
 date: 'June 1st, 2010'
-author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
-indexed: true
 tags: [ bellman-ford, binary heap, browser, dijkstra, dracula, edge, floyd-warshall, graph, javascript, layout, node, raphael, raphaeljs, svg, tooltip ]
 
 

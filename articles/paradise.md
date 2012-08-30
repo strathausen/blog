@@ -1,9 +1,6 @@
 title: '[de] Ein Tag im Paradies'
 id: '2009/12/11/ein-tag-im-paradies'
-sort: 20091211
 date: 'December 11th, 2009'
-author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
-indexed: true
 
 
 ## Ein Tag im Paradies

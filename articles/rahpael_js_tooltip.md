@@ -1,8 +1,5 @@
 title: 'Raphael.js tooltip'
-author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
 date: 'April 25th, 2010'
-sort: 20100425
-indexed: true
 id: '2010/04/25/raphael-svg-tooltip'
 tags: [ 'javascript', 'raphael', 'svg', 'tooltip' ]
 
