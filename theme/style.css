@@ -14,7 +14,7 @@ body {
   margin           : 0;
 }
 #content {
-  width     : 60%;
+  width     : 70%;
   min-width : 450px;
   max-width : 560px;
   margin    : auto;
@@ -96,15 +96,19 @@ ul.index {
   height        : 1.1em;
 }
 /* on the index page */
+ul.index li span {
+  display: inline-block;
+}
 ul.index li span.date {
   width         : 30%;
-  display       : inline-block;
+  min-width     : 160px;
   text-align    : right;
   padding-right : .6em;
 }
 ul.index li span.title {
   color     : #7A2;
   font-size : 1.1em;
+  min-width : 320px;
 }
 ul.index li a:visited span.title {
   color : #896;

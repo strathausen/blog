@@ -4,6 +4,7 @@ date: 'December 15th, 2011'
 sort: 20111215
 indexed: true
 tags: [ nodejs, node, console, colours, colors, culoare ]
+id: '2011/12/15/culoar'
 
 
 ## Culoare
