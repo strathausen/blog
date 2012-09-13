@@ -11,29 +11,30 @@ tags: [ 'javascript', 'raphael', 'svg', 'tooltip' ]
 
 This extension allows you to attach tool tips to <a href="http://raphaeljs.com">Raphael</a> SVG elements. They appear on mouse over.
 
-    #!javascript
-    Raphael.el.tooltip = function (tp) {
-      this.tp = tp;
-      this.tp.ox = 0;
-      this.tp.oy = 0;
+```javascript
+Raphael.el.tooltip = function (tp) {
+  this.tp = tp;
+  this.tp.ox = 0;
+  this.tp.oy = 0;
+  this.tp.hide();
+  this.hover(
+    function(event) { 
+      this.mousemove(function(event) { 
+        this.tp.translate(event.clientX - 
+          this.tp.ox,event.clientY - this.tp.oy);
+        this.tp.ox = event.clientX;
+        this.tp.oy = event.clientY;
+      });
+      this.tp.show().toFront();
+    }, 
+    function(event) {
       this.tp.hide();
-      this.hover(
-        function(event) { 
-          this.mousemove(function(event) { 
-            this.tp.translate(event.clientX - 
-              this.tp.ox,event.clientY - this.tp.oy);
-            this.tp.ox = event.clientX;
-            this.tp.oy = event.clientY;
-          });
-          this.tp.show().toFront();
-        }, 
-        function(event) {
-          this.tp.hide();
-          this.unmousemove();
-        }
-      );
-      return this;
-    };
+      this.unmousemove();
+    }
+  );
+  return this;
+};
+```
 
 Use it simply by calling:
 
