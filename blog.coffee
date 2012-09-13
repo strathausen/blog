@@ -4,19 +4,33 @@
 
 async    = require 'async'
 fs       = require 'fs'
-Blog     = require 'mumpitz/Mumpitz'
+Blog     = require 'colbo'
 vimifier = require './vimifier'
 _        = require 'underscore'
-process.title = 'strablo'
+express  = require 'express'
+c        = require 'culoare'
+process.title = 'blog'
 
 config =
   dir      : __dirname + '/articles'
   layout   : __dirname + '/theme/layout.mustache'
   template : __dirname + '/theme/article.mustache'
-  public   : __dirname + '/public'
+  public   : __dirname + '/theme'
+  app      : express.createServer()
 
 blog = new Blog config
-#blog.plugins.splice 1, 0, vimifier
-# once finished loading
-blog.go (err) ->
-  console.log 'started'
+
+blog.on 'ready', ->
+  # Redirection of legacy wordpress visitors (links are eternal)
+  english = /^\/(en|ro|de|he)(\/|$)/
+  blog.app.use (req, res, next) ->
+    unless english.test req.url
+      return do next
+    res.redirect 'http://strathausen.eu/' + req.url.replace english, ''
+  # Finally, logging unmatched urls
+  blog.app.use (req, res, next) ->
+    console.log 'not found'.red.bold.underline.blink, req.url.green, req.headers['user-agent']
+    do next
+  port = process.env.PORT or 7000
+  blog.app.listen port
+  console.log 'started at port', port
