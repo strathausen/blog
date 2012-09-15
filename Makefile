@@ -1,5 +1,5 @@
-compile:
-	./node_modules/.bin/coffee blog.coffee
+server:
+	PORT=7000 coffee blog.coffee
 
 clean:
-	rm -r public/*
+	rm -rv public/*

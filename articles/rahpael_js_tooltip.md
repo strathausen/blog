@@ -6,8 +6,6 @@ tags: [ 'javascript', 'raphael', 'svg', 'tooltip' ]
 
 ## Raphael SVG Tool Tip
 
-<b>Edit: I’ve just fixed a small bug in the code!</b>
-
 This extension allows you to attach tool tips to <a href="http://raphaeljs.com">Raphael</a> SVG elements. They appear on mouse over.
 
 ```javascript
@@ -43,12 +41,13 @@ Use it simply by calling:
 
 Since Raphael currently does not offer a way to attach custom functions to <code>set</code>, here’s a less elegant way to get tool tips working on <code>set</code>: by accessing the child elements by its attribute <code>items</code>:
 
-    #!javascript
-    var st = paper.set();
-    st.push(
-      paper.circle(10, 10, 5),
-      paper.circle(30, 10, 5)
-    );
-    st.items[0].tooltip(paper.rect(0, 0, 20, 30));
+```javascript
+var st = paper.set();
+st.push(
+  paper.circle(10, 10, 5),
+  paper.circle(30, 10, 5)
+);
+st.items[0].tooltip(paper.rect(0, 0, 20, 30));
+```
 
 Enjoy.
