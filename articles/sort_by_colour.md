@@ -1,10 +1,7 @@
-author: 'Johann Philipp Strathausen <strathausen@gmail.com>'
 title: 'Sort products by colour in web shops'
 tags: [ bulk, colour, csv, import, magento, presta, prestashop, python, shop, sort, sorting, xt-commerce, xtcommerce ]
 id: '2010/08/04/sort_by_colour'
 date: 'August 4th, 2010'
-sort: 20100804
-indexed: true
 
 
 ## Sorting products by colour in web shops
