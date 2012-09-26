@@ -17,59 +17,60 @@ Unfortunately, it was soo three years ago and had a PrototypeJS dependency that 
 
 Here's an example on how easy it is to use (it doesn't differ much from the original code, but includes some customizations):
 
-    #!javascript
-    var redraw;
-    var height = 300;
-    var width = 400;
+```js
+var redraw;
+var height = 300;
+var width = 400;
 
-    var g = new Graph();
+var g = new Graph();
 
-    /* add simple nodes */
-    g.addNode("strawberry");
-    g.addNode("cherry");
+/* add simple nodes */
+g.addNode("strawberry");
+g.addNode("cherry");
 
-    /* add a node with a customized label */
-    g.addNode("id34", { label : "Tomato" });
+/* add a node with a customized label */
+g.addNode("id34", { label : "Tomato" });
 
-    /* add a node with a customized shape
-       (the Raphael graph drawing implementation can draw
-       this shape, please consult the RaphaelJS reference
-       for details raphaeljs.com) */
-    g.addNode("id35", {
-      label : "Meat" ,
-      /* filling the shape with a color
-         makes it easier to be dragged */
-      getShape : function(r,x,y) {
-        return r.rect(x-30, y-13, 62, 33)
-          .attr({"fill": "#f00", "stroke-width": 2});
-      }
-    });
+/* add a node with a customized shape
+   (the Raphael graph drawing implementation can draw
+   this shape, please consult the RaphaelJS reference
+   for details raphaeljs.com) */
+g.addNode("id35", {
+  label : "Meat" ,
+  /* filling the shape with a color
+     makes it easier to be dragged */
+  getShape : function(r,x,y) {
+    return r.rect(x-30, y-13, 62, 33)
+      .attr({"fill": "#f00", "stroke-width": 2});
+  }
+});
 
-    /* connect nodes with edges */
-    g.addEdge("strawberry", "cherry");
-    g.addEdge("cherry", "apple");
-    g.addEdge("id34", "cherry");
+/* connect nodes with edges */
+g.addEdge("strawberry", "cherry");
+g.addEdge("cherry", "apple");
+g.addEdge("id34", "cherry");
 
-    /* customize the colors of that edge */
-    g.addEdge("id35", "apple",
-      { color : "#38a" , colorbg : "#bdf" });
+/* customize the colors of that edge */
+g.addEdge("id35", "apple",
+  { color : "#38a" , colorbg : "#bdf" });
 
-    /* add an unknown node implicitly by adding an edge */
-    g.addEdge("strawberry", "apple");
+/* add an unknown node implicitly by adding an edge */
+g.addEdge("strawberry", "apple");
 
-    /* layout the graph using the Spring layout implementation */
-    var layouter = new Graph.Layout.Spring(g);
-    layouter.layout();
+/* layout the graph using the Spring layout implementation */
+var layouter = new Graph.Layout.Spring(g);
+layouter.layout();
 
-    /* draw the graph using the RaphaelJS draw implementation */
-    var renderer =
-      new Graph.Renderer.Raphael('canvas', g, width, height);
-    renderer.draw();
+/* draw the graph using the RaphaelJS draw implementation */
+var renderer =
+  new Graph.Renderer.Raphael('canvas', g, width, height);
+renderer.draw();
 
-    redraw = function() {
-      layouter.layout();
-      renderer.draw();
-    };
+redraw = function() {
+  layouter.layout();
+  renderer.draw();
+};
+```
 
 The result will look like this:
 

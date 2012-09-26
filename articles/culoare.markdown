@@ -16,16 +16,16 @@ https://github.com/strathausen/culoare
 
 In culoare, you could now do
 
-    #!coffee
-    require 'culoare'
-    console.log 'blinking text'.blink,
-      ('blue background '
-        + 'light red'.lightred
-        + ' blue background').blue
+```coffee
+require 'culoare'
+console.log 'blinking text'.blink,
+  ('blue background '
+    + 'light red'.lightred
+    + ' blue background').blue
+```
 
 ### Installation
 
-    #!sh
     npm install culoare
 
 ### Outlook
