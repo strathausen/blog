@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>{{title}} | strathausen.eu</title>
-    <link rel='stylesheet' href='/style.css' type='text/css' />
-    <meta name='keywords' content='{{#tags}}{{.}},{{/tags}}' /> 
-    <meta name='author' content='{{author}}' /> 
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="canonical" href="http://stratha.us/{{id}}" />
+    <meta name="keywords" content="{{#tags}}{{.}},{{/tags}}" /> 
+    <meta name="author" content="{{author}}" /> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     {{!<link rel="alternate" type="application/rss+xml" title="Johann Philipp Strathausen RSS-Feed" href="http://www.strathausen.eu/feed/" />
     <link rel="alternate" type="application/atom+xml" title="Johann Philipp Strathausen Atom-Feed" href="http://www.strathausen.eu/feed/atom/" />
@@ -28,28 +29,28 @@
   </head>
   <body>
     <header>
-      <div id='header'>
-        <a href='/'><h1>Johann Philipp Strathausen</h1></a>
-        <div class='subline'>••••••••••••••••••••••••••••••••••••••••••••</div>
+      <div id="header">
+        <a href="/"><h1>Johann Philipp Strathausen</h1></a>
+        <div class="subline">••••••••••••••••••••••••••••••••••••••••••••</div>
         <nav>
-          <ul class='navigation'>
-            <li><a href='/'>index</a></li>
-            <li><a href='/profile'>profile</a></li>
-            <li><a href='http://github.com/strathausen' target='_blank'>github</a></li>
-            {{!<li><a href='/hire'>hire</a></li>}}
+          <ul class="navigation">
+            <li><a href="/">index</a></li>
+            <li><a href="/profile">profile</a></li>
+            <li><a href="http://github.com/strathausen" target="_blank">github</a></li>
+            {{!<li><a href="/hire">hire</a></li>}}
           </ul>
         </nav>
       </div>
     </header>
-    <div id='content'>
+    <div id="content">
       {{>body}}
     </div>
     <footer>
       <div id="footer">
-        <div class='subline'>••••••••••••••••••••••••••••••••••••••••••••</div>
+        <div class="subline">••••••••••••••••••••••••••••••••••••••••••••</div>
         <nav>
-          <ul class='navigation'>
-            <li><a href='/imprint'>imprint</a></li>
+          <ul class="navigation">
+            <li><a href="/imprint">imprint</a></li>
           </ul>
         </nav>
       </div>
