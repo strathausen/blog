@@ -7,7 +7,7 @@ tags: [ bellman-ford, binary heap, browser, dijkstra, dracula, edge, floyd-warsh
 
 ## Dracula Graph Library v0.0.3alpha
 
-**Edit: This library moved to it's own a web site: <a href='http://dracula.net'>graphdracula.net</a>**
+**Edit: This library moved to it's own a web site: <a href='http://graphdracula.net'>graphdracula.net</a>**
 
 I have updated the code of the dracula graph library! There are some changes, like now you have a simple option to add labels to connections by passing a label property when creating an edge and a simple overlay option for nodes. Note that the file names have also changed, but this shouldn’t be too hard to adopt to. Some source code refractoring has been done too and the getShape is now called render.
 
