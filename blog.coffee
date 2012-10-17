@@ -2,13 +2,11 @@
 # My personal blog
 # Johann Philipp Strathausen
 
-async    = require 'async'
-fs       = require 'fs'
-Blog     = require 'colbo'
-vimifier = require './vimifier'
+require 'coffee-script'
+Mumpitz  = require 'mumpitz'
 _        = require 'underscore'
-express  = require 'express'
-c        = require 'culoare'
+connect  = require 'connect'
+
 process.title = 'blog'
 
 config =
@@ -16,21 +14,21 @@ config =
   layout   : __dirname + '/theme/layout.mustache'
   template : __dirname + '/theme/article.mustache'
   public   : __dirname + '/theme'
-  app      : express.createServer()
 
-blog = new Blog config
+blog = new Mumpitz config
 
-blog.on 'ready', ->
+blog.go ->
   # Redirection of legacy wordpress visitors (links are eternal)
   english = /^\/(en|ro|de|he)(\/|$)/
-  blog.app.use (req, res, next) ->
+  blog.blog.app.use (req, res, next) ->
     unless english.test req.url
       return do next
-    res.redirect 'http://strathausen.eu/' + req.url.replace english, ''
+    res.redirect 'http://stratha.us/' + req.url.replace english, ''
   # Finally, logging unmatched urls
-  blog.app.use (req, res, next) ->
-    console.log 'not found'.red.bold.underline.blink, req.url.green, req.headers['user-agent']
+  blog.blog.app.use (req, res, next) ->
+    console.log 'not found', req, req.headers['user-agent']
     do next
+  blog.blog.app.use connect.static __dirname + '/theme'
   port = process.env.PORT or 7000
-  blog.app.listen port
+  blog.blog.app.listen port
   console.log 'started at port', port
