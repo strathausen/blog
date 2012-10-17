@@ -1,20 +1,5 @@
-/* Ubuntu Mono Font */
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext);
-/* Junction Sans-Serif Font from the leagueofmovabletype.com */
-@font-face {
-  font-family: 'Junction';
-  src: url(/fonts/Junction-webfont.eot); /* for IE */
-  src: local('Junction'),
-          url(/fonts/Junction-webfont.woff) format('woff'),
-          url(/fonts/Junction-webfont.svg) format('svg'),
-          url(/fonts/Junction-webfont.ttf) format('truetype');
-}
-body {
-  background-color : #FEC;
-  margin           : 0;
-}
 #content {
-  width     : 70%;
+  width     : 75%;
   min-width : 450px;
   max-width : 560px;
   margin    : auto;
@@ -23,32 +8,39 @@ body {
   font-family : 'Junction';
   font-weight : 'normal';
 }
-.navigation li a, #header, h1, #footer {
-  color : #39B;
+.navigation li a,
+#footer,
+#header,
+h1,
+h2,
+h3,
+date {
+  color : #B6321C; /* LaTeX BrickRed */
+}
+p,
+li,
+ul.index li span.title {
+  color : #006795; /* LaTeX MidnightBlue */
+}
+ul.index li a:visited span.title {
+  color : #896;
 }
 #header h1 {
-  font-size : 2em;
+  font-weight : normal;
+  font-size   : 2em;
 }
 #header, #footer {
   text-align : center;
   padding    : .2em 0 0 0;
-}
-.subline {
-  margin-bottom : -1em;
-}
-#header .subline {
-  margin-top : -1em;
 }
 #footer {
   margin-bottom : 3em;
 }
 h2 {
   margin : 2em 0 1em 0;
-  color  : #7A2;
 }
 h3 {
   margin : 2em 0 1em 0;
-  color  : #B31;
 }
 a {
   text-decoration : none;
@@ -58,7 +50,6 @@ a {
   text-shadow : 0 0 6px white;
   font-family : 'Junction';
   font-size   : .9em;
-  color       : #443;
   line-height : 1.8em;
 }
 pre {
@@ -70,7 +61,7 @@ pre {
   color            : #FEC;
   padding          : .8em 1.1em;
   max-width        : 56em;
-  text-shadow : 0 0 6px black;
+  text-shadow      : 0 0 6px black;
 }
 code {
   font-family : 'Ubuntu Mono';
@@ -80,7 +71,6 @@ ul.index {
   font-family : 'Junction';
 }
 .date {
-  color       : #B31;
   font-size   : .9em;
   font-family : 'Junction';
 }
@@ -106,12 +96,8 @@ ul.index li span.date {
   padding-right : .6em;
 }
 ul.index li span.title {
-  color     : #7A2;
   font-size : 1.1em;
   min-width : 320px;
-}
-ul.index li a:visited span.title {
-  color : #896;
 }
 ul.index li {
   line-height : 2.6em!important;
