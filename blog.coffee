@@ -18,6 +18,7 @@ config =
 blog = new Mumpitz config
 
 blog.go ->
+  blog.blog.app.use connect.static __dirname + '/theme'
   # Redirection of legacy wordpress visitors (links are eternal)
   english = /^\/(en|ro|de|he)(\/|$)/
   blog.blog.app.use (req, res, next) ->
@@ -26,9 +27,8 @@ blog.go ->
     res.redirect 'http://stratha.us/' + req.url.replace english, ''
   # Finally, logging unmatched urls
   blog.blog.app.use (req, res, next) ->
-    console.log 'not found', req, req.headers['user-agent']
+    console.log 'not found', req.url, req.headers['user-agent']
     do next
-  blog.blog.app.use connect.static __dirname + '/theme'
   port = process.env.PORT or 7000
   blog.blog.app.listen port
   console.log 'started at port', port

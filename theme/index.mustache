@@ -1,13 +1,13 @@
 <p class='index'>{{{content}}}</p>
 <ul class='index'>
 {{#documents}}
-  {{#indexed}}
+{{#if published}}
   <li>
     <a href="/{{id}}">
       <span class='date'>{{date}}</span>
       <span class='title'>{{title}}</span>
     </a>
-  </li>
-  {{/indexed}}
+    </li>
+{{/if}}
 {{/documents}}
 </ul>
