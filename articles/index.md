@@ -1,8 +1,6 @@
-template: index.mustache
+template: ./theme/index.mustache
 id: ''
 title: 'Index - Johann Philipp Strathausen'
 
 
-## Index
-
-Hi, I'm a Berlin based hacker.
+Hi, I'm a Berlin based software crafts-man.
