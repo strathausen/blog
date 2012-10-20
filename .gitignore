@@ -2,3 +2,4 @@
 /node_modules/
 .bejesus.appconfig
 /theme/*.js
+*.html

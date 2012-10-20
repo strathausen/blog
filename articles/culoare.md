@@ -1,7 +1,6 @@
 title: 'Culoare - colours for the node console'
 date: 'December 15th, 2011'
 tags: [ nodejs, node, console, colours, colors, culoare ]
-id: '2011/12/15/culoar'
 published: true
 
 
