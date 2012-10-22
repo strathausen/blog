@@ -1,7 +1,7 @@
 title: 'Raphael.js tooltip'
 date: 'April 25th, 2010'
-id: '2010/04/25/raphael-svg-tooltip'
 tags: [ 'javascript', 'raphael', 'svg', 'tooltip' ]
+published: true
 
 
 ## Raphael SVG Tool Tip

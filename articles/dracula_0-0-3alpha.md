@@ -1,8 +1,7 @@
 title: 'Dracula Graph Library v0.0.3alpha'
-id: '2010/06/01/dracula_0-0-3alpha'
-end: '_'
 date: 'June 1st, 2010'
 tags: [ bellman-ford, binary heap, browser, dijkstra, dracula, edge, floyd-warshall, graph, javascript, layout, node, raphael, raphaeljs, svg, tooltip ]
+published: true
 
 
 ## Dracula Graph Library v0.0.3alpha
