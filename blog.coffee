@@ -2,35 +2,60 @@
 # My personal blog
 # Johann Philipp Strathausen
 
-async    = require 'async'
-fs       = require 'fs'
-Blog     = require 'colbo'
-vimifier = require './vimifier'
+require 'coffee-script'
+Mumpitz  = require 'mumpitz'
 _        = require 'underscore'
 express  = require 'express'
-c        = require 'culoare'
-process.title = 'blog'
+#connect  = require 'connect'
+oppressor = require 'oppressor'
+path     = require 'path'
+filed = require 'filed'
 
-config =
-  dir      : __dirname + '/articles'
-  layout   : __dirname + '/theme/layout.mustache'
-  template : __dirname + '/theme/article.mustache'
-  public   : __dirname + '/theme'
-  app      : express.createServer()
+configuration   = require './config'
 
-blog = new Blog config
+{ config, rewrites, redirects, ignore: language } = configuration
+process.title = 'stratha.us'
 
-blog.on 'ready', ->
-  # Redirection of legacy wordpress visitors (links are eternal)
-  english = /^\/(en|ro|de|he)(\/|$)/
-  blog.app.use (req, res, next) ->
-    unless english.test req.url
-      return do next
-    res.redirect 'http://strathausen.eu/' + req.url.replace english, ''
-  # Finally, logging unmatched urls
-  blog.app.use (req, res, next) ->
-    console.log 'not found'.red.bold.underline.blink, req.url.green, req.headers['user-agent']
-    do next
-  port = process.env.PORT or 7000
-  blog.app.listen port
+module.exports = app = express.createServer()
+
+
+app.use (req, res, next) ->
+  return do next unless language.test req.url
+  res.redirect '/' + req.url.replace language, ''
+
+# Redirection of legacy wordpress visitors (links are eternal!)
+app.use (req, res, next) ->
+  return do next unless redirects[req.url]
+  res.redirect redirects[req.url]
+  
+app.use (req, res, next) ->
+  return do next unless rewrites[req.url]
+  req.url = rewrites[req.url]
+  do next
+
+# Finally, logging unmatched urls
+app.use (req, res, next) ->
+  console.log 'not found', req.url, req.headers['user-agent']
+  do next
+
+# Look for html files by default
+app.use (req, res, next) ->
+  unless /\.(css|js|ico|json|jpg|jpeg|png|html)$/.test req.url
+    req.url += '.html'
+  do next
+
+# Static assets
+app.use (req, res) ->
+  # Pipe chaining doesn't seem to work for some reason,
+  # not even with substack's branch of filed.
+  op = oppressor req
+  filed(path.join __dirname, 'theme', req.url).pipe op
+  op.pipe(res)
+
+blog = new Mumpitz config
+
+blog.go ->
+
   console.log 'started at port', port
+port = process.env.PORT or 7000
+app.listen port

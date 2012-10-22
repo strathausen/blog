@@ -3,4 +3,4 @@ id: ''
 title: 'Index - Johann Philipp Strathausen'
 
 
-Computer stuff. And more. Read here!
+Hi, I'm a Berlin based software crafts-man.
