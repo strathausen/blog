@@ -14,7 +14,7 @@
     "vimify": "~0.1.0",
     "connect": "~2.2.2",
     "coffee-script": "~1.3.3",
-    "filed": "https://github.com/substack/filed/tarball/master",
+    "filed": "0.0.7",
     "oppressor": "0.0.1",
     "cashed": "~0.1.0"
   },
