@@ -3,7 +3,6 @@
 # Johann Philipp Strathausen
 
 require 'coffee-script'
-_        = require 'underscore'
 express  = require 'express'
 oppressor = require 'oppressor'
 path     = require 'path'
