@@ -33,11 +33,6 @@ app.use (req, res, next) ->
   req.url = rewrites[req.url]
   do next
 
-# Finally, logging unmatched urls
-app.use (req, res, next) ->
-  console.log 'not found', req.url, req.headers['user-agent']
-  do next
-
 # Look for html files by default
 app.use (req, res, next) ->
   unless /\.(css|js|ico|json|jpg|jpeg|png|html)$/.test req.url
@@ -51,6 +46,11 @@ app.use (req, res) ->
   op = oppressor req
   filed(path.join __dirname, 'theme', req.url).pipe op
   op.pipe(res)
+
+# Finally, logging unmatched urls
+app.use (req, res, next) ->
+  console.log 'not found', req.url, req.headers['user-agent']
+  do next
 
 blog = new Mumpitz config
 

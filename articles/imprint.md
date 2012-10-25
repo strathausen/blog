@@ -1,6 +1,0 @@
-title: Imprint
-
-
-## Imprint
-
-Imprint

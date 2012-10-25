@@ -1,6 +1,6 @@
 * {
-  font-weight : normal;
   font-family : 'Junction';
+  font-weight : normal;
 }
 #content {
   width     : 75%;
@@ -14,7 +14,7 @@ a,
 h1,
 h2,
 h3,
-nav a:first-letter,
+/*nav a:first-letter,*/
 .title {
   color : #B6321C; /* LaTeX BrickRed */
 }
@@ -24,15 +24,15 @@ li,
 .date {
   color : #006795; /* LaTeX MidnightBlue */
 }
-a:visited {
-  /*color : #896;*/
-}
+/*p a:visited,*/
+/*a:visited .title {*/
+  /*color : #C652FC;*/
+/*}*/
 .date {
   font-size: .9em;
 }
 #header h1 {
-  font-weight : normal;
-  font-size   : 2em;
+  font-size   : 2.2em;
 }
 #header, #footer {
   text-align : center;
