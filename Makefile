@@ -1,3 +1,6 @@
+compile:
+	coffee compile.coffee
+
 server:
 	PORT=7000 coffee blog.coffee
 

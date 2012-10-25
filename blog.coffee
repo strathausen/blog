@@ -3,25 +3,18 @@
 # Johann Philipp Strathausen
 
 require 'coffee-script'
-Mumpitz  = require 'mumpitz'
 _        = require 'underscore'
 express  = require 'express'
-#connect  = require 'connect'
 oppressor = require 'oppressor'
 path     = require 'path'
 filed = require 'filed'
 
-configuration   = require './config'
-
-{ config, rewrites, redirects, ignore: language } = configuration
-process.title = 'stratha.us'
-
-module.exports = app = express.createServer()
-
+{ rewrites, redirects, ignore } = require './config'
+app = express.createServer()
 
 app.use (req, res, next) ->
-  return do next unless language.test req.url
-  res.redirect '/' + req.url.replace language, ''
+  return do next unless ignore.test req.url
+  res.redirect '/' + req.url.replace ignore, ''
 
 # Redirection of legacy wordpress visitors (links are eternal!)
 app.use (req, res, next) ->
@@ -36,11 +29,12 @@ app.use (req, res, next) ->
 # Look for html files by default
 app.use (req, res, next) ->
   unless /\.(css|js|ico|json|jpg|jpeg|png|html)$/.test req.url
-    req.url += '.html'
+    req.url = req.url.replace(/\/$/, '') + '.html'
   do next
 
 # Static assets
 app.use (req, res) ->
+  console.error req.url
   # Pipe chaining doesn't seem to work for some reason,
   # not even with substack's branch of filed.
   op = oppressor req
@@ -52,10 +46,4 @@ app.use (req, res, next) ->
   console.log 'not found', req.url, req.headers['user-agent']
   do next
 
-blog = new Mumpitz config
-
-blog.go ->
-
-  console.log 'started at port', port
-port = process.env.PORT or 7000
-app.listen port
+app.listen(process.env.PORT or 7000)
