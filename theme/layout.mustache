@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>{{title}} | strathausen.eu</title>
-    <link rel="stylesheet" href="/style.css" type="text/css" />
     <link rel="canonical" href="http://stratha.us/{{id}}" />
     <meta name="keywords" content="{{#tags}}{{.}},{{/tags}}" /> 
     <meta name="author" content="{{author}}" /> 
@@ -28,13 +27,10 @@
         background-color : #FEFFFC;
         margin           : 0;
       }
-      * {
-        font-family : 'Junction';
-        font-weight : normal;
-      }
       {{css}}
       -->
     </style>
+    <link rel="stylesheet" href="/style.css" type="text/css" />
   </head>
   <body>
     <header>
@@ -44,7 +40,7 @@
           <ul class="navigation">
             <li><a href="/">index</a></li>
             <li><a href="/profile">profile</a></li>
-            <li><a href="http://github.com/strathausen" target="_blank">github</a></li>
+            <li><a href="http://github.com/strathausen" target="_blank">&rarr; github</a></li>
             {{!<li><a href="/hire">hire</a></li>}}
           </ul>
         </nav>
