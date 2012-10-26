@@ -27,7 +27,7 @@ app.use (req, res, next) ->
 
 # Look for html files by default
 app.use (req, res, next) ->
-  unless /\.(css|js|ico|json|jpg|jpeg|png|html)$/.test req.url
+  unless /\.(css|js|ico|json|jpg|jpeg|png|html|eot|woff|svg|ttf)$/.test req.url
     req.url = req.url.replace(/\/$/, '') + '.html'
   do next
 
