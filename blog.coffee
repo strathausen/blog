@@ -3,13 +3,13 @@
 # Johann Philipp Strathausen
 
 require 'coffee-script'
-express  = require 'express'
+express   = require 'express'
 oppressor = require 'oppressor'
-path     = require 'path'
-filed = require 'filed'
+path      = require 'path'
+filed     = require 'filed'
 
 { rewrites, redirects, ignore } = require './config'
-app = express.createServer()
+app = express()
 
 app.use (req, res, next) ->
   return do next unless ignore.test req.url
@@ -25,20 +25,26 @@ app.use (req, res, next) ->
   req.url = rewrites[req.url]
   do next
 
+app.use (req, res, next) ->
+  return do next unless /^\/font/.test req.url
+  res.serve req.url
+
 # Look for html files by default
 app.use (req, res, next) ->
-  unless /\.(css|js|ico|json|jpg|jpeg|png|html|eot|woff|svg|ttf)$/.test req.url
+  # Leave typical file extensions allone (as to what I expect to have on my blog)
+  unless /\.([a-z0-9]{1,5})$/i.test req.url
+    console.error req.url
     req.url = req.url.replace(/\/$/, '') + '.html'
   do next
 
 # Static assets
-app.use (req, res) ->
-  console.error req.url
-  # Pipe chaining doesn't seem to work for some reason,
-  # not even with substack's branch of filed.
-  op = oppressor req
-  filed(path.join __dirname, 'theme', req.url).pipe op
-  op.pipe(res)
+#app.use (req, res) ->
+  ## Pipe chaining doesn't seem to work for some reason,
+  ## not even with substack's branch of filed.
+  #op = oppressor req
+  #filed(path.join __dirname, 'theme', req.url).pipe op
+  #op.pipe(res)
+app.use express.static path.join __dirname, 'theme'
 
 # Finally, logging unmatched urls
 app.use (req, res, next) ->

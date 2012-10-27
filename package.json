@@ -15,7 +15,10 @@
     "coffee-script": "~1.3.3",
     "filed": "0.0.7",
     "oppressor": "0.0.1",
-    "mumpitz": "0.0.1alpha"
+    "mumpitz": "0.0.1alpha",
+    "express": "~3.0.0",
+    "send": "~0.1.0",
+    "connect": "~2.6.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
