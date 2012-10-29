@@ -62,7 +62,6 @@ a {
 #content p,
 #content li {
   text-shadow : 0 0 6px white;
-  font-size   : .9em;
   line-height : 1.8em;
 }
 pre {
