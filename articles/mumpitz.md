@@ -1,6 +1,8 @@
 title: 'Mumpitz'
-tags: [ node, coffee, blog ]
 date: 'April 4th, 2012'
+tags: [ node, coffee, blog ]
+description: 'Another minimal static html generator'
+published: true
 
 
 ## Coffee powered
@@ -9,14 +11,12 @@ Here's a little blog engine I hacked together just for the fun of it. I call it 
 
 ### Features
 
-It can read markdown files.
+It can read markdown files annotated with yaml. I don't think anyone has ever thought of this before!
 
 Here's how you can use it.
 
 ```coffee
-Blog = require 'colbo'
+Blog = require 'mumpitz'
 blog = new Blog dir: __dirname + '/articles'
-blog.on 'ready', -> blog.listen 3000
 ```
 
-### And now?
