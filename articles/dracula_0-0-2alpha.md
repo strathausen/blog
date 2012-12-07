@@ -6,13 +6,25 @@ published: true
 
 ## Dracula Graph Library
 
-I was searching for an easy way to display graphs in the browser without having to rely on plug-ins like Flash or Java and I found <a href="http://snipplr.com/view/1950/graph-javascript-framework-version-001/">a piece of code</a> named <a href="http://ajaxian.com/archives/new-javascriptcanvas-graph-library">"Graph JavaScript framework, version 0.0.1"</a>. You could simply add some nodes to a graph model, and then layout and having it displayed.
+I was searching for an easy way to display graphs in the browser without having
+to rely on plug-ins like Flash or Java and I found <a
+href="http://snipplr.com/view/1950/graph-javascript-framework-version-001/">a
+piece of code</a> named <a
+href="http://ajaxian.com/archives/new-javascriptcanvas-graph-library">"Graph
+JavaScript framework, version 0.0.1"</a>. You could simply add some nodes to a
+graph model, and then layout and having it displayed.
 
-Unfortunately, it was soo three years ago and had a PrototypeJS dependency that I didn't really need. Besides that, nothing happened to the code since then. So I took the <a href="http://raphaeljs.com/graffle.html">RaphaelJS example to connect some shapes</a> and plugged it together with that code I found. The algorithm used by the Graph Frameork 0.0.1 is quite solid and mostly produces pleasant results. You can now even have fun dragging around the nodes.
+Unfortunately, it was soo three years ago and had a PrototypeJS dependency that
+I didn't really need. Besides that, nothing happened to the code since then. So
+I took the <a href="http://raphaeljs.com/graffle.html">RaphaelJS example to
+connect some shapes</a> and plugged it together with that code I found. The
+algorithm used by the Graph Frameork 0.0.1 is quite solid and mostly produces
+pleasant results. You can now even have fun dragging around the nodes.
 
 ### Example
 
-Here's an example on how easy it is to use (it doesn't differ much from the original code, but includes some customizations):
+Here's an example on how easy it is to use (it doesn't differ much from the
+original code, but includes some customizations):
 
 ```js
 var redraw;
@@ -71,10 +83,16 @@ redraw = function() {
 
 The result will look like this:
 
-<iframe src="http://dracula.ameisenbar.de/index.html" width="100%" height="360" style="border:1px solid #888; background-color:white;"></iframe>
+<iframe src="http://dracula.ameisenbar.de/index.html" width="100%" height="360"
+style="border:1px solid #888; background-color:white;"></iframe>
 
-You can try it at dracula.ameisenbar.de, get the code <strike>via launchpad</strike> at GitHub or get the zip archive. There are still some optimizations necessary for the layout algorithm as well as the code structure. I already commented most of the code and there's also an example HTML page demonstrating all possible options. Enjoy!
+You can try it at dracula.ameisenbar.de, get the code <strike>via
+launchpad</strike> at GitHub or get the zip archive. There are still some
+optimizations necessary for the layout algorithm as well as the code structure.
+I already commented most of the code and there's also an example HTML page
+demonstrating all possible options. Enjoy!
 
-<strike>Thanks for any comments!</strike> (Comment section will be back at some point)
+<strike>Thanks for any comments!</strike> (Comment section will be back at some
+point)
 
 <b>Update: <a href="http://www.graphdracula.net">There's a new version to try!</a></b>
