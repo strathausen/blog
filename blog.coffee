@@ -19,7 +19,7 @@ app.use (req, res, next) ->
 app.use (req, res, next) ->
   return do next unless redirects[req.url]
   res.redirect redirects[req.url]
-  
+
 app.use (req, res, next) ->
   return do next unless rewrites[req.url]
   req.url = rewrites[req.url]
@@ -27,7 +27,7 @@ app.use (req, res, next) ->
 
 app.use (req, res, next) ->
   return do next unless /^\/font/.test req.url
-  res.serve req.url
+  res.sendfile __dirname + '/theme' + req.url
 
 # Look for html files by default
 app.use (req, res, next) ->
