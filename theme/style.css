@@ -1,3 +1,14 @@
+/* Ubuntu Mono Font */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext);
+/* Junction Sans-Serif Font from the leagueofmovabletype.com */
+@font-face {
+  font-family: 'Junction';
+  src: url(/fonts/Junction-webfont.eot); /* for IE */
+  src: local('Junction'),
+          url(/fonts/Junction-webfont.woff) format('woff'),
+          url(/fonts/Junction-webfont.svg) format('svg'),
+          url(/fonts/Junction-webfont.ttf) format('truetype');
+}
 * {
   font-family : 'Junction';
   font-weight : normal;
