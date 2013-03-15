@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{title}}</title>
+    <link>http://stratha.us/</link>
+    <description>{{description}}</description>
+    <language>en</language>
+    <copyright>{{author}}</copyright>
+    <pubDate>{{date}}</pubDate>
+{{#documents}}
+{{#if published}}
+    <item>
+      <title>{{title}}</title>
+      <description>{{description}}</description>
+      <link>http://stratha.us/{{id}}</link>
+      <author>Autor des Artikels, E-Mail-Adresse</author>
+      <guid>stratha.us/{{id}}:{{date}}</guid>
+      <pubDate>{{date}}</pubDate>
+    </item>
+{{/if}}
+{{/documents}}
+  </channel>
+</rss>

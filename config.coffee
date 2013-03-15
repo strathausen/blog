@@ -17,6 +17,7 @@ redirects =
 ignore = /^\/(en|ro|de|he)(\/|$)/
 
 rewrites =
-  '/' : '/index'
+  '/'         : '/index'
+  '/feed.rss' : '/feed'
 
 module.exports = { config, redirects, rewrites, ignore }
