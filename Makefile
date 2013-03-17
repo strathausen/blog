@@ -1,3 +1,5 @@
+deploy: compile npm
+
 compile: clean
 	coffee compile.coffee
 
@@ -7,3 +9,6 @@ server:
 clean:
 	rm -f theme/*.html
 	#rm -rv public/*
+
+npm:
+	npm i

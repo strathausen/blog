@@ -7,8 +7,8 @@ express   = require 'express'
 oppressor = require 'oppressor'
 path      = require 'path'
 filed     = require 'filed'
-
 { rewrites, redirects, ignore } = require './config'
+
 app = express()
 
 app.use (req, res, next) ->

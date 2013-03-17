@@ -17,11 +17,8 @@
     "oppressor": "0.0.1",
     "mumpitz": "0.0.1alpha",
     "express": "~3.0.0",
-    "send": "~0.1.0",
-    "connect": "~2.6.1"
-    "event-stream": "~3.0.7",
-    "moment": "~1.7.2",
-    "yamlmd": "~0.1.1"
+    "moment": "~2",
+    "handlebars": "~1.0.10"
   },
   "devDependencies": {},
   "optionalDependencies": {},
