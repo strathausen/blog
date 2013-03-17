@@ -1,4 +1,4 @@
-deploy: compile npm
+deploy: npm compile
 
 compile: clean
 	coffee compile.coffee
