@@ -3,4 +3,4 @@ id: ''
 title: 'Index - Johann Philipp Strathausen'
 
 
-Software crafts-man and Berlin hipster.
+Software crafts-man and Berlin based hacker hipster.
