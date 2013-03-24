@@ -7,7 +7,7 @@ express   = require 'express'
 oppressor = require 'oppressor'
 path      = require 'path'
 filed     = require 'filed'
-{ rewrites, redirects, ignore } = require './config'
+{ rewrites, redirects, ignore, config } = require './config'
 
 app = express()
 
@@ -25,10 +25,6 @@ app.use (req, res, next) ->
   req.url = rewrites[req.url]
   do next
 
-app.use (req, res, next) ->
-  return do next unless /^\/font/.test req.url
-  res.sendfile __dirname + '/theme' + req.url
-
 # Look for html files by default
 app.use (req, res, next) ->
   # Leave typical file extensions allone (as to what I expect to have on my blog)
@@ -38,13 +34,11 @@ app.use (req, res, next) ->
   do next
 
 # Static assets
-#app.use (req, res) ->
-  ## Pipe chaining doesn't seem to work for some reason,
-  ## not even with substack's branch of filed.
-  #op = oppressor req
-  #filed(path.join __dirname, 'theme', req.url).pipe op
-  #op.pipe(res)
-app.use express.static path.join __dirname, 'theme'
+if typeof config.public is 'string'
+  app.use express.static config.public
+else
+  for p in config.public
+    app.use express.static p
 
 # Finally, logging unmatched urls
 app.use (req, res, next) ->
