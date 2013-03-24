@@ -34,11 +34,8 @@ app.use (req, res, next) ->
   do next
 
 # Static assets
-if typeof config.public is 'string'
-  app.use express.static config.public
-else
-  for p in config.public
-    app.use express.static p
+app.use express.static config.public
+app.use express.static config.static
 
 # Finally, logging unmatched urls
 app.use (req, res, next) ->

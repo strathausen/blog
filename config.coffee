@@ -2,7 +2,8 @@ config =
   dir      : __dirname + '/articles'
   layout   : __dirname + '/theme/layout.mustache'
   template : __dirname + '/theme/article.mustache'
-  public   : [ __dirname + '/public', __dirname + '/static' ]
+  public   : __dirname + '/public'
+  static   : __dirname + '/static'
   author   : 'Johann Philipp Strathausen <strathausen-at-gmail-dot-com>'
 
 # Redirect legacy URLs (from my previous wordpress blog)
