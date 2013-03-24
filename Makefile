@@ -1,6 +1,6 @@
-deploy: npm compile
+deploy: npm clean compile
 
-compile: clean
+compile:
 	cp -rv static/* public/
 	coffee compile.coffee
 

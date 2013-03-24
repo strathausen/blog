@@ -2,7 +2,7 @@ config =
   dir      : __dirname + '/articles'
   layout   : __dirname + '/theme/layout.mustache'
   template : __dirname + '/theme/article.mustache'
-  public   : __dirname + '/theme'
+  public   : __dirname + '/public'
   author   : 'Johann Philipp Strathausen <strathausen-at-gmail-dot-com>'
 
 # Redirect legacy URLs (from my previous wordpress blog)
@@ -17,7 +17,8 @@ redirects =
 ignore = /^\/(en|ro|de|he)(\/|$)/
 
 rewrites =
-  '/'         : '/index'
-  '/feed.rss' : '/feed'
+  '/'          : '/index'
+  '/feed.rss'  : '/feed'
+  '/feed.html' : '/feed'
 
 module.exports = { config, redirects, rewrites, ignore }
