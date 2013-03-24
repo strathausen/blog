@@ -4,9 +4,7 @@
 
 require 'coffee-script'
 express   = require 'express'
-oppressor = require 'oppressor'
 path      = require 'path'
-filed     = require 'filed'
 { rewrites, redirects, ignore, config } = require './config'
 
 app = express()
