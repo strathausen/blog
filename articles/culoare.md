@@ -15,13 +15,14 @@ https://github.com/strathausen/culoare
 In culoare, you could now do
 
 ```js
-require('culoare')
+require('culoare');
 console.log(
   'blinking text'.blink,
   ('blue background '
     + 'light red'.lightred
-    + ' blue background').blue
-)
+    + ' blue background'
+  ).blue
+);
 ```
 
 ### Installation
