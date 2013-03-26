@@ -26,7 +26,7 @@ pleasant results. You can now even have fun dragging around the nodes.
 Here's an example on how easy it is to use (it doesn't differ much from the
 original code, but includes some customizations):
 
-```js
+``` js
 var redraw;
 var height = 300;
 var width = 400;

@@ -15,7 +15,7 @@ It can read markdown files annotated with yaml. I don't think anyone has ever th
 
 Here's how you can use it.
 
-```coffee
+``` coffee
 Blog = require 'mumpitz'
 blog = new Blog dir: __dirname + '/articles'
 ```
