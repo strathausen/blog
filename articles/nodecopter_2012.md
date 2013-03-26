@@ -7,13 +7,16 @@ published: true
 
 ## Nodecopter 2012
 
-Recently, I've had the pleasure to participate in <a href="http://nodecopter.com">nodecopter</a>,
+Recently, I've had the pleasure to participate in
+<a href="http://nodecopter.com">nodecopter</a>,
 where hackers gathered in a late 19th century,
 three story high abandoned bath house
 to hack flying robots with node.js all day long
 while drinking beer and having a lot of fun.
 
-<img src="/images/nodecopter-venue.jpeg" alt="The great venue of nodecopter 2012 - a former public bath" />
+<img src="/images/nodecopter-venue.jpeg"
+ alt="The great venue of nodecopter 2012 - a former public bath" />
+
 The amazing venue
 
 There I met <a href="http://npmjs.org/~bkw">Bernhard</a> whom I know from
