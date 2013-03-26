@@ -62,21 +62,15 @@ a {
 }
 #content p,
 #content li {
-  text-shadow : 0 0 6px white;
   line-height : 1.8em;
 }
 pre {
-  font-family      : 'Ubuntu Mono';
-  font-size        : .9em;
-  border-radius    : 5px;
+  font-family      : 'Ubuntu Mono' !important;
   margin           : 0 0.2em;
-  background-color : #443;
-  color            : #FEC;
   padding          : .8em 1.1em;
   max-width        : 56em;
-  text-shadow      : 0 0 6px black;
 }
-code {
+code, code span {
   font-family : 'Ubuntu Mono';
 }
 ul.index {

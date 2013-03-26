@@ -1,4 +1,4 @@
-deploy: npm clean compile
+deploy: npm clean compile styles
 
 compile:
 	coffee compile.coffee
@@ -11,3 +11,7 @@ clean:
 
 npm:
 	npm i
+
+styles:
+	cp theme/style.css public/
+	curl https://raw.github.com/isagalaev/highlight.js/master/src/styles/tomorrow.css >> public/style.css
