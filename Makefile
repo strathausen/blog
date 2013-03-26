@@ -13,5 +13,5 @@ npm:
 	npm i
 
 styles:
-	cp theme/style.css public/
+	node_modules/.bin/stylus < theme/style.styl > public/style.css
 	curl https://raw.github.com/isagalaev/highlight.js/master/src/styles/tomorrow.css >> public/style.css

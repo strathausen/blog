@@ -14,7 +14,9 @@
     "mumpitz": "0.0.2",
     "express": "~3.0.0",
     "moment": "~2",
-    "handlebars": "~1.0.10"
+    "handlebars": "~1.0.10",
+    "stylus": "~0.32.1",
+    "consolehighlighter": "~0.1.5"
   },
   "devDependencies": {},
   "optionalDependencies": {},

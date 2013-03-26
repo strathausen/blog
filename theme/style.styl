@@ -1,13 +1,13 @@
 /* Ubuntu Mono Font */
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext);
+@import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext');
 /* Junction Sans-Serif Font from the leagueofmovabletype.com */
 @font-face {
   font-family: 'Junction';
-  src: url(/fonts/Junction-webfont.eot); /* for IE */
+  src: url('/fonts/Junction-webfont.eot'); /* for IE */
   src: local('Junction'),
-          url(/fonts/Junction-webfont.woff) format('woff'),
-          url(/fonts/Junction-webfont.svg) format('svg'),
-          url(/fonts/Junction-webfont.ttf) format('truetype');
+          url('/fonts/Junction-webfont.woff') format('woff'),
+          url('/fonts/Junction-webfont.svg') format('svg'),
+          url('/fonts/Junction-webfont.ttf') format('truetype');
 }
 * {
   font-family : 'Junction';
@@ -19,27 +19,11 @@
   max-width : 560px;
   margin    : auto;
 }
-a,
-#footer,
-#header,
-h1,
-h2,
-h3,
-/*nav a:first-letter,*/
-.title {
+a, #footer, #header, h1, h2, h3, .title {
   color : #B6321C; /* LaTeX BrickRed */
 }
-nav a,
-p,
-li,
-.date {
+nav a, p, li, .date {
   color : #006795; /* LaTeX MidnightBlue */
-}
-/*p a:visited,*/
-/*a:visited .title {*/
-  /*color : #C652FC;*/
-/*}*/
-.date {
 }
 #header h1 {
   font-size   : 2.4em;
@@ -60,8 +44,7 @@ h3 {
 a {
   text-decoration : none;
 }
-#content p,
-#content li {
+#content p, #content li {
   line-height : 1.8em;
 }
 pre {
