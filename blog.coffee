@@ -28,7 +28,11 @@ app.use (req, res, next) ->
   # Leave typical file extensions allone (as to what I expect to have on my blog)
   unless /\.([a-z0-9]{1,5})$/i.test req.url
     console.error req.url
-    req.url = req.url.replace(/\/$/, '') + '.html'
+    base = req.url.replace(/\/$/, '')
+    unless /^curl/.test req.headers['user-agent']
+      req.url = base + '.html'
+    else
+      req.url = base + '.md'
   do next
 
 # Static assets
