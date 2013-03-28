@@ -3,6 +3,9 @@ deploy: npm clean compile styles
 compile:
 	coffee compile.coffee
 
+markdown:
+	tools/colormds
+
 server:
 	PORT=7000 coffee blog.coffee
 

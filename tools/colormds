@@ -1,0 +1,13 @@
+#!/bin/bash
+for sourcef in articles/*
+do
+  targetf=public/`basename $sourcef`
+  sourcetime=`stat --format %Y $sourcef`
+  targettime=`stat --format %Y $targetf`
+  if [[ $sourcetime > $targettime ]]
+  then
+    echo "Updating $sourcef to $targetf"
+    tools/vimcat $sourcef > $targetf
+  fi
+done
+
