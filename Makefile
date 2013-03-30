@@ -1,4 +1,4 @@
-deploy: npm clean compile styles
+deploy: npm compile styles markdown
 
 compile:
 	coffee compile.coffee
