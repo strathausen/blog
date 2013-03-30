@@ -7,7 +7,7 @@ published: true
 
 Thanks to Google recently ditching RSS,
 I finally installed a decent
-<a href="">RSS reader</a>
+<a href="http://lzone.de/liferea/">RSS reader</a>
 on my system and stopped depending on yet another web service.
 
 The incident also reminded me
