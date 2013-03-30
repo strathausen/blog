@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {{#each documents}}
 <url>
-  <loc>http://stratha.us/#{id}</loc>
-  <lastmod>#{toRFC822 date}</lastmod>
+  <loc>http://stratha.us/{{id}}</loc>
+  {{#if date}}<lastmod>{{toRFC822 date}}</lastmod>{{/if}}
   <changefreq>monthly</changefreq>
 </url>
 {{/each}}
