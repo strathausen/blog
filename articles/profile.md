@@ -10,9 +10,8 @@ to provide a fit prediction for clothes.
 
 ### Computing
 
-Check my <a
-href="http://github.com/strathausen/dotfiles">dotfiles at github</a> to get an
-impresson of how I work.
+Check my <a href="http://github.com/strathausen/dotfiles">dotfiles at github</a> to get an
+impresson of how I get stuff done.
 
 Currently I'm mostly doing JavaScript development on both, the back-end and the
-front-end.
+front-end.  Deep in my heart, I'm a haskell guy.
