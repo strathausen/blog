@@ -15,8 +15,7 @@
     "express": "~3.0.0",
     "moment": "~2",
     "handlebars": "~1.0.10",
-    "stylus": "~0.32.1",
-    "async": "~0.2.6"
+    "stylus": "~0.32.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
