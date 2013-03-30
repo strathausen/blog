@@ -1,38 +1,62 @@
-title: 'Nodecopter 2012'
+title: 'Nodecopter - or how to demo untested code'
 date: 'October 15th, 2012'
 tags: [ nodecopter, nodejs, node, event, hacking ]
 description: 'Flying robots and node.js - nodecopter 2012'
 published: true
 
 
-## Nodecopter 2012
+## Nodecopter - or how to demo untested code
 
 Recently, I've had the pleasure to participate in
 <a href="http://nodecopter.com">nodecopter</a>,
-where hackers gathered in a late 19th century,
-three story high abandoned bath house
+an event where hackers gathered in a late 19th century,
+three story high abandoned public pool house
 to hack flying robots with node.js all day long
 while drinking beer and having a lot of fun.
 
-<img src="/images/nodecopter-venue.jpeg"
+Here are my impressions.
+
+<img src="/images/nodecopter_20121005_003.resized.jpg"
  alt="The great venue of nodecopter 2012 - a former public bath" />
+The amazing venue.
 
-The amazing venue
 
-There I met <a href="http://npmjs.org/~bkw">Bernhard</a> whom I know from
-my companies cooperation with youtailor
-and we hacked a quadrocopter that was following people's faces.
+<img src="/images/nodecopter_20121005_011.resized.jpg"
+ alt="Thinkpad + Drone = Love" />
+My Thinkpad with the drone flying next to it.
+
+
+<img src="/images/nodecopter_20121005_002.resized.jpg"
+ alt="Thinkpad + Drone = Love" />
+People hacking drones.
+
+
+So, there I met <a href="http://npmjs.org/~bkw">Bernhard</a> (whom I know from
+a previous cooperation with my company, <a href="http://www.upcload.com">UPcload</a>),
+even bringing a drone and some cables.
+We hacked a quadrocopter that can follow people's faces.
 Bernhard wrote the face recognition part
 and I worked on the copter controller to react to face coordinates on the
 front camera.
 
-Due to just finishing seconds before the final demo and some wireless problems,
-we demoed the robot to the crowd completely untested,
+Once we wanted to integrate our code and test the interfaces,
+the wireless was too crowded and we didn't get a connection to the drone
+until the actual demo.
+
+So it came that we demoed the robot to the crowd completely untested,
 just smacking our code bases together, hoping for the best.
 We didn't even write unit tests.
 And yet, it just worked on the first try!
 
-From now on, I am going to never test anything before demos ever.
+From now on, I am going to never test anything before demos, ever.
 
-The <a href="http://github.com/strathausen">code's on github</a>.
+You can see me on the video here, I'm the guy with the yellow helmet.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/gucpgJEJ5b4" frameborder="0" allowfullscreen></iframe>
+
+By the way, my favourite team was the
+<a href="https://github.com/substack/matador-copter">bullfighting drone</a>.
+
+Our <a href="http://github.com/strathausen">code's on github</a>.
 The code quality has been heavily influenced by beer.
+We take no responsibility.
