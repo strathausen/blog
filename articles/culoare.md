@@ -10,6 +10,9 @@ published: true
 Just released a clone of colors.js with more colours:
 https://github.com/strathausen/culoare
 
+It features background colours, light and dark modes and fancy blinking.
+I wrote it in order to get more fluent with CoffeeScript.
+
 ### Example
 
 In culoare, you could now do
