@@ -2,49 +2,72 @@ title: 'Vimify - Vim Code Highlighting for Node.js'
 date: 'June 16th, 2012'
 tags: [ node, vim, code, project ]
 description: 'Would you like to have the power and quality of vim code highlighting available to your node.js project, blog or website? Read on.'
+published: true
 
 
 ## Vim highlighting your blog
 
 Some weeks ago, I wrote a javascript module using vim to transform source
 code into highlight HTML and CSS, after having stumbled upon vim2html.
-I am announcing my <a href="https://strathausen.github.com/vimify" title="Vimify on Github">latest code snippet</a> that uses vim to turn your source code into HTML and CSS, for your web project!
+I am announcing my
+<a href="https://strathausen.github.com/vimify" title="Vimify on Github">latest code snippet</a>
+that uses vim to turn your source code into HTML and CSS, for your web project!
 
-### The Idea
+### Why?
 
-Vim has excellent highlighting support for a variety of programming languages, and probably one of the most complete in the universe. Why not use it in node? There are already <a href="" title="">tools taking advantage of this out there</a>.
+Vim has excellent highlighting support for a variety of programming languages,
+and probably one of the most complete in the universe.
+Could one use it in a blog or something?
+There are already <a href="https://github.com/jmcantrell/vim2html" title="vim2html">tools taking advantage of this out there</a>.
 
-
-### The implementation
 ### The pros
 
 1. You get all kinds of languages highlighted for free - sure vim has a
 higher coverage than your favourite highlighting library.
-2. You get nice terminal colours and feel at home on your blog.
+2. You get nice colours coresponding to those you use in the terminal
+and feel at home on your blog.
 
 ### The cons
 
-### How It Works
-
-
+1. Wow, __vim's default highlighting of JavaScript sucks!__
+Funny that I only notice it now.
+1. __Getting stdin/stdout to work was not easy__ and straight-forward.
+I ended up using temporary files instead.
+1. __Rendering is damn slow.__ It can take up to one or even to three seconds per code block,
+to start vim and get it to render a file,
+depending on the hardware.
+Twenty articles with two code blocks each can mean a few minutes of waiting,
+just to compile them to HTML.
+Using the same vim instance for everything might speed up things,
+but I'm still not amazed by its speed.
+1. __The generated HTML sucks!__ It's like from the nineties:
+ It's a complete HTML file with
+embedded styles in the header.  I'm parsing it with regular expressions...
+Even worse, I had to activate CSS and XHTML - by default, you'd get fracking FONT tags!!
 
 ### Usage
 
-Convinced? 
+Still convinced?
 
 1. Install it via npm, e.g.
 
-    npm install vimify -S
+``` bash
+npm install vimify -S
+```
 
 2. Use it your code.
 
+``` js
+var vimify = require('vimify');
+vimify('x = (y) -> y', 'coffee', function(err, style, html) {
+  console.log('the css', style);
+  console.log('the markup', html);
+});
+```
+
 ### Summary
 
-Using vim as a highlighter is really awesome, and not quite without disadvantages.
+Vim is certainly a great editor,
+though it's not such a great code highlighting engine yet.
 
-- Vim generating HTML is damn slow (1-3s per code block)
-- The generated HTML sucks! It's like from the nineties. And with line numbers 
-- Vim's code highlighting for JavaScript sucks so much! (I never realized that)
-- Why is vim so hard with stdin and stdout?
-
-Vim is certainly a great IDE, but it's not yet ready to become a code highlighting generator engine. I'll probably switch to something else in the JS repositories. Probably. As soon as I have time for that...
+But clearly, the pros still outweigh the cons, right?
