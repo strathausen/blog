@@ -13,6 +13,7 @@ redirects =
   '/2009/12/11/ein-tag-im-paradies' : '/paradies'
   '/2010/04/25/raphael-svg-tooltip' : '/raphael_js_tooltip'
   '/2010/08/04/sort_by_colour'      : '/sort_by_colour'
+  '/2010/08/17/drei'                : '/threetomic'
 
 # Ignore language prefix
 ignore = /^\/(en|ro|de|he)(\/|$)/
