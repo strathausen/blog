@@ -16,5 +16,8 @@ git clone git@github.com:strathausen/blog.git
 ```
 
 Articles can be found at `./articles/<url-path>.md`.
-Install node.js, run `npm i` and `make && make server`
-to run it on your machine at port 7000.
+
+In order to try the blog on your machine,
+1nstall <a href="http://nodejs.org/">node.js</a>,
+run `npm install` and `make && make server`
+to run it at port 7000.
