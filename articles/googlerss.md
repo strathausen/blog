@@ -1,9 +1,9 @@
-title: 'RSS'
+title: 'Thanks for reminding me, Google'
 date: 'March 25th, 2013'
 published: true
 
 
-## Google ditching RSS? It's not that bad!
+## Google ditching RSS? Thanks for reminding me!
 
 Thanks to Google recently ditching RSS,
 I finally installed a decent
