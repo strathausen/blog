@@ -3,8 +3,10 @@
 # Johann Philipp Strathausen
 
 require 'coffee-script'
+require 'culoare'
 express   = require 'express'
 path      = require 'path'
+moment    = require 'moment'
 { rewrites, redirects, ignore, config } = require './config'
 
 app = express()
@@ -27,7 +29,7 @@ app.use (req, res, next) ->
 app.use (req, res, next) ->
   # Leave typical file extensions allone (as to what I expect to have on my blog)
   unless /\.([a-z0-9]{1,5})$/i.test req.url
-    console.error req.url
+    console.error req.url.green, moment().format().lightblue
     base = req.url.replace(/\/$/, '')
     unless /^curl/.test req.headers['user-agent']
       req.url = base + '.html'
