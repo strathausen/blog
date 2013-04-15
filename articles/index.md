@@ -4,4 +4,5 @@ title: 'Index - Johann Philipp Strathausen'
 
 
 Software crafts-man, Berlin-based hacker and
-<a href="http://www.lomography.com/homes/strathausen">analogue hipster</a>.
+<a href="http://www.lomography.com/homes/strathausen/photos/18188416"
+title="Sunny day on the root of the former UPcload office">analogue hipster</a>.
