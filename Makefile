@@ -17,4 +17,7 @@ npm:
 
 styles:
 	node_modules/.bin/stylus < theme/style.styl > public/style.css
-	curl https://raw.github.com/isagalaev/highlight.js/master/src/styles/tomorrow.css >> public/style.css
+	cat theme/code.css >> public/style.css
+
+highlight-css:
+	curl https://raw.github.com/isagalaev/highlight.js/master/src/styles/tomorrow.css > theme/code.css
