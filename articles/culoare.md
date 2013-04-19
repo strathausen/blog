@@ -7,8 +7,12 @@ published: true
 
 ## Culoare
 
-Just released a clone of colors.js with more colours:
+Just released a fancy clone of
+<a href="https://npmjs.org/package/colors">colors.js</a>
+but with more awesome:
 https://github.com/strathausen/culoare
+
+<img src="/images/culoare.gif" />
 
 It features background colours, light and dark modes and fancy blinking.
 I wrote it in order to get more fluent with CoffeeScript.
