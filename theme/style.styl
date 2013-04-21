@@ -69,6 +69,9 @@ LYellowOrange   = #FAA21A
 
 color1 = LBrickRed
 color2 = LMidnightBlue
+bgcolor = white
+
+@import "/code.css"
 
 /* Ubuntu Mono Font */
 @import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext')
@@ -85,26 +88,43 @@ color2 = LMidnightBlue
   font-family 'Junction'
   font-weight normal
 
+body
+  margin 0
+
+header, footer
+  background-image url('/bg000001.jpeg')
+  background-size 100%
+  margin-bottom 3em
+
+header
+  background-position-y 68%
+
+footer
+  background-position-y 74%
+
 #content
   width     75%
   min-width 450px
   max-width 560px
   margin    auto
 
-a, #footer, #header, h1, h2, h3, .title
+a, footer, header, h1, h2, h3, .title
   color LBrickRed
 
 nav a, p, li, .date
   color LMidnightBlue
 
-#header h1
-  font-size 2.4em
+header h1
+  font-size        2.4em
+  background-color bgcolor
+  display          inline-block
+  padding          .2em .4em
 
-#header, #footer
-  text-align center
+header, footer
+  text-align left
   padding    .2em 0 0 0
 
-#footer
+footer
   margin-bottom 3em
 
 h2
@@ -163,5 +183,8 @@ ul.navigation
   list-style none
 
 .navigation li
+  background-color bgcolor
   display inline-block
-  padding 0 1em 0 1em
+  padding .3em .5em
+  margin 0 1em
+
