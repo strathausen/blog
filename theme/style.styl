@@ -67,9 +67,9 @@ LYellow         = #FFF200
 LYellowGreen    = #98CC70
 LYellowOrange   = #FAA21A
 
-color1 = LBrickRed
-color2 = LMidnightBlue
-bgcolor = white
+ColorPrimary   = LBrickRed
+ColorSecondary = LMidnightBlue
+BGColor        = white
 
 // Code highlighting
 @import "/code.css"
@@ -93,42 +93,12 @@ bgcolor = white
 body
   margin 0
 
-header, footer
-  background-image url('/bg000001.jpeg')
-  background-size  100%
-  margin-bottom    3em
-
-header
-  background-position-y 68%
-
-footer
-  margin-top            2em
-  background-position-y 74%
-
-#content
-  width     75%
-  min-width 450px
-  max-width 560px
-  margin    auto
-
+/* general styling */
 a, footer, header, h1, h2, h3, .title
-  color LBrickRed
+  color ColorPrimary
 
 nav a, p, li, .date
-  color LMidnightBlue
-
-header h1
-  font-size        2.4em
-  background-color bgcolor
-  display          inline-block
-  padding          .2em .4em
-
-header, footer
-  text-align left
-  padding    .2em 0 0 0
-
-footer
-  margin-bottom 3em
+  color ColorSecondary
 
 h2
   margin 2em 0 1em 0
@@ -139,9 +109,6 @@ h3
 a
   text-decoration none
 
-#content p, #content li
-  line-height 1.8em
-
 pre
   font-family 'Ubuntu Mono' !important
   margin      0 0.2em
@@ -151,10 +118,38 @@ pre
 code, code span
   font-family 'Ubuntu Mono'
 
-ul.index
-  list-style none
+#content p, #content li
+  line-height 1.8em
 
-/* on the article page */
+#content
+  width     75%
+  min-width 450px
+  max-width 560px
+  margin    auto
+
+/* header and footer */
+header h1
+  font-size        2.4em
+  background-color BGColor
+  display          inline-block
+  padding          .2em .4em
+
+header, footer
+  background-image url('/bg000001.jpeg')
+  background-size  100%
+  margin-bottom    3em
+  text-align left
+  padding    .2em 0 0 0
+
+header
+  background-position-y 68%
+
+footer
+  margin-top            3em
+  margin-bottom         3em
+  background-position-y 74%
+
+/* article page */
 .article .date
   width         180px
   display       block
@@ -165,7 +160,13 @@ ul.index
   margin-bottom -50px
   height        1.1em
 
-/* on the index page */
+/* index page */
+ul.index
+  list-style none
+
+ul.index li
+  line-height 2.6em !important
+
 ul.index li span
   display inline-block
 
@@ -178,16 +179,14 @@ ul.index li span.date
 ul.index li span.title
   min-width 320px
 
-ul.index li
-  line-height 2.6em!important
-
+/* navigation */
 ul.navigation
   padding    0
   list-style none
 
-.navigation li
-  background-color bgcolor
-  display inline-block
-  padding .3em .5em
-  margin 0 1em
-
+ul.navigation li
+  background-color BGColor
+  display          inline-block
+  padding          .3em .5em
+  margin           0 1em
+  line-height      1.3em
