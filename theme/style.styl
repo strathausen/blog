@@ -71,21 +71,6 @@ ColorPrimary   = LBrickRed
 ColorSecondary = LMidnightBlue
 BGColor        = white
 
-// Code highlighting
-@import "/code.css"
-
-// Ubuntu Mono Font
-@import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext')
-
-// Junction Sans-Serif Font from the leagueofmovabletype.com
-@font-face
-  font-family 'Junction'
-  src url('/fonts/Junction-webfont.eot') // for IE
-  src local('Junction'), \
-    url('/fonts/Junction-webfont.woff') format('woff'), \
-    url('/fonts/Junction-webfont.svg') format('svg'), \
-    url('/fonts/Junction-webfont.ttf') format('truetype')
-
 *
   font-family 'Junction'
   font-weight normal
@@ -135,11 +120,10 @@ header h1
   padding          .2em .4em
 
 header, footer
-  background-image url('/bg000001.jpeg')
   background-size  100%
   margin-bottom    3em
-  text-align left
-  padding    .2em 0 0 0
+  text-align       left
+  padding          .2em 0 0 0
 
 header
   background-position-y 68%
@@ -149,7 +133,30 @@ footer
   margin-bottom         3em
   background-position-y 74%
 
-/* article page */
+/* on big screens: move header and footer to the left */
+@media (min-width: 1096px)
+  body
+    padding-left 30%
+
+  header, footer
+    left     0
+    position fixed
+
+  header
+    top             0
+    height          100%
+    display         block
+    background-size auto 100%
+    width           30%
+
+  footer
+    background-image none !important
+    bottom           0
+
+  #content
+    margin-left 160px
+
+/* article pages */
 .article .date
   width         180px
   display       block
@@ -188,5 +195,5 @@ ul.navigation li
   background-color BGColor
   display          inline-block
   padding          .3em .5em
-  margin           0 1em
+  margin           2em 1em 0 1em
   line-height      1.3em
