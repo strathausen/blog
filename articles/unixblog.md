@@ -1,7 +1,6 @@
 title: 'Unix-Style Blogging'
 date: 'April 13th, 2013'
 tags: [ unix, blog, generator, static, html ]
-published: true
 
 
 ## Unix-Style Blogging
@@ -14,7 +13,7 @@ Suddenly, one can combine that library with many other tools
 implemented in different languages or runtimes. Instead of just another
 library for tome platform, it's a univeral tool.
 
-Let's take as an example a small
+Let me illustrate this development directive with a small
  <a href="/mumpitz">static site generator that I wrote</a> some time ago.
 
 
