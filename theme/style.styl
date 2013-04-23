@@ -132,35 +132,37 @@ header p
   float            right
 
 header, footer
+  background-repeat no-repeat
   background-size  100%
   margin-bottom    3em
   text-align       left
   padding          .2em 0 0 0
 
 header
-  background-position-y 62%
+  background-position-y center
   padding-top           80px
 
 footer
-  margin-top            5em
-  padding-top           3em
-  background-position-y 76%
+  margin-top            4em
+  padding-top           4em
+  background-position-y bottom
 
 /* on big screens: move header and footer to the left */
 @media (min-width: 1096px)
   body
-    padding-left 30%
+    padding-left 32%
 
   header, footer
     left     0
     position fixed
 
   header
+    background-image url('/bg_ver.jpeg') !important
     top             0
     height          100%
     display         block
     background-size auto 100%
-    width           30%
+    width           32%
 
   footer
     background-image none !important
@@ -168,6 +170,7 @@ footer
 
   #content
     margin-left 160px
+    padding-top 3em
 
 /* article pages */
 .article .date
