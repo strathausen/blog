@@ -103,6 +103,9 @@ pre
 code, code span
   font-family 'Ubuntu Mono'
 
+.clear
+  clear both
+
 #content p, #content li
   line-height 1.8em
 
@@ -118,6 +121,15 @@ header h1
   background-color BGColor
   display          inline-block
   padding          .2em .4em
+  margin-top       -80px
+
+header p
+  background-color white
+  padding          0.4em .6em
+  line-height      1.5em
+  display          block
+  text-align       right
+  float            right
 
 header, footer
   background-size  100%
@@ -126,12 +138,13 @@ header, footer
   padding          .2em 0 0 0
 
 header
-  background-position-y 68%
+  background-position-y 62%
+  padding-top           80px
 
 footer
-  margin-top            3em
-  margin-bottom         3em
-  background-position-y 74%
+  margin-top            5em
+  padding-top           3em
+  background-position-y 76%
 
 /* on big screens: move header and footer to the left */
 @media (min-width: 1096px)
@@ -189,11 +202,13 @@ ul.index li span.title
 /* navigation */
 ul.navigation
   padding    0
+  margin     0
   list-style none
+  display    inline-block
 
 ul.navigation li
   background-color BGColor
   display          inline-block
   padding          .3em .5em
-  margin           2em 1em 0 1em
+  margin           1em 1em 0 1em
   line-height      1.3em
