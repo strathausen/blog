@@ -1,8 +1,9 @@
 template: ./theme/index.mustache
 id: ''
-title: 'Index - Johann Philipp Strathausen'
+title: 'Johann Philipp Strathausen - hacker hipster'
 
 
-Software crafts-man, Berlin-based hacker and
+Hi. I make software, I design and sometimes I even
 <a href="http://www.lomography.com/homes/strathausen/photos/18188416"
-title="Sunny day on the roof of the former UPcload office">lomographer</a>.
+title="Sunny day on the roof of the former UPcload office">lomograph</a>.
+This is where I blog.
