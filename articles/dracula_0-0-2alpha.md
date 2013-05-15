@@ -7,11 +7,12 @@ published: true
 ## Dracula Graph Library
 
 I was searching for an easy way to display graphs in the browser without having
-to rely on plug-ins like Flash or Java and I found <a
-href="http://snipplr.com/view/1950/graph-javascript-framework-version-001/">a
-piece of code</a> named <a
-href="http://ajaxian.com/archives/new-javascriptcanvas-graph-library">"Graph
-JavaScript framework, version 0.0.1"</a>. You could simply add some nodes to a
+to rely on plug-ins like Flash or Java and I found
+<a href="http://snipplr.com/view/1950/graph-javascript-framework-version-001/">
+a piece of code</a> named
+<a href="http://ajaxian.com/archives/new-javascriptcanvas-graph-library">
+"Graph JavaScript framework, version 0.0.1"</a>.
+You could simply add some nodes to a
 graph model, and then layout and having it displayed.
 
 Unfortunately, it was soo three years ago and had a PrototypeJS dependency that
