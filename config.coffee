@@ -1,3 +1,9 @@
+###
+
+Configuration file used by blog.coffee and compile.coffee
+
+###
+
 config =
   dir      : __dirname + '/articles'
   layout   : __dirname + '/theme/layout.mustache'
