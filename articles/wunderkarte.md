@@ -1,6 +1,6 @@
 date: 'March 30th, 2013'
 tags: [ 'latex', 'template', 'retro', 'texlive', 'stretch' ]
-title: 'A Beautiful vintage LaTeX template'
+title: 'A vintage LaTeX template'
 published: true
 
 
