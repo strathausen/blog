@@ -7,7 +7,7 @@ markdown:
 	tools/colormds
 
 server:
-	PORT=7000 coffee blog.coffee
+	node blog.js
 
 clean:
 	rm -rv public/*
