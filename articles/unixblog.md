@@ -8,13 +8,15 @@ published: true
 
 Whenever releasing a library or a module,
 I try shipping it with a command line tool that does the same thing!
+I noticed that many people in the node.js community already do that,
+but I wish more people would do so too.
 
-You'll be amazed by the possibilities that open up.
+Instead of writing just another
+library for some platform, you create a univeral tool.
 Suddenly, one can combine that library with many other tools
-implemented in different languages or runtimes. Instead of just another
-library for tome platform, it's a univeral tool.
+implemented in different languages or runtimes.
 
-Let me illustrate this development directive with a small
+That's what I did while writing
  <a href="/mumpitz">static site generator that I wrote</a> some time ago.
 
 
@@ -95,9 +97,10 @@ like the ones listed on that
 <a href="http://http://stackoverflow.com/questions/3858671/unix-command-line-json-parser">Stackoverflow-question</a>
 or that <a href="http://http://trentm.com/json/">awesome json query
 and manipulation tool</a>
-(which, by coincidence, happens to be implemented in node.js too).
+(which, by coincidence, happens to be implemented in node.js too),
+ also pandoc and asciidoc.
 
-Have bash glue them together.
+Now have bash glue them together.
 
 ``` bash
 # some sane default values for your blog
@@ -123,4 +126,27 @@ done
 
 I didn't actually test this code, but it should just work™.
 
+### How to do it in node.js
 
+Turning a npm module into a command line tool is easy.
+Say, you've got that awesome tool that converts json to msword documents.
+
+1. add this to your `package.json`
+
+``` js
+{ "bin": { "json2msword": "./bin/json2msword.js" } },
+```
+
+2. create the actual command line tool using your lib
+
+``` js
+/* ./bin/js2msword.js */
+var json2msword = require('../')
+  , mapStream = require('map-stream');
+process.stdin.pipe(mapStream(
+  function(text, cb) {
+    var result = json2msword(JSON.parse(text.toString()));
+    cb(null, result);
+  }
+));
+```
