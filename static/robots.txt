@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: http://stratha.us/sitemap.xml
