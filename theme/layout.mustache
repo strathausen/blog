@@ -9,8 +9,12 @@
     <link rel="alternate" type="application/rss+xml"
       title="Johann Philipp Strathausen RSS-Feed"
       href="http://www.strathausen.eu/feed.rss" />
-    {{!<link rel="alternate" type="application/atom+xml" title="Johann Philipp Strathausen Atom-Feed" href="http://www.strathausen.eu/feed.atom" />
-    <link rel="pingback" href="http://www.strathausen.eu/xmlrpc.aspx" />}}
+    {{!
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="alternate" type="application/atom+xml" title="Johann Philipp Strathausen Atom-Feed" href="http://www.strathausen.eu/feed.atom" />
+    <link rel="pingback" href="http://www.strathausen.eu/xmlrpc.aspx" />
+    <link rel="next" title="Showcase" href="http://www.graphdracula.net/showcase/">
+    }}
     <meta name="generator" content="vim" />
     <link rel="prefetch" href="/fonts/Junction-webfont.woff" />
     <link rel="stylesheet" href="/style.css" type="text/css" />
@@ -37,7 +41,7 @@
   </head>
   <body>
     <header>
-      <a href="/"><h1>Johann Philipp Strathausen</h1></a>
+      <a href="/" class="header">Johann Philipp Strathausen</a>
       <p>computer craftsman &nbsp; creator &nbsp; lomographer</p>
       <nav>
         <ul class="navigation">
@@ -45,11 +49,12 @@
           <li><a href="/profile">profile</a></li>
           <li><a href="http://github.com/strathausen" target="_blank">
             → github</a></li>
-          {{!<li><a href="/hire">hire me</a></li>}}
+          <li><a href="/hire">hire me</a></li>
         </ul>
       </nav>
       <div class="clear"></div>
     </header>
+    <h1>{{title}}</h1>
     <div id="content">
       {{>body}}
     </div>
