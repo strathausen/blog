@@ -1,4 +1,4 @@
-date: '19 Nov 12'
+date: 'July 32nd, 2013'
 
 
 ## Terminal Survival Kit
@@ -33,6 +33,8 @@ battery status, suspent/hibernate, screen/keyboard backlight
 
 w3m, elinks, ... ? one that can render graphics in terminal mode!
 
+links: scroll down , scroll up 
+
 ### Watch videos and images
 
 mplayer with direct rendering?
@@ -47,3 +49,8 @@ tmux
 
 mutt
 finch
+
+### File viewers
+
+lesspipe - for PDF, or probably even more
+cacaview - view images as ASCII
