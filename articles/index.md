@@ -1,6 +1,6 @@
 template: ./theme/index.mustache
 id: ''
-title: 'Johann Philipp Strathausen - hacker hipster'
+title: ''
 
 
 Hi. I make software, I design and sometimes I enjoy
