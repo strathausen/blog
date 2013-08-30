@@ -46,4 +46,6 @@ app.use (req, res, next) ->
   console.log 'not found', req.url, req.headers['user-agent']
   do next
 
-app.listen(process.env.PORT or 7000)
+port = process.env.PORT or 7000
+app.listen port
+console.log 'listening at port', port
