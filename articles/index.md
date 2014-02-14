@@ -1,9 +1,9 @@
 template: ./theme/index.mustache
 id: ''
 title: 'Johann Philipp Strathausen - hacker hipster'
+description: 'Hi. I make software and co-founded UPcload.com - a company solving the fit problem in apparel shopping. This is where I blog about things I do.'
 
-
-Hi. I make software, I design and sometimes I enjoy
+Hi. I make software, I design systems and sometimes I enjoy
 <a href="http://www.flickr.com/photos/61913761@N00/"
-title="My Flickr Profile">analogue photograpy</a>.
+title="My amazing Flickr Profile">analogue photograpy</a>.
 This is where I blog.
