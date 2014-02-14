@@ -4,15 +4,20 @@
     <title>{{title}} | stratha.us</title>
     <link rel="canonical" href="http://stratha.us/{{id}}" />
     <meta name="keywords" content="{{#tags}}{{.}},{{/tags}}" /> 
+    {{#if description}}
+    <meta name="description" content="{{description}}" />
+    {{/if}}
     <meta name="author" content="{{author}}" /> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="alternate" type="application/rss+xml"
       title="Johann Philipp Strathausen RSS-Feed"
       href="http://www.strathausen.eu/feed.rss" />
     {{!
-    <link rel="alternate" type="application/atom+xml" title="Johann Philipp Strathausen Atom-Feed" href="http://www.strathausen.eu/feed.atom" />
-    <link rel="pingback" href="http://www.strathausen.eu/xmlrpc.aspx" />
-    <link rel="next" title="Showcase" href="http://www.graphdracula.net/showcase/">
+    <link rel="alternate" type="application/atom+xml"
+      title="Johann Philipp Strathausen Atom-Feed"
+      href="" />
+    <link rel="pingback" href="" />
+    <link rel="next" title="Showcase" href="">
     }}
     <meta name="generator" content="vim" />
     <link rel="prefetch" href="/fonts/Junction-webfont.woff" />
@@ -46,11 +51,10 @@
       <p>computer craftsman &nbsp; creator &nbsp; lomographer</p>
       <nav>
         <ul class="navigation" role="navigation">
-          <li><a href="/">index</a></li>
-          <li><a href="/profile">profile</a></li>
+          <li><a href="/" alt="Blog">index</a></li>
+          <li><a href="/profile" alt="Profile">profile</a></li>
           <li><a href="http://github.com/strathausen" target="_blank">
             → github</a></li>
-          {{! <li><a href="/hire">hire me</a></li> }}
         </ul>
       </nav>
       <div class="clear"></div>
