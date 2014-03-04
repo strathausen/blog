@@ -27,7 +27,7 @@ My Thinkpad with the drone flying next to it.
 
 
 <img src="/images/nodecopter_20121005_002.resized.jpg"
- alt="Thinkpad + Drone = Love" />
+ alt="People hacking drones." />
 People hacking drones.
 
 
