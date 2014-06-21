@@ -9,6 +9,7 @@
     {{/if}}
     <meta name="author" content="{{author}}" /> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic|Cousine' rel='stylesheet' type='text/css' />
     <link rel="alternate" type="application/rss+xml"
       title="Johann Philipp Strathausen RSS-Feed"
       href="http://www.strathausen.eu/feed.rss" />
@@ -17,29 +18,18 @@
       title="Johann Philipp Strathausen Atom-Feed"
       href="" />
     <link rel="pingback" href="" />
-    <link rel="next" title="Showcase" href="">
     }}
+    {{#relatives}}
+    <link rel="next" title="{{direction}}" href="{{link}}">
+    {{/relatives}}
     <meta name="generator" content="vim" />
-    <link rel="prefetch" href="/fonts/Junction-webfont.woff" />
     <link rel="stylesheet" href="/style.css" type="text/css" />
     <link rel="stylesheet" href="/code.css" type="text/css" />
     <style type="text/css">
     <!--
-    /* Junction Sans-Serif Font from the leagueofmovabletype.com */
-    @font-face {
-      font-family: 'Junction';
-      src: url('/fonts/Junction-webfont.eot'); /* for IE */
-      src: local('Junction'),
-        url('/fonts/Junction-webfont.woff') format('woff'),
-        url('/fonts/Junction-webfont.svg') format('svg'),
-        url('/fonts/Junction-webfont.ttf') format('truetype');
-    }
     header, footer {
       background-image: url('/bg_hor.jpeg');
     }
-
-    /* Ubuntu Mono Font */
-    @import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext');
     -->
     </style>
   </head>
@@ -48,13 +38,13 @@
       <h1>
         <a href="/" role="banner">Johann Philipp Strathausen</a>
       </h1>
-      <p>computer craftsman &nbsp; creator &nbsp; lomographer</p>
+      <p>unicorn. hacking web, mobile, aeronautics.</p>
       <nav>
         <ul class="navigation" role="navigation">
-          <li><a href="/" alt="Blog">index</a></li>
+          <li><a href="/" alt="Blog">blog</a></li>
           <li><a href="/profile" alt="Profile">profile</a></li>
           <li><a href="http://github.com/strathausen" target="_blank">
-            → github</a></li>
+            → code</a></li>
         </ul>
       </nav>
       <div class="clear"></div>

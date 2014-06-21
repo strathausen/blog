@@ -1,4 +1,6 @@
 title: 'My Profile'
+relatives:
+  - {direction: prev, link: index}
 
 
 ## About me

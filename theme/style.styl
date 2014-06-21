@@ -71,19 +71,30 @@ ColorPrimary   = LBrickRed
 ColorSecondary = LMidnightBlue
 BGColor        = white
 
+FixedFont = 'Cousine'
+//TextFont = 'Didact Gothic'
+TextFont = 'Carrois Gothic'
+
 *
-  font-family 'Junction'
+  font-family TextFont
   font-weight normal
 
 body
   margin 0
+  font-size 1.2em
 
 /* general styling */
 a, footer, header, h1, h2, h3
   color ColorPrimary
 
+header, h1, h2, h3, h1 a, header p
+  font-family FixedFont
+
 nav a, p, li, .date
   color ColorSecondary
+
+nav a
+  font-family FixedFont
 
 h2
   margin 2em 0 1em 0
@@ -95,13 +106,13 @@ a
   text-decoration none
 
 pre
-  font-family 'Ubuntu Mono' !important
+  font-family FixedFont !important
   margin      0 0.2em
   padding     .8em 1.1em
   max-width   56em
 
 code, code span
-  font-family 'Ubuntu Mono'
+  font-family FixedFont
 
 .clear
   clear both
@@ -110,18 +121,15 @@ code, code span
   line-height 1.8em
 
 #content
-  width     75%
-  min-width 450px
-  max-width 560px
-  margin    auto
+  margin 1em
 
 /* header and footer */
 header h1
-  font-size        2.4em
+  font-size        2.2em
+  line-height      1.5em
   background-color BGColor
   display          inline-block
   padding          .2em .4em
-  margin-top       -80px
 
 header p
   background-color white
@@ -132,56 +140,32 @@ header p
   float            right
 
 header, footer
-  background-repeat no-repeat
-  background-size  100%
-  margin-bottom    3em
-  text-align       left
-  padding          .2em 0 0 0
+  background-repeat     no-repeat
+  background-size       100%
+  background-attachment fixed
+  text-align            left
+  padding               .2em 0 0 0
 
 header
-  background-position-y center
-  padding-top           90px
+  padding-top           10%
+  margin-bottom         3em
 
 footer
   margin-top            4em
-  padding-top           4em
+  padding-top           2em
+  padding-bottom        6em
   background-position-y bottom
 
 /* on big screens: move header and footer to the left */
 @media (min-width: 1096px)
-  body
-    padding-left 32%
-
   header, footer
-    left     0
-    position fixed
-
-  header
-    background-image url('/bg_ver.jpeg') !important
-    top             0
-    height          100%
-    display         block
-    background-size auto 100%
-    width           32%
-
-  footer
-    background-image none !important
-    bottom           0
+    padding-left  32%
+    padding-right 32%
 
   #content
-    margin-left 160px
-    padding-top 3em
-
-/* article pages */
-.article .date
-  width         180px
-  display       block
-  position      relative
-  text-align    right
-  left          -195px
-  top           20px
-  margin-bottom -50px
-  height        1.1em
+    width     75%
+    max-width 660px
+    margin    auto
 
 /* index page */
 ul.index
