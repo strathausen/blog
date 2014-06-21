@@ -18,7 +18,7 @@ npm:
 styles:
 	./node_modules/.bin/stylus < ./theme/style.styl > ./public/style.css
 
-style-watch:
+styles-watch:
 	./node_modules/.bin/stylus -w ./theme/style.styl -o ./public/
 
 highlight-css:
