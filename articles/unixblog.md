@@ -37,7 +37,7 @@ generator where only two:
  Any other tool that understands JSON can hook in here.
 
 - Another one to render JSON with
-<a href="handlebarsjs.com">Handlebars templates</a> (like 
+<a href="http://handlebarsjs.com">Handlebars templates</a> (like
 <a href="http://mustache.github.io/">Mustache</a>)
  to HTML files, lets call it `json2html`.
 
@@ -88,7 +88,7 @@ And here is the content...
 #   <p>And here is the content...</p>
 ```
 
-It took me, the author, almost no effort to turn the modules into 
+It took me, the author, almost no effort to turn the modules into
 
 ### Go nuts!
 
