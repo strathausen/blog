@@ -17,6 +17,7 @@ I was already able to cook something nice up!
 Here is the result. (of a few minutes more fiddling...)
 
 <img src="/images/wunderkarte.png" />
+
 This is great for posters, invitations or even business cards.
 
 ### Usage
