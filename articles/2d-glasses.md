@@ -4,7 +4,7 @@ description: 'Tired of watching 3D movies? Get yourself some 2D glasses!'
 tags: '3d cinema, 2d, glasses'
 published: true
 
-## The 2D revolution: Home made 2D glasses
+## The 2D revolution is now
 
 When going out with friends to see a film,
 we're always arguing about whether we should see it
