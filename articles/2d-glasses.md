@@ -16,8 +16,8 @@ but watch it in 2D!
 
 ### Whoa, how??
 
-All you need is two pairs of 3d glasses and follow these
-two easy steps:
+All you need is two pairs of 3d glasses and
+to follow these two easy steps:
 
 1. take two pairs of 2d glasses (those made of paper) and
    cut one left glass from one pair and one right glass the other pair
