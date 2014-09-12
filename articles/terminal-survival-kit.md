@@ -89,3 +89,4 @@ TERM=fbterm vi
 TERM=fbterm mutt
 
 tmux ?
+sc - spreadsheet
