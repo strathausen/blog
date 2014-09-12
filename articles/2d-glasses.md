@@ -28,7 +28,7 @@ The result: Two pairs of 2d glasses!
 
 ### But I don't have two pairs!
 
-Worry not.
+Don't dis-pair.
 If it's a pair with
 <a href="http://en.wikipedia.org/wiki/Polarized_3D_system#Linearly_polarized_glasses">linearly polarized glasses</a>
 (like IMAX),
