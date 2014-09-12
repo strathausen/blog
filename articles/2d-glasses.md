@@ -24,3 +24,15 @@ Two easy steps:
    the other one has two right glasses
 
 The result: Two pairs of 2d glasses!
+
+### But I don't have two pairs!
+
+Worry not.
+If it's a pair with
+<a href="http://en.wikipedia.org/wiki/Polarized_3D_system#Linearly_polarized_glasses">linearly polarized glasses</a>
+(like IMAX),
+just turn one glass by 90 degrees.
+
+If the glasses have a modern
+<a href="http://en.wikipedia.org/wiki/Polarized_3D_system#Circularly_polarized_glasses">circular polarization</a>,
+you just have to invert one glass within itself using a space-inverter.
