@@ -61,4 +61,6 @@ module.exports = (options) ->
     console.log 'not found'.red, req.url.lightred, req.headers['user-agent'].red
     do next
 
-  app.listen(process.env.PORT or 7000)
+  port = process.env.PORT or 7000
+  app.listen port
+  console.log "http://localhost:#{port}"
