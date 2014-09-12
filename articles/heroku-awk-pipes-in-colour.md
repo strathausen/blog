@@ -1,8 +1,12 @@
 title: 'Pipe heroku logs in colour'
 tags: [ 'heroku', 'logs', 'pipe', 'colour', 'awk', 'grep' ]
 date: 'May 30th, 2013'
+published: true
 
 ## Preserve colours in heroku logs when piping
+
+Just a little trick of the day to have colours when piping
+heroku logs around.
 
 ```/usr/local/heroku/lib/heroku/helpers/log_displayer.rb```
 around line 20, remove the condition that says 
@@ -30,3 +34,5 @@ condition a few lines further down to
 ``` bash
 heroku logs --app nodecload -t|sed 's/2[^ ]* //'
 ```
+
+Enjoy a happier life.
