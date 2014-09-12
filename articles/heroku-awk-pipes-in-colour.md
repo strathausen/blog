@@ -5,11 +5,12 @@ published: true
 
 ## Preserve colours in heroku logs when piping
 
-Just a little trick of the day to make use of your fancy colour monitor when piping
-heroku logs around.
+Just a little trick of the day to leverage your fancy colour monitor
+when piping heroku logs around.
 
-```/usr/local/heroku/lib/heroku/helpers/log_displayer.rb```
-around line 20, remove the condition that says 
+Fire your editor at file
+`/usr/local/heroku/lib/heroku/helpers/log_displayer.rb`
+and somewhere at line 20, remove the condition that says
 
 ``` ruby
 if STDOUT.isatty && ENV.has_key?("TERM")
@@ -19,14 +20,14 @@ else
 end
 ```
 
-to something like this
+and change it to something like this
 
 ``` ruby
 display(colorize(chunk))
 ```
 
 Make sure you don't use the heroku logs anywhere else,
-where this modification may break anything.
+as this modification will break stuff.
 
 You may also want to modify the other occurence of the same
 condition a few lines further down to 
