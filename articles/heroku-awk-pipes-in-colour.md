@@ -5,7 +5,7 @@ published: true
 
 ## Preserve colours in heroku logs when piping
 
-Just a little trick of the day to have colours when piping
+Just a little trick of the day to make use of your fancy colour monitor when piping
 heroku logs around.
 
 ```/usr/local/heroku/lib/heroku/helpers/log_displayer.rb```
