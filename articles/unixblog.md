@@ -7,47 +7,52 @@ published: true
 ## Unix-Style Blogging
 
 Whenever releasing a library or a module,
-I try shipping it with a command line tool that does the same thing!
+I try to ship it with a command line tool
+that does the same thing.
+
 I noticed that many people in the node.js community already do that,
 but I wish more people would do so too.
 
-Instead of writing just another
-library for some platform, you create a univeral tool.
-Suddenly, one can combine that library with many other tools
-implemented in different languages or runtimes.
+Instead of writing just another library for some platform,
+you create a univeral tool
+that can be combined with
+many other tools implemented in different languages or runtimes.
 
 That's what I did while writing
- <a href="/mumpitz">static site generator that I wrote</a> some time ago.
+ <a href="/mumpitz">static site generator</a> some time ago.
+By now, it's just another site generator
+(<a href="http://www.metalsmith.io/">metalsmith</a> is much better),
+but its parts are still useful.
 
 
-### Meet the two tools
+### Turning the libs into tools
 
-So I wanted something that reads some files in a format
-I could edit with my
-editor of choice into HTML. Big deal. Many static site generators
-do that.
+So I wanted something that
 
-While refactoring re-usable chunks of my code
-into modules, I figured that the minimum toolset to power a basic blog
-generator where only two:
+- reads some files in a format I could edit with my editor of choice
+- converts it into into HTML.
+
+Big deal. Many static site generators do that.
+
+I figured that the minimum toolset to power a basic blog
+generator were only two:
 
 - One tool for converting a source data format into an intermediate format,
- i.E. Yaml annotated markdown files into JSON,
- let's call it `yamlmd2json`.
+ i.E. Yaml annotated markdown files into JSON.
  Any other tool that understands JSON can hook in here.
 
 - Another one to render JSON with
 <a href="http://handlebarsjs.com">Handlebars templates</a> (like
 <a href="http://mustache.github.io/">Mustache</a>)
- to HTML files, lets call it `json2html`.
+ to HTML files.
 
 The modules that expose these tools are available via
  <a href="http://npmjs.org">npm</a> and I called them
-`yamlmd` and `schnauzer` (horrible name, I know).
+`yamlmd` and `jsonrender`.
 
 ### Setup
 
-You can install these awesome programs globally on your system:
+You can install these awesome computer programs on your system:
 
 ``` bash
 sudo npm i yamlmd -g
@@ -69,8 +74,7 @@ json2html --body template.hbs \
 
 ### Workflow
 
-So now you can use my node.js-lib even wihout caring about node.js or
-JavaScript.
+You can use my nodejs-lib even wihout caring about JavaScript.
 
 ``` bash
 # create the template
@@ -88,7 +92,7 @@ And here is the content...
 #   <p>And here is the content...</p>
 ```
 
-It took me, the author, almost no effort to turn the modules into
+It took me, the author, almost no effort to turn the modules into unix tools.
 
 ### Go nuts!
 
@@ -100,7 +104,7 @@ and manipulation tool</a>
 (which, by coincidence, happens to be implemented in node.js too),
  also pandoc and asciidoc.
 
-Now have bash glue them together.
+Just have bash glue them together.
 
 ``` bash
 # some sane default values for your blog
@@ -124,11 +128,12 @@ do
 done
 ```
 
-I didn't actually test this code, but it should just work™.
+I didn't actually test this code, but it should just work™ because
+it looks really good.
 
 ### How to do it in node.js
 
-Turning a npm module into a command line tool is easy.
+Turning npm modules into command line tools is easy.
 Say, you've got that awesome tool that converts json to msword documents.
 
 1. add this to your `package.json`
@@ -150,3 +155,5 @@ process.stdin.pipe(mapStream(
   }
 ));
 ```
+
+Done. You've just made the world a better place.
