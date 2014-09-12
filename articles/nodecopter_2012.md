@@ -57,6 +57,6 @@ You can see me on the video here, I'm the guy with the yellow helmet.
 By the way, my favourite team was the
 <a href="https://github.com/substack/matador-copter">bullfighting drone</a>.
 
-Our <a href="http://github.com/strathausen">code's on github</a>.
+Our <a href="http://github.com/strathausen/nodecopter-hacks">code's on github</a>.
 The code quality has been heavily influenced by beer.
 We take no responsibility.
