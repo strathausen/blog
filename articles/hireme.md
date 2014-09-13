@@ -3,6 +3,8 @@ description: 'Functional JavaScript geek. Designing scalable and dependable syst
 
 ## Hire me
 
-I'm a full-stack software engineer with experience who gets things done.
-Drop me a line at <a href="mailto:strathausen@gmail.com">strathausen@gmail.com</a>,
-I might be available!
+I'm a full-stack software engineer with experience.
+
+I get things done.
+
+Drop me a line at <a href="mailto:philipp@stratha.us">philipp@stratha.us</a>!
