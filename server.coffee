@@ -24,7 +24,9 @@ module.exports = (options) ->
   { rewrites, redirects, ignore, config, logger, app } = options
   app    or= express()
   logger or= (req) ->
-    console.error req.url.green, moment().format().lightblue
+    u = req.url or ''
+    a = req.headers['user-agent'] or ''
+    console.error u.green, moment().format().lightblue, a.red
 
   app.use (req, res, next) ->
     return do next unless ignore.test req.url
@@ -58,7 +60,9 @@ module.exports = (options) ->
 
   # Finally, logging unmatched urls
   app.use (req, res, next) ->
-    console.log 'not found'.red, req.url.lightred, req.headers['user-agent'].red
+    u = req.url or ''
+    a = req.headers['user-agent'] or ''
+    console.log 'not found'.red, u.lightred, a.red
     do next
 
   port = process.env.PORT or 7000
