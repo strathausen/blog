@@ -14,19 +14,16 @@ Options:
               both are identical (static content vs. generated static content)
 
 ###
-require 'culoare'
-express   = require 'express'
-path      = require 'path'
-moment    = require 'moment'
-express   = require 'express'
+express = require 'express'
+path    = require 'path'
+moment  = require 'moment'
+express = require 'express'
+morgan  = require 'morgan'
+chalk   = require 'chalk'
 
 module.exports = (options) ->
-  { rewrites, redirects, ignore, config, logger, app } = options
-  app    or= express()
-  logger or= (req) ->
-    u = req.url or ''
-    a = req.headers['user-agent'] or ''
-    console.error u.green, moment().format().lightblue, a.red
+  { rewrites, redirects, ignore, config, app } = options
+  app or= express()
 
   app.use (req, res, next) ->
     return do next unless ignore.test req.url
@@ -42,11 +39,13 @@ module.exports = (options) ->
     req.url = rewrites[req.url]
     do next
 
+  app.use morgan 'combined', skip: (req) ->
+    /\.(css|jpg|jpeg|pdf|png)$/.test req.url
+
   # Look for html files by default
   app.use (req, res, next) ->
     # Leave typical file extensions allone (as to what I expect to have on my blog)
     unless /\.([a-z0-9]{1,5})$/i.test req.url
-      logger req
       base = req.url.replace(/\/$/, '')
       unless /^curl/.test req.headers['user-agent']
         req.url = base + '.html'
@@ -55,14 +54,14 @@ module.exports = (options) ->
     do next
 
   # Static assets
-  app.use express.static config.public
   app.use express.static config.static
+  app.use express.static config.public
 
   # Finally, logging unmatched urls
   app.use (req, res, next) ->
     u = req.url or ''
     a = req.headers['user-agent'] or ''
-    console.log 'not found'.red, u.lightred, a.red
+    console.log chalk.red('not found'), chalk.bgRed(u), chalk.red(a)
     do next
 
   port = process.env.PORT or 7000
