@@ -6,7 +6,7 @@ published: true
 
 ## Sorting products by colour in web shops
 
-Many on-line shop systems, like Magento, Prestashop or xt-commerce, lack the ability to automatically sort products by colour.
+Many shop systems, like Magento, Prestashop or xt-commerce, lack the ability to automatically sort products by colour.
 
 In order to solve this,
 I wrote a little python script that transforms the average colour of a product
