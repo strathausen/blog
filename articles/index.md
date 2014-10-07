@@ -11,4 +11,3 @@ relatives:
 title="My amazing Flickr Profile">analogue photograpy</a>.
 This is where I blog.
 </div>
-<!--http://www.google.com/webmasters/tools/richsnippets-->
