@@ -5,7 +5,10 @@ description: 'Hi. I make software and co-founded UPcload / Fit Analytics - a com
 relatives:
   - {direction: next, link: profile}
 
-Hi. I make software. I enjoy
+<div itemscope>
+ Hi, I make software.  I also enjoy
 <a href="http://www.flickr.com/photos/61913761@N00/"
 title="My amazing Flickr Profile">analogue photograpy</a>.
 This is where I blog.
+</div>
+<!--http://www.google.com/webmasters/tools/richsnippets-->
