@@ -16,10 +16,12 @@ npm:
 	npm i
 
 styles:
-	./node_modules/.bin/stylus < ./theme/style.styl > ./public/style.css
+	./node_modules/.bin/stylus --use ./node_modules/kouto-swiss/ \
+	  < ./theme/style.styl > ./public/style.css
 
 styles-watch:
-	./node_modules/.bin/stylus -w ./theme/style.styl -o ./public/
+	./node_modules/.bin/stylus --use ./node_modules/kouto-swiss/ \
+	  -w ./theme/style.styl -o ./public/
 
 highlight-css:
 	curl https://raw.github.com/isagalaev/highlight.js/master/src/styles/tomorrow.css > theme/code.css
