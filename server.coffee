@@ -57,13 +57,6 @@ module.exports = (options) ->
   app.use express.static config.static
   app.use express.static config.public
 
-  # Finally, logging unmatched urls
-  app.use (req, res, next) ->
-    u = req.url or ''
-    a = req.headers['user-agent'] or ''
-    console.log chalk.red('not found'), chalk.bgRed(u), chalk.red(a)
-    do next
-
   port = process.env.PORT or 7000
   app.listen port
   console.log "http://localhost:#{port}"
