@@ -1,3 +1,9 @@
+@import 'kouto-swiss'
+
+meyer-reset()
+box-sizing-reset()
+normalize()
+
 // LaTeX colours
 LApricot        = #FBB982
 LAquamarine     = #00B5BE
@@ -67,9 +73,10 @@ LYellow         = #FFF200
 LYellowGreen    = #98CC70
 LYellowOrange   = #FAA21A
 
-ColorPrimary   = LBrickRed
+ColorPrimary   = LWildStrawberry
 ColorSecondary = LBlack
 BGColor        = white
+//cGhostWhite
 
 FixedFont = 'Cousine'
 //TextFont = 'Didact Gothic'
@@ -81,8 +88,7 @@ TextFont = 'PT Sans'
   font-weight normal
 
 body
-  margin 0
-  font-size 1.2em
+  font-size 100%
 
 /* general styling */
 a, footer, header, h1, h2, h3
@@ -99,11 +105,14 @@ nav a
   font-family FixedFont
   font-weight bold
 
-h2
+h2, h3
   margin 2em 0 1em 0
 
+h2
+  font-size 1.4em
+
 h3
-  margin 2em 0 1em 0
+  font-size 1.2em
 
 a
   text-decoration none
@@ -123,6 +132,9 @@ code, code span
 #content p, #content li
   line-height 1.8em
 
+#content p
+  margin-bottom 1em
+
 #content
   margin 1em
 
@@ -131,16 +143,13 @@ header h1
   font-size        1.6em
   line-height      1.5em
   background-color BGColor
-  display          inline-block
   padding          .2em .4em
 
 header p
-  background-color white
+  background-color BGColor
   padding          0.6em 0.6em .4em 1.2em
   line-height      1.5em
-  display          block
   text-align       right
-  float            right
 
 header, footer
   background-repeat     no-repeat
@@ -159,16 +168,45 @@ footer
   padding-bottom        6em
   background-position-y bottom
 
-/* on big screens: move header and footer to the left */
-@media only screen and (min-width: 1096px)
+header, footer
+  padding-left  32%
+  padding-right 32%
+
+header h1
+  display inline-block
+
+header p
+  float right
+  display block
+
+#content
+  width     75%
+  max-width 7.6in
+  margin    auto
+
+@media only screen and (max-width: 1496px)
   header, footer
-    padding-left  32%
-    padding-right 32%
+    padding-left  28%
+    padding-right 28%
 
   #content
-    width     75%
-    max-width 660px
-    margin    auto
+    width 80%
+
+@media only screen and (max-width: 1296px)
+  header, footer
+    padding-left  16%
+    padding-right 16%
+
+  #content
+    width 85%
+
+@media only screen and (max-width: 896px)
+  header, footer
+    padding-left  5%
+    padding-right 5%
+
+  #content
+    width 95%
 
 /* index page */
 ul.index
@@ -185,9 +223,6 @@ ul.index li span.date
   min-width     160px
   text-align    right
   padding-right .6em
-
-ul.index li span.header
-  min-width 320px
 
 /* navigation */
 ul.navigation

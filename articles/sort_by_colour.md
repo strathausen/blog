@@ -15,9 +15,9 @@ some property, allowing it to be sorted easily by the web shop system of your
 choice.  Images with many different colours are not sorted very well, but it
 worked for most of the products in my case.
 
-You can see the script in action at <a
-href="http://unikatstoff.de/9-einfarbige-stoffe-unicolor"
-target="_blank">unikatstoff.de</a> (sorry for the ugly design).  It generates a
+You can see the script in action at
+<a href="http://unikatstoff.de/9-einfarbige-stoffe-unicolor" target="_blank">unikatstoff.de</a>
+(sorry, shop is offline right now).  It generates a
 CVS file which can be imported by most e-commerce systems.  You will certainly
 have to change the script to your needs, but this should be easy to do even
 with little programming experience.  Changing the sorting mechanism may also be
