@@ -3,6 +3,7 @@
 # Johann Philipp Strathausen
 
 require 'coffee-script'
+require 'coffee-script/register'
 require 'culoare'
 express   = require 'express'
 path      = require 'path'
