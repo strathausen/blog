@@ -2,7 +2,7 @@ title: 'Culoare - colours for the node console'
 date: 'December 15th, 2011'
 tags: [ nodejs, node, console, colours, colors, culoare ]
 description: 'Culoare, npm module for colours'
-published: true
+archived: true
 
 
 ## Culoare
@@ -10,7 +10,7 @@ published: true
 Just released a fancy clone of
 <a href="https://npmjs.org/package/colors">colors.js</a>
 but with more awesome:
-https://github.com/strathausen/culoare
+<a href="https://github.com/strathausen/culoare">github.com/strathausen/culoare</a>
 
 <img src="/images/culoare.gif" />
 
