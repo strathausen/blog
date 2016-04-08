@@ -11,7 +11,7 @@ I've had a lot of fun at my second
 <a href="http://www.nodecopter.com/2013/berlin/sept-13">nodecopter</a> event with my friend
 <a href="https://njh.eu">vog</a>.
 
-The venue was an old church boasting huge windows
+The venue was an old church boasting huge windows,
 providing us with lots of light and space for the day.
 
 Our idea was to control a <a href="http://ardrone2.parrot.com">Parrot AR.Drone</a>
