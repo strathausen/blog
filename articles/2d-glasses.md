@@ -1,31 +1,32 @@
-title: 'DIY 2D glasses'
+title: 'DIY 2D Glasses'
 date: 'September 12th, 2014'
-description: 'Tired of watching 3D movies? Get yourself some 2D glasses!'
+description: 'Tired of 3D? Get yourself some 2D glasses!'
 tags: '3d cinema, 2d, glasses'
 published: true
 
-## The 2D revolution is now
+## 2D Glasses for the 3D Cinema
+
+Are you annoyed by movies only being screened in 3D?
 
 When going out with friends to see a film,
-we're always arguing about whether we should see it
-in 3D or in 2D.
+are you always arguing about whether to see it in 3D or in 2D?
 
 There is a solution: Home made 2D glasses!
-One can now go to a film in 3D, enjoying the superiour 3D price,
+One can now go to a film in 3D, enjoy the superiour 3D price,
 but watch it in 2D!
 
-### Whoa, how??
+### How does it work?
 
-All you need is two pairs of 3d glasses (ideally those made of paper) and
-to follow these two easy steps:
+All you need is **two pairs of 3D glasses** (ideally those made of paper).
+Follow these two easy steps:
 
-1. cut one left glass from one pair and one right glass the other pair
+1. cut the left glass from one pair and the right glass the other pair
 2. exchange them so that one pair of glasses has two left glasses and
    the other one has two right glasses
 
-The result: Two pairs of 2d glasses!
+The result: Two pairs of 2D glasses!
 
-### But I don't have two pairs!
+### But I don't have two pairs of 3D glasses!
 
 Don't dis-pair.
 If it's a pair with
@@ -35,4 +36,6 @@ just turn one glass by 90 degrees.
 
 If the glasses have a modern
 <a href="http://en.wikipedia.org/wiki/Polarized_3D_system#Circularly_polarized_glasses">circular polarization</a>,
-you just have to invert one glass within itself using a space-inverter.
+you just have to mirror one glass through itself!
+
+Enjoy your 2D movie experience.
