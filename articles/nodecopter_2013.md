@@ -17,8 +17,8 @@ providing us with lots of light and space for the day.
 Our idea was to control a <a href="http://ardrone2.parrot.com">Parrot AR.Drone</a>
 solely via the command line, including a live ASCII video streaming!
 
-In one afternoon, we wrote the <a
-href="https://github.com/vog/drone-asciiview">ascii drone</a>!
+In one afternoon, we wrote the
+<a href="https://github.com/vog/drone-asciiview">ascii drone</a>!
 
 ### Challenges
 
