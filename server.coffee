@@ -16,7 +16,6 @@ Options:
 ###
 express = require 'express'
 path    = require 'path'
-moment  = require 'moment'
 express = require 'express'
 morgan  = require 'morgan'
 chalk   = require 'chalk'
