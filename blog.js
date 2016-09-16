@@ -19,7 +19,7 @@
   app = express();
 
   app.post('/canvas.md', function(req, res) {
-    return res.send('I got this: ' + JSON.stringify(req.query));
+    return res.send("<script>console.log('foo')</script>\n  I got this: " + (JSON.stringify(req.query)));
   });
 
   app.use(function(req, res, next) {
