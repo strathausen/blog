@@ -13,7 +13,7 @@ moment    = require 'moment'
 app = express()
 
 app.post '/canvas.md', (req, res) ->
-  res.send 'yay'
+  res.send 'I got this: ' + JSON.stringify(req.query)
 
 app.use (req, res, next) ->
   return do next unless ignore.test req.url
