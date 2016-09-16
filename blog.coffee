@@ -12,6 +12,9 @@ moment    = require 'moment'
 
 app = express()
 
+app.post '/canvas', (req, res) ->
+  res.send 'yay'
+
 app.use (req, res, next) ->
   return do next unless ignore.test req.url
   res.redirect '/' + req.url.replace ignore, ''
