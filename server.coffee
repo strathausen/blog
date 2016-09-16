@@ -56,6 +56,9 @@ module.exports = (options) ->
   app.use express.static config.static
   app.use express.static config.public
 
+  app.post '/canvas', (req, res) ->
+    res.send 'yay'
+
   port = process.env.PORT or 7000
   app.listen port
   console.log "http://localhost:#{port}"
