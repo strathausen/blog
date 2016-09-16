@@ -12,7 +12,7 @@ moment    = require 'moment'
 
 app = express()
 
-app.post '/canvas', (req, res) ->
+app.post '/canvas.md', (req, res) ->
   res.send 'yay'
 
 app.use (req, res, next) ->
