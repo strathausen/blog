@@ -1,0 +1,6 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:moment:20161019':
+    - mumpitz > moment:
+        patched: '2016-10-24T15:09:54.696Z'
