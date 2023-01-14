@@ -2,6 +2,7 @@
 title: 'Dracula - Graph layouts for the browser'
 date: 'Mar 2, 2010'
 tags: [ 'browser', 'graph', 'javascript', 'layout', 'math', 'raphael', 'raphaeljs' ]
+layout: "../layouts/BlogPost.astro"
 published: true
 archived: true
 ---

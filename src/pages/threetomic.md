@@ -2,6 +2,7 @@
 date: 'August 17, 2010'
 title: 'Threetomic'
 tags: [ nuclear, environment, fukushima, drawing, crayon ]
+layout: "../layouts/BlogPost.astro"
 published: true
 archived: true
 ---

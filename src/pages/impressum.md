@@ -1,4 +1,6 @@
+---
 title: Impressum
+---
 
 # Impressum
 
@@ -6,7 +8,7 @@ title: Impressum
 
 Johann Philipp Strathausen
 
-Moosdorfstraße 5
+Elsenstr. 101
 
 12435 Berlin
 

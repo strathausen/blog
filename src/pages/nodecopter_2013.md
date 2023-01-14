@@ -8,7 +8,7 @@ published: true
 ---
 
 
-# Nodecopter Birthday Bash
+--## Nodecopter Birthday Bash
 
 I've had a lot of fun at my second 
 <a href="http://www.nodecopter.com/2013/berlin/sept-13">nodecopter</a> event with my friend

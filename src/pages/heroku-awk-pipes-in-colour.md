@@ -2,6 +2,7 @@
 title: 'Pipe heroku logs in colour'
 tags: [ 'heroku', 'logs', 'pipe', 'colour', 'awk', 'grep' ]
 date: 'May 30, 2013'
+layout: "../layouts/BlogPost.astro"
 published: true
 ---
 

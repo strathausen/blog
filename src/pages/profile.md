@@ -1,7 +1,9 @@
+---
 title: 'My Profile'
 relatives:
   - {direction: prev, link: index}
-
+layout: "../layouts/BlogPost.astro"
+---
 
 ## About me
 

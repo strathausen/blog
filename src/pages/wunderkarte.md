@@ -2,6 +2,7 @@
 date: 'March 30, 2013'
 tags: [ 'latex', 'template', 'retro', 'texlive', 'stretch' ]
 title: 'A vintage LaTeX template'
+layout: "../layouts/BlogPost.astro"
 published: true
 ---
 

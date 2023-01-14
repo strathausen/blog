@@ -1,5 +1,6 @@
 ---
 date: 'July 32nd, 2013'
+layout: "../layouts/BlogPost.astro"
 ---
 
 ## Terminal Survival Kit

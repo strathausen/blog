@@ -1,5 +1,8 @@
+---
 title: '[de] Ein Tag im Paradies'
 date: 'December 11th, 2009'
+layout: "../layouts/BlogPost.astro"
+---
 
 
 ## Ein Tag im Paradies

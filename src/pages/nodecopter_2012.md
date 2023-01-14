@@ -3,6 +3,7 @@ title: 'Nodecopter - or how to demo untested code'
 date: 'October 15, 2012'
 tags: [ nodecopter, nodejs, node, event, hacking ]
 description: 'Flying robots and node.js - nodecopter 2012'
+layout: "../layouts/BlogPost.astro"
 published: true
 ---
 
