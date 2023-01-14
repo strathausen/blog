@@ -1,7 +1,9 @@
+---
 title: 'Raphael.js tooltip'
-date: 'April 25th, 2010'
+date: 'April 25, 2010'
 tags: [ 'javascript', 'raphael', 'svg', 'tooltip' ]
 published: true
+---
 
 
 ## Raphael SVG Tool Tip

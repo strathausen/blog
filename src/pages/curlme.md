@@ -1,4 +1,6 @@
+---
 title: 'curl me'
+---
 
 
 ## curl me

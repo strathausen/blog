@@ -1,8 +1,10 @@
+---
 title: 'Vimify - Vim Codes Highlightings for Node.js'
-date: 'June 16th, 2012'
+date: 'June 16, 2012'
 tags: [ node, vim, code, project ]
 description: 'Would you like to have the power and quality of vim code highlighting available to your node.js project, blog or website? Read on.'
 published: true
+---
 
 
 ## Vim highlight your blogs

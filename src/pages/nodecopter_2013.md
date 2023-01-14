@@ -1,11 +1,14 @@
+---
 title: 'Nodecopter Matrix Church'
-date: 'September 20th, 2013'
+date: 'September 20, 2013'
 tags: [ nodecopter, nodejs, node, event, hacking, church, robots ]
 description: 'Flying robots and node.js - nodecopter 2013'
+layout: "../layouts/BlogPost.astro"
 published: true
+---
 
 
-## Nodecopter Birthday Bash
+# Nodecopter Birthday Bash
 
 I've had a lot of fun at my second 
 <a href="http://www.nodecopter.com/2013/berlin/sept-13">nodecopter</a> event with my friend

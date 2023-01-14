@@ -1,5 +1,6 @@
+---
 date: 'July 32nd, 2013'
-
+---
 
 ## Terminal Survival Kit
 

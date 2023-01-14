@@ -1,7 +1,9 @@
+---
 title: 'Unix-Style Blogging'
-date: 'April 13th, 2013'
+date: 'April 13, 2013'
 tags: [ unix, blog, generator, static, html ]
 published: true
+---
 
 
 ## Unix-Style Blogging

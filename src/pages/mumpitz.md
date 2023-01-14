@@ -1,10 +1,11 @@
 ---
 title: 'Mumpitz - Stream Punk Blog Engine'
-date: 'March 12, 2013'
+date: 'Mar 12, 2013'
 tags: [ node, coffee, blog ]
 description: 'Another minimalistic static html generator'
 published: true
 archived: true
+layout: "../layouts/BlogPost.astro"
 ---
 
 ## Mumpitz, a Stream Punk Blog Engine

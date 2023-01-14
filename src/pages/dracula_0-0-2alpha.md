@@ -1,7 +1,10 @@
+---
 title: 'Dracula - Graph layouts for the browser'
-date: 'March 2nd, 2010'
+date: 'Mar 2, 2010'
 tags: [ 'browser', 'graph', 'javascript', 'layout', 'math', 'raphael', 'raphaeljs' ]
 published: true
+archived: true
+---
 
 
 ## Dracula Graph Library

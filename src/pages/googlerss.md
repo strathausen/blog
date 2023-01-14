@@ -1,6 +1,8 @@
+---
 title: 'Thanks for reminding me, Google'
-date: 'March 25th, 2013'
+date: 'March 25, 2013'
 published: true
+---
 
 
 ## Google ditching RSS? Thanks for reminding me!

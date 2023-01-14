@@ -1,7 +1,9 @@
+---
 title: 'Pipe heroku logs in colour'
 tags: [ 'heroku', 'logs', 'pipe', 'colour', 'awk', 'grep' ]
-date: 'May 30th, 2013'
+date: 'May 30, 2013'
 published: true
+---
 
 ## Preserve colours in heroku logs when piping
 
