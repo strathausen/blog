@@ -1,0 +1,55 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>hi there.</h1>
+      <img
+        src="/strathausen.jpeg"
+        width="300"
+        style="float: right; margin-left: 2em;"
+      />
+      <!-- <p>i'm philipp</p> -->
+
+      <p>
+        i'm philipp, a berlin based full-stack engineer with a focus on
+        pragmatic and elegant solutions.
+      </p>
+
+      <p>
+        i have built and scaled several successful products from the ground up,
+        like <a href="https://yourjuno.co">your juno</a> and <a
+          href="https://www.fitanalytics.com">fit analytics</a
+        >.
+      </p>
+
+      <p>
+        i've also been creating awesome tools that make aeronautics even more
+        amazing at <a href="http://m-click.aero/">m-click.aero</a>.
+      </p>
+
+      <p>
+        currently, my tools of choice are <strong>postgres</strong>, <strong
+          >typescript</strong
+        > and <strong>react</strong>. i'm also a big fan of <strong>rust</strong
+        >.
+      </p>
+      <p>
+        drop me a line at <a href="mailto:philipp@stratha.us"
+          >philipp@stratha.us</a
+        > if you want to get in touch.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>

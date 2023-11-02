@@ -1,37 +1,22 @@
 {
-  "author": "Johann Philipp Strathausen <strathausen@gmail.com>",
-  "name": "strathausen",
-  "description": "Website of Johann Philipp Strathausen",
-  "private": "true",
-  "version": "2.1.3",
-  "homepage": "http://www.strathausen.eu",
-  "repository": {
-    "type": "git",
-    "url": "a:/home/filip/git/strathausen"
+  "name": "stratha.us",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "coffeescript": "^2.5.1",
-    "express": "~4.16.0",
-    "moment": "~2.19.3",
-    "morgan": "^1.3.1",
-    "mumpitz": "^0.3.0",
-    "snyk": "^1.1064.0"
-  },
-  "devDependencies": {
-    "chalk": "^1.1.3",
-    "culoare": "^1.2.1",
-    "grunt": "^1.0.1",
-    "handlebars": "^4.7.6",
-    "kouto-swiss": "^1.1.0",
-    "stylus": "^0.54.5"
-  },
-  "optionalDependencies": {},
-  "engines": {
-    "node": "*"
-  },
-  "scripts": {
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
-  },
-  "snyk": true
+    "@astrojs/check": "^0.3.0",
+    "@astrojs/mdx": "^1.1.3",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.2",
+    "astro": "^3.4.0",
+    "moment": "^2.29.4",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  }
 }

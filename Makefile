@@ -1,27 +1,10 @@
-deploy: npm compile styles markdown
+deploy: yarn compile styles
 
 compile:
-	coffee compile.coffee
-
-markdown:
-	tools/colormds
+	echo 'compiling...'
 
 server:
-	node blog.js
+	yarn dev
 
-clean:
-	rm -rv public/*
-
-npm:
-	npm i
-
-styles:
-	./node_modules/.bin/stylus --use ./node_modules/kouto-swiss/ \
-	  < ./theme/style.styl > ./public/style.css
-
-styles-watch:
-	./node_modules/.bin/stylus --use ./node_modules/kouto-swiss/ \
-	  -w ./theme/style.styl -o ./public/
-
-highlight-css:
-	curl https://raw.github.com/isagalaev/highlight.js/master/src/styles/tomorrow.css > theme/code.css
+yarn:
+	yarn

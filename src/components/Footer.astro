@@ -1,0 +1,18 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+const today = new Date();
+---
+
+<footer>
+  <nav>
+    <ul class="navigation" role="navigation">
+      <li><HeaderLink href="/impressum">impressum</HeaderLink></li>
+      <li><a href="/rss.xml">rss</a></li>
+      <li><a href="/hireme">hire me</a></li>
+    </ul>
+  </nav>
+  <div class="copyright">
+    &copy; {today.getFullYear()} johann philipp strathausen. all rights
+    reserved.
+  </div>
+</footer>
