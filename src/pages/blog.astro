@@ -3,13 +3,13 @@ import moment from "moment";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 const posts = (await Astro.glob("./*.{md,mdx}"))
   .filter((post) => post.frontmatter.published)
   .map((post) => {
     if (!post.frontmatter.pubDate) {
-      post.frontmatter.pubDate = moment(post.frontmatter.date);
+      post.frontmatter.pubDate = new Date();
     }
     return post;
   })

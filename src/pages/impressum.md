@@ -1,22 +1,25 @@
 ---
-title: Impressum
+title: impressum
+layout: "../layouts/BlogPost.astro"
+pubDate: Nov 02 2023
 ---
 
-# Impressum
+# impressum
 
-## Address
+## address
 
-Johann Philipp Strathausen
+<pre>
+johann philipp strathausen
+elsenstr. 101
+12435 berlin
+</pre>
 
-Elsenstr. 101
+## contact
 
-12435 Berlin
-
-## Contact
-
-Telefon: 01781478472
-
-E-Mail: philipp@stratha.us
+<pre>
+phone: 01781478472
+mail: philipp@stratha.us
+</pre>
 
 ## VAT
 

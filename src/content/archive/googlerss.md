@@ -1,7 +1,6 @@
 ---
 title: 'Thanks for reminding me, Google'
 pubDate: 'Mar 25 2013'
-published: true
 ---
 
 

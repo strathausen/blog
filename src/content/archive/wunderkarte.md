@@ -1,8 +1,7 @@
 ---
+title: 'A vintage LaTeX template'
 pubDate: 'Mar 30 2013'
 tags: [ 'latex', 'template', 'retro', 'texlive', 'stretch' ]
-title: 'A vintage LaTeX template'
-published: true
 ---
 
 

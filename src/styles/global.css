@@ -5,48 +5,44 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+  --accent: #ee2967;
+  --accent-dark: #d01f5b;
+  --black: 15, 18, 25;
+  --gray: 96, 115, 159;
+  --gray-light: 229, 233, 240;
+  --gray-dark: 34, 41, 57;
+  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
+    0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 body {
-	font-family: 'Atkinson', sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+  font-family: "Atkinson", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.7;
 }
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+  width: 720px;
+  max-width: calc(100% - 2em);
+  margin: auto;
+  padding: 1em 1em;
 }
 h1,
 h2,
@@ -54,101 +50,273 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
-	line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+  color: rgb(var(--accent-dark));
+  line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+  font-size: 2em;
 }
 h2 {
-	font-size: 2.441em;
+  font-size: 1.5em;
 }
 h3 {
-	font-size: 1.953em;
+  font-size: 1.4em;
 }
 h4 {
-	font-size: 1.563em;
+  font-size: 1.25em;
 }
 h5 {
-	font-size: 1.25em;
+  font-size: 1.15em;
+}
+h6 {
+  font-size: 1em;
 }
 strong,
 b {
-	font-weight: 700;
+  font-weight: 700;
 }
 a {
-	color: var(--accent);
+  color: var(--accent);
 }
 a:hover {
-	color: var(--accent);
+  color: var(--accent);
 }
 p {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 .prose p {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 textarea {
-	width: 100%;
-	font-size: 16px;
+  width: 100%;
+  font-size: 16px;
 }
 input {
-	font-size: 16px;
+  font-size: 16px;
 }
 table {
-	width: 100%;
+  width: 100%;
 }
 img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
+  padding: 2px 5px;
+  background-color: rgb(var(--gray-light));
+  border-radius: 2px;
 }
 pre {
-	padding: 1.5em;
-	border-radius: 8px;
+  padding: 1.5em;
+  border-radius: 8px;
 }
 pre > code {
-	all: unset;
+  all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
+  border-left: 4px solid var(--accent);
+  padding: 0 0 0 20px;
+  margin: 0px;
+  font-size: 1.333em;
 }
 hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+  border: none;
+  border-top: 1px solid rgb(var(--gray-light));
 }
 @media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
+  body {
+    font-size: 18px;
+  }
+  main {
+    padding: 1em;
+  }
 }
 
-.sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
-	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
-	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
-	white-space: nowrap;
+footer,
+header {
+  background-image: url("/bg_hor.jpeg");
+}
+a {
+  color: var(--accent);
+}
+header p {
+  font-weight: bold;
+}
+nav a,
+p,
+li,
+.date {
+  color: #221e1f;
+}
+header nav ul.navigation {
+  margin-bottom: -5px;
+}
+nav a {
+  font-weight: bold;
+}
+nav a.active {
+  text-decoration-color: var(--accent);
+}
+a {
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+#content p,
+#content li {
+  line-height: 1.8em;
+}
+#content p {
+  margin-bottom: 1em;
+}
+#content {
+  margin: 1em;
+}
+/* header and footer */
+header h2 {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  background-color: #fff;
+  padding: 0.2em 0.5em 0.2em 0.6em;
+}
+header p {
+  background-color: #fff;
+  padding: 0.6em 0.8em 0.4em 1em;
+  line-height: 1.5em;
+  text-align: right;
+}
+header,
+footer {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 0.2em 0 0 0;
+}
+header {
+  padding-top: 10%;
+  margin-bottom: 3em;
+}
+footer {
+  margin-top: 4em;
+  padding-top: 2em;
+  padding-bottom: 6em;
+  background-position-y: bottom;
+}
+header,
+footer {
+  padding-left: 32%;
+  padding-right: 32%;
+}
+header h2 {
+  display: inline-block;
+}
+header p {
+  /* float: right; */
+  display: inline-block;
+  margin: 20px 0;
+}
+header .tagline {
+  text-align: right;
+}
+header .tagline p {
+  rotate: -3deg;
+}
+#content {
+  width: 75%;
+  max-width: 6.4in;
+  margin: auto;
+}
+@media only screen and (min-width: 1497px) {
+  #content {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 1496px) {
+  header,
+  footer {
+    padding-left: 28%;
+    padding-right: 28%;
+  }
+  #content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1296px) {
+  header,
+  footer {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+  #content {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 896px) {
+  header,
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #content {
+    width: 95%;
+  }
+}
+/* index page */
+ul.index {
+  list-style: none;
+}
+ul.index li {
+  line-height: 2.6em !important;
+}
+ul.index li span {
+  display: inline-block;
+}
+ul.index li span.date {
+  width: 30%;
+  min-width: 160px;
+  text-align: right;
+  padding-right: 0.6em;
+}
+/* navigation */
+ul.navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+ul.navigation li {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  margin: 1em 1em 0 1em;
+  line-height: 1.3em;
+}
+.article img {
+  width: 100%;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body:before {
+    background: #ee2967;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 99999999999;
+    position: fixed;
+    content: "";
+    display: block;
+    -webkit-transform: translateY(-99.99px);
+  }
+}
+footer .copyright {
+  margin-top: 2em;
+  text-align: center;
+  color: rgb(var(--gray-light));
+}
+main {
+  min-height: 400px;
 }

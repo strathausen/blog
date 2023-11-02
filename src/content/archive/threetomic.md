@@ -2,8 +2,6 @@
 pubDate: 'Aug 17 2010'
 title: 'Threetomic'
 tags: [ nuclear, environment, fukushima, drawing, crayon ]
-published: true
-archived: true
 ---
 
 ## Threetomic

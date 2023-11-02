@@ -1,0 +1,13 @@
+<div class='index'>{{{html}}}</div>
+<ul class='index'>
+{{#documents}}
+{{#if published}}
+  <li>
+    <a href="/{{id}}" alt="{{title}}" title="{{description}}">
+      <span class='date'>{{date}}</span>
+      <span class='title'>{{title}}</span>
+    </a>
+    </li>
+{{/if}}
+{{/documents}}
+</ul>

@@ -2,12 +2,10 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
-import tailwind from "@astrojs/tailwind";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://stratha.us",
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [mdx(), sitemap()],
   redirects: {
     "/2011/12/15/culoar": "/archive/culoare",
     "/2010/03/02/dracula": "/archive/dracula_0-0-2alpha",

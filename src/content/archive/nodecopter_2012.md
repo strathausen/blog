@@ -1,9 +1,8 @@
 ---
 title: 'Nodecopter - or how to demo untested code'
-pubDate: 'October 15, 2012'
+pubDate: 'Oct 15 2012'
 tags: [ nodecopter, nodejs, node, event, hacking ]
 description: 'Flying robots and node.js - nodecopter 2012'
-published: true
 ---
 
 
@@ -62,3 +61,13 @@ By the way, my favourite team was the
 Our <a href="http://github.com/strathausen/nodecopter-hacks">code's on github</a>.
 The code quality has been heavily influenced by beer.
 We take no responsibility.
+
+<div>
+<!--
+http://www.mikealrogers.com/posts/hella-copters.html
+http://creativejs.com/2012/10/flying-javascript/
+http://richardmetzler.posterous.com/ive-been-to-nodecopterjs-yesterday
+http://swanson.github.com/
+-->
+</div>
+

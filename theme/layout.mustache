@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}} | stratha.us</title>
+    <link rel="canonical" href="https://stratha.us/{{id}}" />
+    <meta name="keywords" content="{{#tags}}{{.}},{{/tags}}" /> 
+    {{#if description}}
+    <meta name="description" content="{{description}}" />
+    {{/if}}
+    <meta name="author" content="{{author}}" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='//fonts.googleapis.com/css?family=PT+Sans|Cousine'
+      rel='stylesheet' type='text/css' />
+    <link rel="alternate" type="application/rss+xml"
+      title="Johann Philipp Strathausen RSS-Feed"
+      href="https://stratha.us/feed" />
+    {{!
+    <link rel="pingback" href="" />
+    }}
+    {{#relatives}}
+    <link rel="next" title="{{direction}}" href="{{link}}">
+    {{/relatives}}
+    <meta name="generator" content="vim" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="stylesheet" href="/code.css" type="text/css" />
+    <style type="text/css">
+    <!--
+    header, footer {
+      background-image: url('/bg_hor.jpeg');
+    }
+    -->
+    </style>
+  </head>
+  <body>
+    <div id="rainbowsafari"></div>
+    <header>
+      <h1>
+        <a href="/" role="banner">Johann Philipp Strathausen</a>
+      </h1>
+      <p>maker of <a href="https://www.graphdracula.net">dracula.js</a>
+        co-founder of <a href="https://fitanalytics.com">FitAnalytics</a></p>
+      <nav>
+        <ul class="navigation" role="navigation">
+          <li><a href="/" alt="Blog">blog</a></li>
+          <li><a href="/profile" alt="Profile">profile</a></li>
+          <li><a href="https://github.com/strathausen" target="_blank">
+              -> code</a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </header>
+    <div id="content">
+      {{>body}}
+    </div>
+    <footer>
+      <nav>
+        <ul class="navigation">
+          <li><a href="/impressum">impressum</a></li>
+          <li><a href="/feed.rss">rss</a></li>
+          <li><a href="/curlme">curl me</a></li>
+          <li><a href="/forkme">fork me</a></li>
+          <li><a href="/hireme">hire me</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
