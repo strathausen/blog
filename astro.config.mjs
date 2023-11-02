@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,6 +32,8 @@ export default defineConfig({
     "/unixblog": "/archive/unixblog",
     "/vimify": "/archive/vimify",
     "/wunderkarte": "/archive/wunderkarte",
-    "/heroku-awk-pipes-in-colour": "/archive/heroku-awk-pipes-in-colour",
+    "/heroku-awk-pipes-in-colour": "/archive/heroku-awk-pipes-in-colour"
   },
+  output: "static",
+  adapter: vercel()
 });
