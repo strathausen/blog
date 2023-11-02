@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import vercel from "@astrojs/vercel/static";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,6 +34,6 @@ export default defineConfig({
     "/wunderkarte": "/archive/wunderkarte",
     "/heroku-awk-pipes-in-colour": "/archive/heroku-awk-pipes-in-colour"
   },
-  output: "static",
+  output: "server",
   adapter: vercel()
 });
