@@ -1,9 +1,7 @@
 ---
 title: 'Raphael.js tooltip'
-date: 'April 25, 2010'
+pubDate: 'Apr 25 2010'
 tags: [ 'javascript', 'raphael', 'svg', 'tooltip' ]
-layout: "../layouts/BlogPost.astro"
-published: true
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 title: 'Unix-Style Blogging'
-date: 'April 13, 2013'
+pubDate: 'Apr 13 2013'
 tags: [ unix, blog, generator, static, html ]
-layout: "../layouts/BlogPost.astro"
 published: true
 ---
 

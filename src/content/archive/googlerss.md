@@ -1,7 +1,6 @@
 ---
 title: 'Thanks for reminding me, Google'
-date: 'March 25, 2013'
-layout: "../layouts/BlogPost.astro"
+pubDate: 'Mar 25 2013'
 published: true
 ---
 

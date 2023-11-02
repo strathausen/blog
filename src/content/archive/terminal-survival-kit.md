@@ -1,6 +1,6 @@
 ---
-date: 'July 32nd, 2013'
-layout: "../layouts/BlogPost.astro"
+title: terminal survival kit
+pubDate: 'Jul 02 2013'
 ---
 
 ## Terminal Survival Kit

@@ -17,7 +17,7 @@ Get the code by invoking:
 git clone git@github.com:strathausen/blog.git
 ```
 
-Articles can be found at `./articles/<url-path>.md`.
+Articles can be found at `./src/articles/<url-path>.md`.
 
 In order to try the blog on your machine,
 install <a href="http://nodejs.org/">node.js</a>,

@@ -1,9 +1,8 @@
 ---
 title: 'DIY 2D Glasses'
-date: 'Sept 12th, 2014'
+pubDate: 'Sep 12 2014'
 description: 'Tired of 3D? Get yourself some 2D glasses!'
 tags: '3d cinema, 2d, glasses'
-layout: "../layouts/BlogPost.astro"
 published: true
 archived: true
 ---

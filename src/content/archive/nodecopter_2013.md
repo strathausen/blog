@@ -1,9 +1,8 @@
 ---
 title: 'Nodecopter Matrix Church'
-date: 'September 20, 2013'
+pubDate: 'September 20, 2013'
 tags: [ nodecopter, nodejs, node, event, hacking, church, robots ]
 description: 'Flying robots and node.js - nodecopter 2013'
-layout: "../layouts/BlogPost.astro"
 published: true
 ---
 

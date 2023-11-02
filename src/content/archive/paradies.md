@@ -1,7 +1,6 @@
 ---
 title: '[de] Ein Tag im Paradies'
-date: 'December 11th, 2009'
-layout: "../layouts/BlogPost.astro"
+pubDate: 'Dec 11 2009'
 ---
 
 
