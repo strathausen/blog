@@ -1,12 +1,11 @@
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.stratha.us",
-  integrations: [mdx(), sitemap()],
+  integrations: [sitemap()],
   redirects: {
     "/2011/12/15/culoar": "/archive/culoare",
     "/2010/03/02/dracula": "/archive/dracula_0-0-2alpha",
