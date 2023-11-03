@@ -5,7 +5,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://stratha.us",
+  site: "https://www.stratha.us",
   integrations: [mdx(), sitemap()],
   redirects: {
     "/2011/12/15/culoar": "/archive/culoare",
