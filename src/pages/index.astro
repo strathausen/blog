@@ -9,17 +9,28 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      img.profile {
+        float: right;
+        margin-left: 2em;
+        width: 300px;
+      }
+      /* in small screens, don't float the image */
+      @media only screen and (max-width: 600px) {
+        img.profile {
+          float: none;
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <Header title={SITE_TITLE} />
     <main>
       <h1>hi there.</h1>
-      <img
-        src="/strathausen.jpeg"
-        width="300"
-        style="float: right; margin-left: 2em;"
-      />
-      <!-- <p>i'm philipp</p> -->
+      <img class="profile" src="/strathausen.jpeg" />
 
       <p>
         i'm philipp, a berlin based full-stack engineer with a focus on

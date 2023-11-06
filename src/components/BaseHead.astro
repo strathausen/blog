@@ -11,7 +11,7 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/strathausen.jpeg" } = Astro.props;
+const { title, description, image = "/bg_hor.jpeg" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -71,6 +71,17 @@ const { title, description, image = "/strathausen.jpeg" } = Astro.props;
   header,
   footer {
     background-image: url("/bg_hor.jpeg");
+  }
+  /* on small screens, change background to cover */
+  @media (max-width: 640px) {
+    header {
+      background-size: 200%;
+      background-position: 20% 0%;
+    }
+    footer {
+      background-size: 300%;
+      background-position: 30% 100%;
+    }
   }
   @font-face {
     font-family: "Atkinson";
