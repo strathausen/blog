@@ -53,7 +53,7 @@ From now on, I am going to never test anything before demos, ever.
 
 You can see me on the video here, I'm the guy with the yellow helmet.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/gucpgJEJ5b4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gucpgJEJ5b4?si=GeD-jao_EMIWILmD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 By the way, my favourite team was the
 <a href="https://github.com/substack/matador-copter">bullfighting drone</a>.
