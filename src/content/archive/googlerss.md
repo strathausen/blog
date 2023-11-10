@@ -1,10 +1,8 @@
 ---
 title: 'Thanks for reminding me, Google'
 pubDate: 'Mar 25 2013'
+description: 
 ---
-
-
-## Google ditching RSS? Thanks for reminding me!
 
 Thanks to Google recently ditching RSS,
 I finally installed a decent

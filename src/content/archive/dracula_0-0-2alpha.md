@@ -1,10 +1,8 @@
 ---
 title: 'Dracula - Graph layouts for the browser'
 pubDate: 'Mar 2 2010'
+description: easily display graphs in the browser without plugins
 ---
-
-
-## Dracula Graph Library
 
 I was searching for an easy way to display graphs in the browser without having
 to rely on plug-ins like Flash or Java and I found

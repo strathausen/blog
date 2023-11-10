@@ -1,10 +1,7 @@
 ---
-title: '[de] Ein Tag im Paradies'
+title: 'Ein Tag im Paradies'
 pubDate: 'Dec 11 2009'
 ---
-
-
-## Ein Tag im Paradies
 
 (Diesen Text habe ich für die Vereinszeitung des
  <a target="_blank" href="http://www.cde-ev.de">CDE e.V.</a>

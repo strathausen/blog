@@ -2,10 +2,8 @@
 title: 'Dracula Graph Library v0.0.3alpha'
 pubDate: 'Jun 1 2010'
 tags: [ bellman-ford, binary heap, browser, dijkstra, dracula, edge, floyd-warshall, graph, javascript, layout, node, raphael, raphaeljs, svg, tooltip ]
+description: the javascript graph library gets its own website
 ---
-
-
-## Dracula Graph Library v0.0.3alpha
 
 **Edit: This library moved to it's own a web site: <a href='http://graphdracula.net'>graphdracula.net</a>**
 

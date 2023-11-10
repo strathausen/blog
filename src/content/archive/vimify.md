@@ -5,9 +5,6 @@ tags: [ node, vim, code, project ]
 description: 'Would you like to have the power and quality of vim code highlighting available to your node.js project, blog or website? Read on.'
 ---
 
-
-## Vim highlight your blogs
-
 Some weeks ago, I wrote a javascript module using vim to transform source
 code into highlight HTML and CSS, after having stumbled upon vim2html.
 I am announcing my

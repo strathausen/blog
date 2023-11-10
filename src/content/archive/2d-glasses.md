@@ -5,8 +5,6 @@ description: 'Tired of 3D? Get yourself some 2D glasses!'
 tags: '3d cinema, 2d, glasses'
 ---
 
-## 2D Glasses for the 3D Cinema
-
 Are you annoyed by movies only being screened in 3D?
 
 When going out with friends to see a film,

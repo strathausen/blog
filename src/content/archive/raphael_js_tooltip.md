@@ -4,9 +4,6 @@ pubDate: 'Apr 25 2010'
 tags: [ 'javascript', 'raphael', 'svg', 'tooltip' ]
 ---
 
-
-## Raphael SVG Tool Tip
-
 This extension allows you to attach tool tips to <a href="http://raphaeljs.com">Raphael</a> SVG elements. They appear on mouse over.
 
 ``` js

@@ -4,9 +4,6 @@ pubDate: 'Apr 13 2013'
 tags: [ unix, blog, generator, static, html ]
 ---
 
-
-## Unix-Style Blogging
-
 Whenever releasing a library or a module,
 I try to ship it with a command line tool
 that does the same thing.

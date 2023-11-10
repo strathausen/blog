@@ -5,8 +5,6 @@ tags: [ nodejs, node, console, colours, colors, culoare ]
 description: 'Culoare, npm module for colours'
 ---
 
-## Culoare
-
 Just released a fancy clone of
 <a href="https://npmjs.org/package/colors">colors.js</a>
 but with more awesome:

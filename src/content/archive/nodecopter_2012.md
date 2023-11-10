@@ -5,9 +5,6 @@ tags: [ nodecopter, nodejs, node, event, hacking ]
 description: 'Flying robots and node.js - nodecopter 2012'
 ---
 
-
-## Nodecopter - or how to demo untested code
-
 Recently, I've had the pleasure to participate in
 <a href="http://nodecopter.com">nodecopter</a>,
 an event where hackers gathered in a late 19th century,

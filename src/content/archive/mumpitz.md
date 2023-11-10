@@ -5,8 +5,6 @@ tags: [ node, coffee, blog ]
 description: 'Another minimalistic static html generator'
 ---
 
-## Mumpitz, a Stream Punk Blog Engine
-
 Here's a little static site generator I hacked together just for the fun of it.
 I call it _mumpitz_.
 

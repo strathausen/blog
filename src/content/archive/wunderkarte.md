@@ -4,9 +4,6 @@ pubDate: 'Mar 30 2013'
 tags: [ 'latex', 'template', 'retro', 'texlive', 'stretch' ]
 ---
 
-
-## Beautiful vintage template for LaTeX
-
 Some days ago I was writing an invitation for something
 but didn't find any LaTeX templates that where hip enough.
 

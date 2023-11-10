@@ -4,8 +4,6 @@ tags: [ 'heroku', 'logs', 'pipe', 'colour', 'awk', 'grep' ]
 pubDate: 'May 30 2013'
 ---
 
-## Preserve colours in heroku logs when piping
-
 Just a little trick of the day to leverage your fancy colour monitor
 when piping heroku logs around.
 

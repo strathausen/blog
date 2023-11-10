@@ -3,8 +3,6 @@ title: terminal survival kit
 pubDate: 'Jul 02 2013'
 ---
 
-## Terminal Survival Kit
-
 ### Tutorials
 
 https://github.com/notro/fbtft/wiki/Framebuffer-use

@@ -4,9 +4,6 @@ tags: [ bulk, colour, csv, import, magento, presta, prestashop, python, shop, so
 pubDate: 'Aug 4 2010'
 ---
 
-
-## Sorting products by colour in web shops
-
 Many shop systems, like Magento, Prestashop or xt-commerce, lack the ability to automatically sort products by colour.
 
 In order to solve this,

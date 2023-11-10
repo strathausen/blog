@@ -4,8 +4,6 @@ title: 'Threetomic'
 tags: [ nuclear, environment, fukushima, drawing, crayon ]
 ---
 
-## Threetomic
-
 Just some drawing that I made some time ago
 to highlight the advantages of nuclear power.
 
