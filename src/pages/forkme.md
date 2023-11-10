@@ -23,3 +23,6 @@ In order to try the blog on your machine,
 install <a href="http://nodejs.org/">node.js</a>,
 run `npm install` and `make && make server`
 to run it at port 7000.
+
+
+<a href="yourjuno://Community">juno community</a>
