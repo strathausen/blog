@@ -1,7 +1,7 @@
 ---
 title: 'Thanks for reminding me, Google'
 pubDate: 'Mar 25 2013'
-description: 
+description: now i'm using liferea
 ---
 
 Thanks to Google recently ditching RSS,
