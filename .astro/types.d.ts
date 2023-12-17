@@ -296,6 +296,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "blog": {
+"tomatovillage-design-initial.md": {
+	id: "tomatovillage-design-initial.md";
+  slug: "tomatovillage-design-initial";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "tomatovillage-profile.md": {
 	id: "tomatovillage-profile.md";
   slug: "tomatovillage-profile";
