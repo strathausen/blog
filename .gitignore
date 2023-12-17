@@ -1,3 +1,4 @@
 /node_modules/
 missed
 .DS_Store
+.vercel
