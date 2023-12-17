@@ -13,8 +13,8 @@ covid struck once again and took me out for a few weeks. now I'm back with a few
 I wanted a design that is easy on the eyes but also doesn't look too boring.
 
 check out the **before**:
-<Image src="/images/tomatovillage_profile_before.png" />
+<img src="/images/tomatovillage_profile_before.png" />
 and the **after**:
-<Image src="/images/tomatovillage_profile_after.png" />
+<img src="/images/tomatovillage_profile_after.png" />
 
 I'm not sure about the buttons yet, but overall I'm happy with where it's going.
