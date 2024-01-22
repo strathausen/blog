@@ -1,4 +1,5 @@
 ---
+import { Analytics } from "@vercel/analytics/react";
 import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
@@ -77,5 +78,6 @@ const { title, description, pubDate, updatedDate } = Astro.props;
       </article>
     </main>
     <Footer />
+    <Analytics />
   </body>
 </html>
