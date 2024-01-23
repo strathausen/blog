@@ -31,8 +31,10 @@ export default defineConfig({
     "/unixblog": "/archive/unixblog",
     "/vimify": "/archive/vimify",
     "/wunderkarte": "/archive/wunderkarte",
-    "/heroku-awk-pipes-in-colour": "/archive/heroku-awk-pipes-in-colour"
+    "/heroku-awk-pipes-in-colour": "/archive/heroku-awk-pipes-in-colour",
   },
   output: "server",
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: true,
+  }),
 });
