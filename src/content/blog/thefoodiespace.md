@@ -1,10 +1,10 @@
 ---
-title: "tomatovillage is now thefoodie.space"
+title: "thefoodie.space"
 description: "a new name and a bunch of new features"
 pubDate: "Feb 19 2024"
 ---
 
-i haven't posted an update for a while - but a lot has happened.
+i haven't posted an update on tomatovillage for a while - but a lot has happened.
 
 ## a new name
 
@@ -17,7 +17,7 @@ the new name is self explanatory and has potential to play around with space in 
 after messing with a few logo ideas on chatgpt using food, cats, planets and other space related
 keywords, i settled for this cat in a planet bowl:
 
-<Image src="/images/thefoodiespace-logo.webp" />
+<Image src="/images/thefoodiespace-logo.webp" width={150} />
 
 ## new features
 
