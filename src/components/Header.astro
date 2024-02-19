@@ -1,9 +1,11 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 ---
 
 <header>
+  <SpeedInsights />
   <div class="intro">
     <h2><a href="/" role="banner">{SITE_TITLE}</a></h2>
     <div class="tagline">
