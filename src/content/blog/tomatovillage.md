@@ -5,7 +5,7 @@ pubDate: "Nov 02 2023"
 ---
 
 after weeks of choosing [the right stack](https://create.t3.gg/), i finally started working on
-[tomatocity.com](https://www.tomatocity.com), a place where people can share
+[tomatovillage.com](https://www.tomatovillage.com), a place where people can share
 recipes with each other. right now, it's just a landing page with dummy content
 that lets you create an account.
 
