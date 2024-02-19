@@ -17,7 +17,9 @@ the new name is self explanatory and has potential to play around with space in 
 after messing with a few logo ideas on chatgpt using food, cats, planets and other space related
 keywords, i settled for this cat in a planet bowl:
 
-<Image src="/images/thefoodiespace-logo.webp" style="width: 150px; margin: auto;" />
+<div style="display: flex;">
+  <Image src="/images/thefoodiespace-logo.webp" style="width: 150px; margin: auto;" />
+</div>
 
 ## new features
 
