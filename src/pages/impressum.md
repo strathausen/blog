@@ -17,10 +17,12 @@ elsenstr. 101
 ## contact
 
 <pre>
-phone: 01781478472
+phone: +491781478472
 mail: philipp@stratha.us
 </pre>
 
 ## VAT
 
+<pre>
 USt.-IdNr.: DE294406882
+</pre>
