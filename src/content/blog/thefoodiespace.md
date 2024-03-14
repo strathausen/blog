@@ -10,7 +10,7 @@ i haven't posted an update on tomatovillage for a while - but a lot has happened
 
 i found a new name for the food blogging platform.
 what used to be tomatovillage is now [thefoodie.space](https://www.thefoodie.space).
-the new name is self explanatory and has potential to play around with space in branding and marketing.
+the new name is self explanatory and has the potential to play around with space related themes in branding and marketing.
 
 ## a logo
 
