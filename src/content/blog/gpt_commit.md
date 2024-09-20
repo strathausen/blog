@@ -1,6 +1,6 @@
 ---
 title: "automating git commit messages with gpt"
-description: "simplify your git workflow with ai-generated commit messages"
+description: "using ai to do something good for once"
 pubDate: "Sep 20 2024"
 ---
 
@@ -44,6 +44,8 @@ here's a simplified overview of the process:
 - **error handling**: includes checks for staged changes and api errors.
 
 ## start using gpt_commit today!
+
+like what you see? keep reading and soon you'll be saving hours each day writing commit messages!
 
 ### prerequisites
 
@@ -106,6 +108,12 @@ export OPENAI_API_KEY="your-openai-api-key"
 options to change models or add a custom prompt would be nice.
 especially on retry it could ask for another prompt on how to improve the message.
 providing more context to the llm is another idea: what is this codebase about? which commits preceded this one?
+
+initially i had mixed feelings about the whole idea:
+will this script just contribute to the amount of generated sludge coming from ai lately?
+then i looked at the commit messages of my team and thought,
+whatever generated sludge the ai will come up with,
+it's almost certainly more helpful than that.
 
 ---
 
