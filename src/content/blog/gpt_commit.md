@@ -104,6 +104,8 @@ export OPENAI_API_KEY="your-openai-api-key"
 ## what's next
 
 options to change models or add a custom prompt would be nice.
+especially on retry it could ask for another prompt on how to improve the message.
+providing more context to the llm is another idea: what is this codebase about? which commits preceded this one?
 
 ---
 
