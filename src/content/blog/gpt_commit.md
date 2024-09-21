@@ -51,7 +51,7 @@ like what you see? keep reading and soon you'll be saving hours each day writing
 
 - **git**: ensure git is installed and initialized in your repository.
 - **bash**: the script is written in bash.
-- **openai api key**: obtain one from [openai](https://platform.openai.com/signup/).
+- **openai api key**: obtain one from [openai](https://platform.openai.com/api-keys).
 - **jq**: for json processing.
   - install with homebrew:
     ```bash
