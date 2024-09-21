@@ -3,3 +3,5 @@ missed
 .DS_Store
 .vercel
 .vscode/
+.astro/
+.yarn/
