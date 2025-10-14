@@ -12,18 +12,20 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.0",
+    "@astrojs/mdx": "^4.3.7",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/vercel": "^8.2.10",
     "@vercel/speed-insights": "^1.0.10",
-    "astro": "^4.12.2",
+    "astro": "^5.14.5",
     "moment": "^2.29.4",
     "react": "^18.2.0",
+    "sharp": "^0.34.4",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
   },
   "engines": {
     "node": ">= 22.14.0"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
