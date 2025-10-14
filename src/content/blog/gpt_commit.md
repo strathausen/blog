@@ -4,9 +4,11 @@ description: "using ai to do something good for once"
 pubDate: "Sep 20 2024"
 ---
 
-i've always found writing git commit messages to be a bit of a chore,
-especially when i'm deep in coding and don't want to interrupt my flow.
-to scratch my itch, i wrote a script called [gpt_commit](https://github.com/strathausen/gpt_commit)
+have you ever wanted to commit your changes on git, but found yourself to be too tired
+or a bit too much in a hurry to think of a good commit message? too much in the zone
+and don't want to interrupt your flow?
+
+to scratch that itch, i've made a script called [gpt_commit](https://github.com/strathausen/gpt_commit)
 that automates the generation of commit messages using openai.
 
 ## how it works
@@ -37,20 +39,8 @@ here's a simplified overview of the process:
    Choose an option [y/e/r/q]:
    ```
 
-## features
-
-- **ai-powered commit messages**: generates meaningful commit messages based on your actual code changes.
-- **interactive workflow**: accept, edit, regenerate, or abort the commit message.
-- **error handling**: includes checks for staged changes and api errors.
-
-## start using gpt_commit today!
-
-like what you see? keep reading and soon you'll be saving hours each day writing commit messages!
-
 ### prerequisites
 
-- **git**: ensure git is installed and initialized in your repository.
-- **bash**: the script is written in bash.
 - **openai api key**: obtain one from [openai](https://platform.openai.com/api-keys).
 - **jq**: for json processing.
   - install with homebrew:
@@ -111,7 +101,7 @@ providing more context to the llm is another idea: what is this codebase about? 
 
 initially i had mixed feelings about the whole idea:
 will this script just contribute to the amount of generated sludge coming from ai lately?
-then i looked at the commit messages of my team and thought,
+then i looked at the commit messages of me and my team and thought,
 whatever generated sludge the ai will come up with,
 it's almost certainly more helpful than that.
 
