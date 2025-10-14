@@ -53,10 +53,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/internal-helpers@npm:0.6.0":
-  version: 0.6.0
-  resolution: "@astrojs/internal-helpers@npm:0.6.0"
-  checksum: 10c0/fd6d57a5b7df8f32aaae50ca2cf08566b56a610b23d5afac32cacbf7ee88a02c3f16850e6ea7773774d9a04067a37b4c8979febd38aac3d83b6a48206087bd53
+"@astrojs/internal-helpers@npm:0.7.4":
+  version: 0.7.4
+  resolution: "@astrojs/internal-helpers@npm:0.7.4"
+  checksum: 10c0/f43014d228a4609e60a7b9fbed1a4a617275fa7367209aef79fb4499e29427d4834629173e27c734b6aee9b36ce8e56854744cb85380b6ba839ec4c08d53c96c
   languageName: node
   linkType: hard
 
@@ -141,14 +141,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/sitemap@npm:^3.0.2":
-  version: 3.2.1
-  resolution: "@astrojs/sitemap@npm:3.2.1"
+"@astrojs/sitemap@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "@astrojs/sitemap@npm:3.6.0"
   dependencies:
     sitemap: "npm:^8.0.0"
     stream-replace-string: "npm:^2.0.0"
-    zod: "npm:^3.23.8"
-  checksum: 10c0/03a883dcf5ea18963e2b9031c07ea131d8c79efbc76abb42a06e71db1ad252696846c187187f2804b16d1d51b740419433a1eacb4abe0e93d74056320aee12ae
+    zod: "npm:^3.25.76"
+  checksum: 10c0/a88c3c0c476b230cd1717c37d55408c57295539e9d141ff6738bcf38cefeb340a79b1d08c08f9bec39ec7ad6bfbb619454e1ae2053c8a65bbe3f1cd87a9e5904
   languageName: node
   linkType: hard
 
@@ -167,20 +167,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/vercel@npm:8.1.1":
-  version: 8.1.1
-  resolution: "@astrojs/vercel@npm:8.1.1"
+"@astrojs/vercel@npm:^8.2.10":
+  version: 8.2.10
+  resolution: "@astrojs/vercel@npm:8.2.10"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.6.0"
+    "@astrojs/internal-helpers": "npm:0.7.4"
     "@vercel/analytics": "npm:^1.5.0"
-    "@vercel/edge": "npm:^1.2.1"
-    "@vercel/nft": "npm:^0.29.2"
-    "@vercel/routing-utils": "npm:^5.0.4"
+    "@vercel/functions": "npm:^2.2.13"
+    "@vercel/nft": "npm:0.30.1"
+    "@vercel/routing-utils": "npm:^5.1.1"
     esbuild: "npm:^0.25.0"
-    tinyglobby: "npm:^0.2.12"
+    tinyglobby: "npm:^0.2.15"
   peerDependencies:
     astro: ^5.0.0
-  checksum: 10c0/7710c6cd2aff43f07af5805432ce67c437beac5dba1f6e052f9e9e163f1c898d9a8504e2e13d2b59e8f1fc5167e9bea3a30a1e90cc03559e199acc2eb7e70526
+  checksum: 10c0/ae0f36a593cb6b75d274f49eb0c1a0990cbd7eac7b14fa9b20e62135a2b4ffc8d9295beebc84a217d3cb0179c678af0c0a1ee0c150603f01889a4dcb42e2c218
   languageName: node
   linkType: hard
 
@@ -1442,7 +1442,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ms@npm:*":
+"@types/ms@npm:*, @types/ms@npm:2.1.0":
   version: 2.1.0
   resolution: "@types/ms@npm:2.1.0"
   checksum: 10c0/5ce692ffe1549e1b827d99ef8ff71187457e0eb44adbae38fdf7b9a74bae8d20642ee963c14516db1d35fa2652e65f47680fdf679dcbde52bbfadd021f497225
@@ -1527,16 +1527,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/edge@npm:^1.2.1":
-  version: 1.2.2
-  resolution: "@vercel/edge@npm:1.2.2"
-  checksum: 10c0/524115e7baef7867fc14669e5f57e4f4180eecabe32328c4d418754bfe82a21b9519fbc65dcafaf1b6d526651506e9d4955a2dfc319337a35868635e8cec5ec3
+"@vercel/functions@npm:^2.2.13":
+  version: 2.2.13
+  resolution: "@vercel/functions@npm:2.2.13"
+  dependencies:
+    "@vercel/oidc": "npm:2.0.2"
+  peerDependencies:
+    "@aws-sdk/credential-provider-web-identity": "*"
+  peerDependenciesMeta:
+    "@aws-sdk/credential-provider-web-identity":
+      optional: true
+  checksum: 10c0/1eb9f395e448301aef9d33a25eceb191d94700ce8d7f02d1219dd5399123aa8ad499135591f41d8bb448154ebb18d61c7e64c295a31bc9482e0b22785e0b28af
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:^0.29.2":
-  version: 0.29.4
-  resolution: "@vercel/nft@npm:0.29.4"
+"@vercel/nft@npm:0.30.1":
+  version: 0.30.1
+  resolution: "@vercel/nft@npm:0.30.1"
   dependencies:
     "@mapbox/node-pre-gyp": "npm:^2.0.0"
     "@rollup/pluginutils": "npm:^5.1.3"
@@ -1552,11 +1559,21 @@ __metadata:
     resolve-from: "npm:^5.0.0"
   bin:
     nft: out/cli.js
-  checksum: 10c0/84ba32c685f9d7c2c849b1e8c963d3b7eb09d122e666143ed97c3776f5b04a4745605e1d29fd81383f72b1d1c0d7d58e39f06dc92f021b5de079dfa4e8523574
+  checksum: 10c0/9719174e7cde01b67e085a396ccde3523c379e262a289af06c2d18bac5705ff8148f06babbb5d9906203098244547b416cf03654023e8deae0a5d072870c6fc6
   languageName: node
   linkType: hard
 
-"@vercel/routing-utils@npm:^5.0.4":
+"@vercel/oidc@npm:2.0.2":
+  version: 2.0.2
+  resolution: "@vercel/oidc@npm:2.0.2"
+  dependencies:
+    "@types/ms": "npm:2.1.0"
+    ms: "npm:2.1.3"
+  checksum: 10c0/473baec88175e235777e12ffe912a5a76f1497a1aea121ddd98a885223e0284eae3535a0ac4975e01f72664b4d40bfff40067dc70a7ec241c4482d1d3f6205df
+  languageName: node
+  linkType: hard
+
+"@vercel/routing-utils@npm:^5.1.1":
   version: 5.2.0
   resolution: "@vercel/routing-utils@npm:5.2.0"
   dependencies:
@@ -4177,7 +4194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ms@npm:^2.1.3":
+"ms@npm:2.1.3, ms@npm:^2.1.3":
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: 10c0/d924b57e7312b3b63ad21fc5b3dc0af5e78d61a1fc7cfb5457edaf26326bf62be5307cc87ffb6862ef1c2b33b0233cdb5d4f01c4c958cc0d660948b65a287a48
@@ -5351,8 +5368,8 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.3.0"
     "@astrojs/rss": "npm:^3.0.0"
-    "@astrojs/sitemap": "npm:^3.0.2"
-    "@astrojs/vercel": "npm:8.1.1"
+    "@astrojs/sitemap": "npm:^3.6.0"
+    "@astrojs/vercel": "npm:^8.2.10"
     "@vercel/speed-insights": "npm:^1.0.10"
     astro: "npm:^4.12.2"
     moment: "npm:^2.29.4"
@@ -5561,7 +5578,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.12":
+"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.15":
   version: 0.2.15
   resolution: "tinyglobby@npm:0.2.15"
   dependencies:
@@ -6387,6 +6404,13 @@ __metadata:
   version: 3.24.2
   resolution: "zod@npm:3.24.2"
   checksum: 10c0/c638c7220150847f13ad90635b3e7d0321b36cce36f3fc6050ed960689594c949c326dfe2c6fa87c14b126ee5d370ccdebd6efb304f41ef5557a4aaca2824565
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.25.76":
+  version: 3.25.76
+  resolution: "zod@npm:3.25.76"
+  checksum: 10c0/5718ec35e3c40b600316c5b4c5e4976f7fee68151bc8f8d90ec18a469be9571f072e1bbaace10f1e85cf8892ea12d90821b200e980ab46916a6166a4260a983c
   languageName: node
   linkType: hard
 
