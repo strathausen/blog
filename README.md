@@ -63,3 +63,9 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+
+## How I use AI
+
+I'm using AI mainly for coding. Sometimes I use AI as well for drafting up new content, to get some ideas on which topics to cover that I might otherwise have missed.
+However, I always write the actual content by myself.
+I tried using AI more extensively for writing content in the past on two posts, but it ended up sounding generic and fluffy. That didn't age well. I ended up removing the slop from those posts. See the git history if you're interested 🫠
