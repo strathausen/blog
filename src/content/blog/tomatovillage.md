@@ -1,5 +1,5 @@
 ---
-title: "announcing tomatovillage.com"
+title: "building a recipe sharing community"
 description: "a brand new recipe sharing community"
 pubDate: "Nov 02 2023"
 ---

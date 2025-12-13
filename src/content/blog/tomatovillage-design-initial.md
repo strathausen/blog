@@ -1,5 +1,5 @@
 ---
-title: "tomatovillage design explorations"
+title: "design explorations for my recipe app"
 description: "finding a design that is neither boring nor distracting"
 pubDate: "Dec 17 2023"
 ---

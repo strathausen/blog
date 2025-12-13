@@ -1,5 +1,5 @@
 ---
-title: "laundryroom.social launch"
+title: "launching a free meetup alternative"
 description: "meetups without hostage holding"
 pubDate: "Jan 31 2025"
 ---

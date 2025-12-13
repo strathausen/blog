@@ -1,5 +1,5 @@
 ---
-title: "thefoodie.space"
+title: "rebranding my recipe platform"
 description: "a new name and a bunch of new features"
 pubDate: "Feb 19 2024"
 ---

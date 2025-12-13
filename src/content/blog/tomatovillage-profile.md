@@ -1,5 +1,5 @@
 ---
-title: "tomatovillage.com profile edit"
+title: "adding user profiles to my recipe app"
 description: "just a small update, create your profile"
 pubDate: "Nov 05 2023"
 ---
