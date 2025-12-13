@@ -1,6 +1,5 @@
 ---
 title: "pivoting my recipe app to a tiktok link-in-bio"
-description: "it's now a tiktok link-in-bio"
 pubDate: "Oct 14 2025"
 ---
 
