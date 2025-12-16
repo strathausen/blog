@@ -1,0 +1,130 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE } from "../consts";
+
+const projects = [
+  {
+    name: "thefoodie.space",
+    url: "https://www.thefoodie.space",
+    image: "/images/projects/thefoodiespace.png",
+    description:
+      "a link-in-bio for food creators. sync your tiktok food posts and get a beautiful profile page at thefoodie.space/~username. videos get processed by ai into written recipes. like linktree, but specifically for food bloggers.",
+  },
+  {
+    name: "pleeboo",
+    url: "https://www.pleeboo.com",
+    image: "/images/projects/pleeboo.png",
+    description:
+      "a free tool for organizing community events and coordinating volunteers. create pledge boards where people can sign up to bring things or help out - no sign-ups or credit cards required.",
+  },
+  {
+    name: "laundryroom.social",
+    url: "https://www.laundryroom.social",
+    image: "/images/projects/laundryroom.png",
+    description:
+      "a free meetup alternative to organize community events. built out of frustration with meetup.com's pricing. open source and available on github.",
+  },
+  {
+    name: "tomatovillage",
+    url: "https://www.tomatovillage.com",
+    image: "/images/projects/tomatovillage.png",
+    description:
+      "a recipe sharing community where people can create, share, and discover recipes. features a recipe editor, social interactions like likes and comments, ai-powered content moderation, and algolia search.",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`projects | ${SITE_TITLE}`} description="side projects by philipp strathausen" />
+    <style>
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+      .intro {
+        color: rgb(var(--gray-dark));
+        margin-bottom: 3rem;
+        line-height: 1.6;
+      }
+      .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+      .project {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+      .project-image {
+        flex-shrink: 0;
+        width: 400px;
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+      }
+      .project-content {
+        flex: 1;
+      }
+      .project-title {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.5rem;
+      }
+      .project-title a {
+        color: rgb(var(--black));
+        text-decoration: none;
+      }
+      .project-title a:hover {
+        color: rgb(var(--accent));
+      }
+      .project-description {
+        margin: 0;
+        color: rgb(var(--gray-dark));
+        line-height: 1.6;
+      }
+      @media (max-width: 720px) {
+        .project {
+          flex-direction: column;
+        }
+        .project-image {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>side projects</h1>
+      <p class="intro">
+        i build things for fun and to learn. these are some of the projects i've been working on in my spare time.
+      </p>
+      <div class="projects">
+        {
+          projects.map((project) => (
+            <article class="project">
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <img
+                  class="project-image"
+                  src={project.image}
+                  alt={`screenshot of ${project.name}`}
+                />
+              </a>
+              <div class="project-content">
+                <h2 class="project-title">
+                  <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    {project.name}
+                  </a>
+                </h2>
+                <p class="project-description">{project.description}</p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
