@@ -1,7 +1,7 @@
 ---
-title: "building a volunteer coordination tool"
+title: "a who-brings-what app"
 description: "organizing community events without the hassle"
-pubDate: "Dec 16 2024"
+pubDate: "Nov 16 2025"
 ---
 
 ## what is pleeboo?
