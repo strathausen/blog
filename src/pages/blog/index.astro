@@ -2,19 +2,22 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { SITE_TITLE } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+const pageTitle = `blog | ${SITE_TITLE}`;
+const pageDescription = "articles about building side projects, full stack development, open source tools, and lessons learned from shipping saas products. topics include react, typescript, postgres, ai integrations, and more.";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={pageTitle} description={pageDescription} />
     <style>
       ul {
         display: flex;
@@ -55,6 +58,23 @@ const posts = (await getCollection("blog")).sort(
       ul a:hover img {
         box-shadow: var(--box-shadow);
       }
+      .page-intro {
+        margin-bottom: 2rem;
+      }
+      .page-intro h1 {
+        margin-bottom: 0.5rem;
+      }
+      .page-intro p {
+        color: rgb(var(--gray-dark));
+        line-height: 1.6;
+        margin: 0;
+      }
+      .post-description {
+        margin: 0.25rem 0 0 0;
+        font-size: 0.9rem;
+        color: rgb(var(--gray-dark));
+        line-height: 1.4;
+      }
       @media (max-width: 720px) {
         ul {
           gap: 0.5em;
@@ -70,6 +90,14 @@ const posts = (await getCollection("blog")).sort(
     <Header />
     <main>
       <section>
+        <div class="page-intro">
+          <h1>blog</h1>
+          <p>
+            i write about building side projects, full stack development, and lessons learned from shipping software.
+            most of my work involves react, typescript, postgres, and experimenting with ai integrations.
+            check out my <a href="/projects">projects</a> to see what i'm currently working on.
+          </p>
+        </div>
         <ul>
           {
             posts.map((post) => (
@@ -79,6 +107,9 @@ const posts = (await getCollection("blog")).sort(
                   <p class="date">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
+                  {post.data.description && (
+                    <p class="post-description">{post.data.description}</p>
+                  )}
                 </a>
               </li>
             ))

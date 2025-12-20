@@ -35,3 +35,7 @@ either way:
 you can also write custom prompts to tailor the ai moderation to your needs - stricter, more lenient, whatever fits your community.
 
 check it out at **[commentable.space](https://www.commentable.space)** or grab the code on [github](https://github.com/strathausen/commentable).
+
+---
+
+*commentable is one of my [side projects](/projects). see what else i'm building.*

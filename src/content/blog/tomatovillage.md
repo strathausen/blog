@@ -37,3 +37,7 @@ here are some things i have planned so far:
 1. [ ] a mobile app for sure!
 
 stay tuned.
+
+---
+
+*tomatovillage is one of my [side projects](/projects). see what else i'm building.*

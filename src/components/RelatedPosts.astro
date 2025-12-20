@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+  currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+
+const allPosts = await getCollection("blog");
+const otherPosts = allPosts
+  .filter((post) => post.slug !== currentSlug)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+{otherPosts.length > 0 && (
+  <div class="related-posts">
+    <h3>more from the blog</h3>
+    <ul>
+      {otherPosts.map((post) => (
+        <li>
+          <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+<style>
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgb(var(--gray-light));
+  }
+  .related-posts h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: rgb(var(--gray-dark));
+  }
+  .related-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .related-posts li {
+    margin-bottom: 0.5rem;
+  }
+  .related-posts a {
+    color: rgb(var(--accent));
+    text-decoration: none;
+  }
+  .related-posts a:hover {
+    text-decoration: underline;
+  }
+</style>

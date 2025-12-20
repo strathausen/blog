@@ -39,3 +39,7 @@ i'm exploring ways to make event coordination even easier. some ideas:
 - **templates**: pre-made boards for common event types
 
 check out **[pleeboo.com](https://www.pleeboo.com)** and let me know what you think!
+
+---
+
+*pleeboo is one of my [side projects](/projects). see what else i'm building.*

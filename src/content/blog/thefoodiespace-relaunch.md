@@ -1,5 +1,6 @@
 ---
 title: "pivoting my recipe app to a tiktok link-in-bio"
+description: "from full social network to focused link-in-bio for food creators"
 pubDate: "Oct 14 2025"
 ---
 
@@ -37,3 +38,7 @@ like all of my side projects, i'm mainly doing this **for fun** and in order to 
 there are no big plans for AI moderation or social features. just focusing on doing one thing well: giving food creators a better home for their recipes.
 
 check it out: [thefoodie.space](https://www.thefoodie.space)
+
+---
+
+*thefoodie.space is one of my [side projects](/projects). see what else i'm building.*

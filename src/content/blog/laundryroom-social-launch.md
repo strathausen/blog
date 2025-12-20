@@ -41,4 +41,8 @@ i’d love your feedback—what features would you like to see? what’s missing
 
 check out **[laundryroom.social](https://www.laundryroom.social)** and help
 spread the word. together, we can make community building more accessible and
-inclusive for everyone. 
+inclusive for everyone.
+
+---
+
+*laundryroom.social is one of my [side projects](/projects). see what else i'm building.* 

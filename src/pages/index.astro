@@ -2,13 +2,15 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE } from "../consts";
+
+const description = "philipp strathausen - berlin based senior full stack developer specializing in react, typescript, node.js, and postgres. building open source side projects and writing about software development.";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SITE_TITLE} description={description} />
     <style>
       img.profile {
         float: right;
@@ -30,7 +32,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <Header title={SITE_TITLE} />
     <main>
       <h1>hi there.</h1>
-      <img alt="profile picture in autumn, plastic lens" class="profile" src="/strathausen.jpeg" />
+      <img alt="philipp strathausen - berlin based full stack developer" class="profile" src="/strathausen.jpeg" />
 
       <p>
         i'm philipp, a berlin based full-stack engineer with a focus on
@@ -55,10 +57,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         > and <strong>react</strong>. i'm also a big fan of <strong>rust</strong
         >.
       </p>
+
+      <h2>side projects</h2>
+      <p>
+        in my spare time, i build open source tools to solve problems i encounter.
+        some of my current <a href="/projects">projects</a> include
+        <a href="https://www.laundryroom.social">laundryroom.social</a> (a free meetup alternative),
+        <a href="https://www.commentable.space">commentable.space</a> (a self-hosted commenting system),
+        and <a href="https://www.thefoodie.space">thefoodie.space</a> (a link-in-bio for food creators).
+      </p>
+
+      <h2>writing</h2>
+      <p>
+        i occasionally write about building software, launching side projects, and lessons learned along the way.
+        check out my <a href="/blog">blog</a> for articles on full stack development, ai integrations, and open source.
+      </p>
+
+      <h2>get in touch</h2>
       <p>
         drop me a line at <a href="mailto:philipp@stratha.us"
           >philipp@stratha.us</a
-        > if you want to get in touch.
+        > if you want to collaborate, have questions, or just want to say hi.
       </p>
     </main>
     <Footer />

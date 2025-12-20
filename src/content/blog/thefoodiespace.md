@@ -40,3 +40,7 @@ there are still a lot of small bugs and quirks to be sorted out,
 especially in the search.
 
 next i would like to work on seo and start building a mobile app.
+
+---
+
+*thefoodie.space is one of my [side projects](/projects). see what else i'm building.*
