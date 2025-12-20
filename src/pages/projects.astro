@@ -143,10 +143,13 @@ const projects = [
       .blog-posts a {
         color: rgb(var(--accent));
         text-decoration: none;
-        margin-right: 0.75rem;
       }
       .blog-posts a:hover {
         text-decoration: underline;
+      }
+      .blog-posts .separator {
+        margin: 0 0.5rem;
+        color: rgb(var(--gray));
       }
       .project-description {
         margin: 0 0 0.75rem 0;
@@ -215,8 +218,11 @@ const projects = [
                 {project.blogPosts && project.blogPosts.length > 0 && (
                   <div class="blog-posts">
                     <span class="blog-posts-label">read more:</span>
-                    {project.blogPosts.map((post) => (
-                      <a href={post.url}>{post.title}</a>
+                    {project.blogPosts.map((post, i) => (
+                      <>
+                        {i > 0 && <span class="separator">·</span>}
+                        <a href={post.url}>{post.title}</a>
+                      </>
                     ))}
                   </div>
                 )}
