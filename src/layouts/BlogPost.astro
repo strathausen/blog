@@ -61,6 +61,38 @@ const { title, description, pubDate, updatedDate, slug } = Astro.props;
       .last-updated-on {
         font-style: italic;
       }
+      .comments-section {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        background: linear-gradient(135deg, rgba(238, 41, 103, 0.08), rgba(201, 162, 39, 0.08));
+        border-radius: 12px;
+        text-align: center;
+      }
+      .comments-section p {
+        margin: 0 0 1rem 0;
+        color: rgb(var(--gray-dark));
+        font-size: 1rem;
+      }
+      .comments-section .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+      .comments-section .cta:hover {
+        background: var(--accent-dark);
+        transform: translateY(-1px);
+      }
+      .comments-section .cta svg {
+        width: 18px;
+        height: 18px;
+      }
     </style>
   </head>
 
@@ -85,12 +117,17 @@ const { title, description, pubDate, updatedDate, slug } = Astro.props;
           <slot />
           {slug && (
             <div class="comments-section">
+              <p>got thoughts? i'd love to hear from you.</p>
               <a
+                class="cta"
                 href={`https://www.commentable.space/embed/C14847B8-4BE4-44E4-A5AB-F7F73C38BC23?path=${slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                comments
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                leave a comment
               </a>
             </div>
           )}
