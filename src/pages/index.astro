@@ -16,6 +16,7 @@ const description = "philipp strathausen - berlin based senior full stack develo
         float: right;
         margin-left: 2em;
         width: 300px;
+        aspect-ratio: 540 / 438;
       }
       /* in small screens, don't float the image */
       @media only screen and (max-width: 600px) {
@@ -23,12 +24,14 @@ const description = "philipp strathausen - berlin based senior full stack develo
           float: none;
           margin-left: 0;
           width: 100%;
+          aspect-ratio: 540 / 438;
         }
       }
     </style>
   </head>
 
   <body>
+    <div class="page-wrapper">
     <Header title={SITE_TITLE} />
     <main>
       <h1>hi there.</h1>
@@ -81,5 +84,6 @@ const description = "philipp strathausen - berlin based senior full stack develo
       </p>
     </main>
     <Footer />
+    </div>
   </body>
 </html>

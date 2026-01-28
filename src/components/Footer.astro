@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
 const today = new Date();
 ---
 
-<footer>
+<footer transition:persist>
   <nav>
     <ul class="navigation" role="navigation">
       <li><HeaderLink href="/impressum">impressum</HeaderLink></li>

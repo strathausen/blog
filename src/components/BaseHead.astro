@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -67,6 +68,10 @@ const articleSchema = isArticle && publishedDate ? {
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
+<!-- Theme color for browser UI -->
+<meta name="theme-color" content="#5a6b2a" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#3d481c" media="(prefers-color-scheme: dark)" />
+
 <!-- Font preloads -->
 <link
   rel="preload"
@@ -82,6 +87,9 @@ const articleSchema = isArticle && publishedDate ? {
   type="font/woff"
   crossorigin
 />
+
+<!-- Background image preload -->
+<link rel="preload" href="/bg_hor.jpeg" as="image" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -127,6 +135,9 @@ const articleSchema = isArticle && publishedDate ? {
 {articleSchema && (
   <script is:inline type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 )}
+
+<!-- View Transitions for smooth page navigation -->
+<ViewTransitions />
 
 <style is:global>
   header,

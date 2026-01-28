@@ -4,7 +4,7 @@ import { SITE_TITLE } from "../consts";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 ---
 
-<header>
+<header transition:persist>
   <SpeedInsights />
   <div class="intro">
     <h2><a href="/" role="banner">{SITE_TITLE}</a></h2>

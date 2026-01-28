@@ -23,12 +23,17 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.7;
+  background-color: #5a6b2a;
 }
 main {
   width: 720px;
   max-width: calc(100% - 2em);
   margin: auto;
   padding: 1em 1em;
+}
+.page-wrapper {
+  background-color: #fff;
+  min-height: 100vh;
 }
 h1,
 h2,
@@ -85,7 +90,7 @@ table {
   width: 100%;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
