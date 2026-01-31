@@ -21,3 +21,16 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
     </ul>
   </nav>
 </header>
+
+<script>
+  function updateActiveLink() {
+    const links = document.querySelectorAll('header .navigation a');
+    const pathname = window.location.pathname;
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+      const isActive = href === pathname || href === pathname.replace(/\/$/, '');
+      link.classList.toggle('active', isActive);
+    });
+  }
+  document.addEventListener('astro:after-swap', updateActiveLink);
+</script>
