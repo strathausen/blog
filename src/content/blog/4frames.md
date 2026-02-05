@@ -4,7 +4,7 @@ description: "a web tool that transforms action sampler photos into smooth anima
 pubDate: "Feb 05 2026"
 ---
 
-i got a [lomo action sampler](https://microsites.lomography.com/actionsampler/) camera for 5 euros on a flea market a few years back.
+i got a [lomo action sampler](https://shop.lomography.com/de/actionsampler-clear) camera for 5 euros on a flea market a few years back.
 it's a plastic toy camera with 4 lenses that fire in sequence, capturing a burst of motion on a single frame of film.
 the results look like this:
 
