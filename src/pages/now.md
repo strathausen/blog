@@ -1,23 +1,27 @@
 ---
 title: now
 layout: "../layouts/BlogPost.astro"
-pubDate: Feb 29 2024
+pubDate: Feb 25 2026
 ---
 
 # now
 
 ## work
 
-i'm currently working on my own idea: <a href="https://www.thefoodie.space">thefoodie.space</a>.
-it's a platform for sharing food recipes.technologies i'm using are typescript, prisma, postgres, trpc and nextjs/react.
-using llms for content moderation and importing recipes.
+freelancing on ai-powered products:
 
-i'm still looking for content creators willing to work with me.
+- **[recless](https://recless.de)** — llm-powered recruiting tool with linkedin integration, candidate screening, and vacancy management. non-technical product owners can tweak application logic with llm prompts. built with next.js, trpc, drizzle, postgres, bullmq, playwright.
+- **[be-rate.com](https://be-rate.com)** — building energy analysis and compliance platform with energyplus simulations and pdf report generation. next.js, react, express, mysql, three.js, aws.
+- **[m-click.aero](http://m-click.aero)** — german airspace management software in ocaml/reason/melange.
 
-aside from that, i'm working with <a href="https://www.yourjuno.co">your juno</a> on smaller things.
-we're using react-native, graphql, koa, postgres, prisma and typescript.
+## side projects
+
+- **[thefoodie.space](https://www.thefoodie.space)** — pivoted from recipe social network to "tiktok link-in-bio for food creators." auto-syncs food posts from tiktok, ai-powered recipe generation from video content.
+- **[commentable.space](https://www.commentable.space)** — self-hosted commenting system with ai moderation. built with swift/vapor.
+- **[pleeboo.com](https://www.pleeboo.com)** — who-brings-what app for community events. no signups, no premium tiers.
+- **[laundryroom.social](https://www.laundryroom.social)** — free open-source meetup alternative.
+- **[4fram.es](https://4fram.es)** — converts lomo action sampler photos into smooth animated gifs.
 
 ## learning
 
-i am getting into rust, which i'm enjoying a lot so far.
-also it's my first time using nextjs with server components. 
+getting deeper into ocaml and the melange ecosystem. also exploring what's possible with llm agents beyond simple chat interfaces.
