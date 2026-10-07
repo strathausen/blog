@@ -47,7 +47,12 @@ export const prerender = true;
         <div class="prose">
           <h1>sheetbird</h1>
           <p>a thunderbird add-on.</p>
-          <a class="download" href="/sheetbird/download" download="sheetbird-0.1.0.xpi">
+          <a
+            class="download"
+            id="download"
+            href="/sheetbird/sheetbird-0.1.0.xpi"
+            download="sheetbird-0.1.0.xpi"
+          >
             download sheetbird 0.1.0
           </a>
           <p class="meta">version 0.1.0 · needs thunderbird 140 or newer</p>
@@ -62,5 +67,21 @@ export const prerender = true;
       </main>
       <Footer />
     </div>
+    <script>
+      // Firefox offers to install .xpi files instead of saving them, so
+      // fetch the file and save it as a plain blob.
+      const link = document.getElementById("download") as HTMLAnchorElement;
+      link.addEventListener("click", async (event) => {
+        event.preventDefault();
+        const res = await fetch(link.href);
+        const blob = new Blob([await res.blob()], { type: "application/octet-stream" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = link.download;
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+    </script>
   </body>
 </html>
