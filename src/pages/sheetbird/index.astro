@@ -1,0 +1,66 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+export const prerender = true;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title="sheetbird"
+      description="sheetbird, a thunderbird add-on"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      .prose {
+        width: 720px;
+        max-width: calc(100% - 2em);
+        margin: auto;
+        padding: 1em;
+        color: rgb(var(--gray-dark));
+      }
+      .download {
+        display: inline-block;
+        margin: 1em 0;
+        padding: 0.75rem 1.5rem;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+      .download:hover {
+        background: var(--accent-dark);
+      }
+      .meta {
+        color: rgb(var(--gray));
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <Header />
+      <main>
+        <div class="prose">
+          <h1>sheetbird</h1>
+          <p>a thunderbird add-on.</p>
+          <a class="download" href="/sheetbird/download" download="sheetbird-0.1.0.xpi">
+            download sheetbird 0.1.0
+          </a>
+          <p class="meta">version 0.1.0 · needs thunderbird 140 or newer</p>
+          <h2>install</h2>
+          <ol>
+            <li>download the file above.</li>
+            <li>in thunderbird, open <strong>add-ons and themes</strong>.</li>
+            <li>click the gear icon ⚙️ and choose <strong>install add-on from file…</strong></li>
+            <li>pick <code>sheetbird-0.1.0.xpi</code>.</li>
+          </ol>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

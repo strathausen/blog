@@ -5,7 +5,9 @@ import vercel from "@astrojs/vercel";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.stratha.us",
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({ filter: (page) => !page.includes("/sheetbird") }),
+  ],
   redirects: {
     "/2011/12/15/culoar": "/archive/culoare",
     "/2010/03/02/dracula": "/archive/dracula_0-0-2alpha",
